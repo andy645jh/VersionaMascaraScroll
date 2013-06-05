@@ -1,0 +1,3 @@
+function mostrarInfo(){
+    alert("hols");
+}
