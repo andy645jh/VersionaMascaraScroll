@@ -1,3 +1,6 @@
 function mostrarInfo(){
-    alert("hols");
+  $("#dialog").dialog({ autoOpen: false });
+ 
+      $("#dialog").dialog("open");
+  
 }

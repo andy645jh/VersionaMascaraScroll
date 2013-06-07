@@ -4,20 +4,25 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Blueprint: Fixed Background Scrolling Layout</title>
+		<title>Blueprint: Fixed Background Scrolling Layout</title> 
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+          <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 		<meta name="description" content="Blueprint: Fixed Background Scrolling Layout" />
 		<meta name="keywords" content="background scrolling, fixed background, background-attachment, jquery" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+         
 		<script src="js/modernizr.custom.js"></script>
         <script src="js/funciones.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<header class="clearfix">
-				<div id="logo"></div>
+				<div id="logo"></div> 
+                <div id="dialog">Este texto aparecera en el diaglogo</div>
 			</header>	
 			<div id="cbp-fbscroller" class="cbp-fbscroller">
 				<nav>
@@ -35,6 +40,7 @@
 				<section id="fbsection5"></section>
 			</div>
 		</div>
+       
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
 		<script src="js/jquery.easing.min.js"></script>
@@ -46,7 +52,8 @@
 		<script>
 			$(function() {
 				cbpFixedScrollLayout.init();
-			});
+			});                  
+
 		</script>
 	</body>
 </html>
