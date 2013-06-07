@@ -16,7 +16,9 @@
 	<body>
 		<div class="container">
 			<header class="clearfix">
-				<div id="logo"></div>
+				<div id="logo" onclick="mostrar();"></div>
+                <div onclick="alert('hola');">Otra caja</div>
+                <div id="dialogo">contenido de la caja</div>
 			</header>	
 			<div id="cbp-fbscroller" class="cbp-fbscroller">
 				<nav>
@@ -41,10 +43,16 @@
 		<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
 		<script src="js/jquery.debouncedresize.js"></script>
 		<script src="js/cbpFixedScrollLayout.min.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.js"></script>
 		<script>
-			$(function() {
-				cbpFixedScrollLayout.init();
-			});
+      $(function () {
+          cbpFixedScrollLayout.init();
+      });
+      function mostrar() {
+          alert("mensaje");
+          $("#dialogo").dialog({ modal: true });
+      }
 		</script>
 	</body>
 </html>
