@@ -13,7 +13,7 @@
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+        
          
 		<script src="js/modernizr.custom.js"></script>
         <script src="js/funciones.js"></script>
@@ -22,8 +22,7 @@
 		<div class="container">
 			<header class="clearfix">
 
-				<div id="logo" onclick="mostrar();"></div>
-                <div onclick="alert('hola');">Otra caja</div>
+				<div id="logo" onclick="mostrar();"></div>               
                 <div id="dialogo">contenido de la caja</div>
 
 			</header>	
@@ -36,7 +35,7 @@
 					<a href="#fbsection5">Section 5</a>
                     <a href="#">Section 6</a>
 				</nav>
-				<section id="fbsection1"><a href="#" onclick="mostrarInfo();">Mostrar Informacion extra</a></section>
+				<section id="fbsection1"><a href="#" onclick="mostrar();">Mostrar Informacion extra</a></section>
 				<section id="fbsection2"></section>
 				<section id="fbsection3"></section>
 				<section id="fbsection4"></section>
@@ -61,7 +60,7 @@
 			});  
 
       function mostrar() {
-          alert("mensaje");
+         
           $("#dialogo").dialog({ modal: true });
       }
 
