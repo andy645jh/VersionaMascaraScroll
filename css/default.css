@@ -33,11 +33,11 @@ a:hover {
 }
 
 .container > header {
-	padding: 2.875em 1.875em 1.875em;
+	/*padding: 2.875em 1.875em 1.875em;width: 60%;left: 20%;*/
 	position: fixed;
-	z-index: 1000;
-	width: 60%;
-	left: 20%;
+	z-index: 1000;	
+    width: 100%;
+	
 }
 
 .container > header h1 {
@@ -66,7 +66,8 @@ a:hover {
 	position: relative;
 	width: 2.5em;
 	height: 2.5em;
-	background: #fff;
+	/*background: #fff;*/
+    background-image: url(../images/tabs_menu.png);
 	border-radius: 50%;
 	color: transparent;
 	margin: 0 0.1em;
@@ -75,7 +76,7 @@ a:hover {
 }
 
 .container > header nav a:after {
-	content: attr(data-info);
+	/*content: attr(data-info);*/
 	color: #fff;
 	position: absolute;
 	width: 600%;
