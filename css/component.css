@@ -31,24 +31,7 @@ header{
     margin: 0 auto;
 }
 
-#menu{
-    position: fixed;
-    top: 150px;
-    left: 50px;
-    z-index: 1000;
-}
 
-#menu nav{
-    width: 200px;
-}
-
-#menu a{
-    color: black;
-    text-decoration: none;
-    padding: 5px;
-    display: block;
-    background-color: cadetblue;
-}
 /* The nav is fixed on the right side  and we center it by translating it 50% 
 (we don't know it's height so we can't use the negative margin trick) */
 .cbp-fbscroller > nav {
@@ -56,7 +39,9 @@ header{
 	z-index: 9999;	
     top: 50%;
 	width: 250px;
-    
+    background-color: cadetblue;
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
 	/*width: 26px;right: 100px;*/
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -79,12 +64,28 @@ header{
     display: block;
 }
 
+nav .menu{
+    position: fixed;
+    height: 50px;
+   /* background-color: cadetblue;*/
+}
+
+#header_menu{   
+    
+    border-top-right-radius: 10px;
+    background-image: url(../images/header_menu.png);
+}
+
+#footer_menu{  
+    border-bottom-right-radius: 10px;        
+    background-image: url(../images/footer_menu.png);
+}
 .no-touch .cbp-fbscroller > nav a:hover {
 	background: rgba(255,255,255,0.6);
 }
 
 .cbp-fbscroller > nav a.cbp-fbcurrent {
-	background: #fff;
+	background: rgb(156, 120, 120);
 }
 
 /* background-attachment does the trick */
