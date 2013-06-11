@@ -64,8 +64,7 @@ header{
     display: block;
 }
 
-nav .menu{
-    position: fixed;
+nav .menu{   
     height: 50px;
    /* background-color: cadetblue;*/
 }
