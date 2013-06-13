@@ -15,7 +15,7 @@ var cbpFixedScrollLayout = (function() {
 		// the cbp-fbscroller's sections
 		$sections : $( '#cbp-fbscroller > section' ),
 		// the navigation links
-		$navlinks : $( '#cbp-fbscroller > nav:first > a' ),
+		$navlinks : $( '#cbp-fbscroller >#menu> nav:first > a' ),
 		// index of current link / section
 		currentLink : 0,
 		// the body element
