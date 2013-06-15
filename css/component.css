@@ -82,8 +82,10 @@ header{
     background-image: url(../images/header_menu.png);
 }
 section > a{
-    
+    position: absolute;
+    margin: 200px 300px;    
 }
+
 #footer_menu{  
     border-bottom-right-radius: 10px;        
     background-image: url(../images/footer_menu.png);
