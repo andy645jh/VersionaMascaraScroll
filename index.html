@@ -64,19 +64,27 @@
         <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
         <script src="js/jquery-ui-1.10.3.custom.js"></script>
 		<script>
+      var posX;
+      var posY;
 
       $(function () {
           cbpFixedScrollLayout.init();
       });
 
       function mostrar() {
+
+          posX = window.pageXOffset;
+          posY = window.pageYOffset;
+         
           $("body").css("overflow", "hidden");
           $("#dialogo").show();
+          scrollTo(posX, posY);
           //$("#dialogo").dialog({ modal: true });
       }
 
       function ocultar() {//aun no funciona este codigo
-          alert("clic");
+
+          scrollTo(posX, posY);
           $("body").css("overflow", "visible");
           $("#dialogo").css("display", "none");
           //$("#dialogo").dialog({ modal: true });
