@@ -27,10 +27,20 @@
 }
 #contenido_dialog{
     margin: 0 auto;
-    height: 800px;
-    width: 600px; 
-    background-color: #cc0000;  
+    height: 600px;
+    width: 1000px; 
+    background-color: black; 
+    background-image: url(../images/header2.jpg);
     
+}
+#info_destino{
+    color: black;
+    height: 400px;
+    padding: 50px 10px 10px 10px;
+    width: 900px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+   
 }
 .ui-helper-hidden-accessible {
 	border: 0;
