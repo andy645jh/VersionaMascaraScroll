@@ -26,10 +26,9 @@
     z-index: -1; 
 }
 #contenido_dialog{
-    margin: 0 auto;
+    margin: 100px auto;
     height: 600px;
     width: 1000px; 
-    padding-top: 100px;
     background-color: black; 
     background-image: url(../images/header2.jpg);
     
@@ -39,12 +38,11 @@
     height: 400px;
     padding: 50px 10px 10px 10px;
     width: 900px;
-    margin: 0 auto;
-    background-color: whitesmoke;
+    margin: 0 auto;   
    
 }
 #btn_cerrar_dialogo{
-    
+    float: right;
 }
 #tabs{
     overflow: hidden;
