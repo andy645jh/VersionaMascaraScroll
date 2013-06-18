@@ -5,8 +5,11 @@ html, body,
 .cbp-fbscroller section { 
 	height: 100%; 
 }
-
+button{
+    cursor: pointer;
+}
 header{
+    
     background-color: #808080;
     background-image: url(../images/header2.jpg);
     background-repeat: repeat-x;
