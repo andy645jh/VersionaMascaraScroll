@@ -37,8 +37,9 @@ header{
 /* The nav is fixed on the right side  and we center it by translating it 50% 
 (we don't know it's height so we can't use the negative margin trick) */
 .cbp-fbscroller > #menu > nav {
-	
+	height: 50px;
 	width: 250px;
+    overflow: hidden;
     background-color: cadetblue;
    /* border-top-right-radius: 10px; 
     border-bottom-right-radius: 10px;

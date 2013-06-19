@@ -58,6 +58,7 @@
                             <a href="#fbsection5" >Mostrar Informacion extra5</a>  
                                          
                         </nav>
+                    <div id="bajar" onclick="desplazar();">mas</div>
                     <div id="footer_menu" class="menu"></div>
             	</div>
 				<section id="fbsection1"></section>
@@ -92,7 +93,7 @@
 
           posX = window.pageXOffset;
           posY = window.pageYOffset;
-         
+
           $("body").css("overflow", "hidden");
           $("#dialogo").show();
           scrollTo(posX, posY);
@@ -107,19 +108,24 @@
           //$("#dialogo").dialog({ modal: true });
       }
 
-      $(document).ready(function() {
-        $("#content div").hide();
-        $("#tabs li:first").attr("id","current");
-        $("#content div:first").fadeIn();
+      function desplazar() {
+          $nav = $("nav");
+          scrollTo(0, $nav.pageYOffset+5);
+      }
 
-        $('#tabs a').click(function(e) {
-            e.preventDefault();
-            $("#content div").hide();
-            $("#tabs li").attr("id","");
-            $(this).parent().attr("id","current");
-            $('#' + $(this).attr('title')).fadeIn();
-        });
-    });
+      $(document).ready(function () {
+          $("#content div").hide();
+          $("#tabs li:first").attr("id", "current");
+          $("#content div:first").fadeIn();
+
+          $('#tabs a').click(function (e) {
+              e.preventDefault();
+              $("#content div").hide();
+              $("#tabs li").attr("id", "");
+              $(this).parent().attr("id", "current");
+              $('#' + $(this).attr('title')).fadeIn();
+          });
+      });
 		</script>
 	</body>
 </html>
