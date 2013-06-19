@@ -54,7 +54,7 @@
 
 #tabs li{
       float: left;
-      margin: 0 .5em 0 0;
+      margin: 0 1em 0 0;
 }
 
 #tabs a{
@@ -106,11 +106,11 @@
 {
     background: #fff;
     padding: 2em;
-    height: 220px;
+    height: 400px;
     position: relative;
     z-index: 2;
     border-radius: 0 5px 5px 5px;
-    box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+    box-shadow: 0 -4px 3px -2px rgba(0, 0, 0, .5);
 }
 .ui-helper-hidden-accessible {
 	border: 0;
