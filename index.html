@@ -62,7 +62,7 @@
                     <div id="footer_menu" class="menu"></div>
             	</div>
 				<section id="fbsection1"></section>
-				<section id="fbsection2"><a href="#" onclick="mostrar();">Mas Información</a></section>
+				<section id="fbsection2"><a href="javascript:mostrar()" title="section2" onclick="">Mas Información</a></section>
 				<section id="fbsection3"></section>
 				<section id="fbsection4"></section>
 				<section id="fbsection5"></section>
@@ -90,13 +90,14 @@
       });
 
       function mostrar() {
-
+          
+          alert($(this).attr("title"));
           posX = window.pageXOffset;
           posY = window.pageYOffset;
 
           $("body").css("overflow", "hidden");
           $("#dialogo").show();
-          scrollTo(posX, posY);
+          scrollTo(posX, posY);          
           //$("#dialogo").dialog({ modal: true });
       }
 
@@ -109,8 +110,7 @@
       }
 
       function desplazar() {
-          $nav = $("nav");
-          scrollTo(0, $nav.pageYOffset+5);
+          $('nav').animate({ scrollTop: $("#fbsection4").offset().top }, 2000);
       }
 
       $(document).ready(function () {
@@ -124,6 +124,7 @@
               $("#tabs li").attr("id", "");
               $(this).parent().attr("id", "current");
               $('#' + $(this).attr('title')).fadeIn();
+             
           });
       });
 		</script>

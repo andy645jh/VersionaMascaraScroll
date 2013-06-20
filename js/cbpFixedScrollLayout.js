@@ -30,6 +30,7 @@ var cbpFixedScrollLayout = (function() {
 
 		// click on a navigation link: the body is scrolled to the position of the respective section
 		config.$navlinks.on( 'click', function() {
+            
 			scrollAnim( config.$sections.eq( $( this ).index() ).offset().top );
 			return false;
 		} );
