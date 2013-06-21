@@ -78,7 +78,11 @@ header{
     height: 50px;
    /* background-color: cadetblue;*/
 }
-
+.flecha_menu{
+    background-color: cadetblue;
+    cursor: pointer;
+    text-align: center;
+}
 #header_menu{   
     
     border-top-right-radius: 10px;
