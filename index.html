@@ -123,12 +123,13 @@
 
           numEnlace++;
           var index = (NUM_ENLACES_SEGMENTO * (numEnlace - 1)) - 1;
-
+          alert("altura= "+ $('a:first').height());
           if (numEnlace <= segmento) {
               $enlace = $('nav > a:eq(' + index + ')');
               var itemNext = $enlace.attr("id");
-              $('nav').scrollTop(10);
-              //$('nav').animate({  scrollTop: $('#'+itemNext).offset().top }, 2000);
+              //$('nav').scrollTop(50*index);
+              $('nav').animate({  scrollTop: 44 * index }, 2000);
+               //$('nav').animate({  scrollTop: $('#'+itemNext).offset().top }, 2000);
           } else {
 
           }
@@ -143,7 +144,8 @@
           if (numEnlace >= 1) {
               $enlace = $('nav > a:eq(' + index + ')');
               var itemNext = $enlace.attr("id");
-              $('nav').animate({ scrollTop: $('#'+itemNext).offset().top }, 500);
+              $('nav').animate({  scrollTop: 44 * index }, 2000);
+              //$('nav').animate({ scrollTop: $('#'+itemNext).offset().top }, 500);
           } else {
 
           }
