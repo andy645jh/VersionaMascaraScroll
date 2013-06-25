@@ -51,7 +51,7 @@
                 <div id="menu">
                    
                    <div id="header_menu" class="menu" ></div>
-                   <div id="bajar" class="flecha_menu" onclick="subir();">subir</div>
+                   <div id="subir" class="flecha_menu" onclick="subir();">subir</div>
                         <nav>                        
                             <a href="#fbsection1" title="section1" id="item1" class="cbp-fbcurrent">Mostrar Informacion extra1</a>
                             <a href="#fbsection2" title="section2" id="item2">Mostrar Informacion extra2</a>
@@ -62,7 +62,7 @@
                             <a href="#fbsection5" title="section5" id="item7">Mostrar Informacion extra7</a>  
                                          
                         </nav>
-                    <div id="bajar"  onclick="bajar();">bajar</div>
+                    <div id="bajar" class="flecha_menu" onclick="bajar();">bajar</div>
                     <div id="footer_menu" class="menu"></div>
             	</div>
 				<section id="fbsection1"></section>
@@ -101,7 +101,7 @@
 
       function mostrar() {
 
-          alert($(this).attr("title"));
+          //alert($(this).attr("title"));
           posX = window.pageXOffset;
           posY = window.pageYOffset;
 
@@ -123,13 +123,13 @@
 
           numEnlace++;
           var index = (NUM_ENLACES_SEGMENTO * (numEnlace - 1)) - 1;
-          alert("altura= "+ $('a:first').height());
+          
           if (numEnlace <= segmento) {
               $enlace = $('nav > a:eq(' + index + ')');
               var itemNext = $enlace.attr("id");
-              //$('nav').scrollTop(50*index);
-              $('nav').animate({  scrollTop: 44 * index }, 2000);
-               //$('nav').animate({  scrollTop: $('#'+itemNext).offset().top }, 2000);
+             
+              $('nav').animate({  scrollTop: 44 * index }, 1000);
+              
           } else {
 
           }
@@ -139,13 +139,13 @@
       function subir() {
 
           numEnlace--;
-          var index = NUM_ENLACES_SEGMENTO * (numEnlace - 1);
+          var index = (NUM_ENLACES_SEGMENTO * (numEnlace - 1)) -1;
 
           if (numEnlace >= 1) {
               $enlace = $('nav > a:eq(' + index + ')');
               var itemNext = $enlace.attr("id");
-              $('nav').animate({  scrollTop: 44 * index }, 2000);
-              //$('nav').animate({ scrollTop: $('#'+itemNext).offset().top }, 500);
+              $('nav').animate({  scrollTop: 44 * index }, 1000);
+             
           } else {
 
           }
