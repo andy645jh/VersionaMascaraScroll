@@ -20,4 +20,5 @@ $res = mysql_query($sql,conectar());
 while($row = mysql_fetch_array($res)){
     echo $row["nombre"];
 }
+
 ?>
