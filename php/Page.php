@@ -1,7 +1,11 @@
 <?php
-    public class Page{
+    class Page{
 
-        private $header; 
+        public $header = ''; 
+
+        public function _construct(){
+            echo "hola";
+        }
 
         public function addHeader($lang,$charset,$title){
             $this->header = "<!DOCTYPE html>
@@ -16,5 +20,5 @@
             echo $this->header ;
         }
     }
+    
 ?>
-

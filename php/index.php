@@ -1,8 +1,8 @@
 <?php
     
-    include("Page.php");
-   /* var $pagina = new Page();
-    $pagina->addHeader('en','utf-8','titulo');
-    $pagina->display();*/
+    require_once("Page.php");
+    $pagina = new Page();
+    $pagina->addHeader('en','utf-8','Agregando Header');
+    $pagina->display();
     echo "pagina";
 ?>
