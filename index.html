@@ -16,7 +16,7 @@
         
         <link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
 		<script src="js/modernizr.custom.js"></script>
-        <script src="js/funciones.js"></script>
+       
 	</head>
 	<body>
         <div id="dialogo">
@@ -25,8 +25,8 @@
                 <div id="info_destino" >
                     <button id="btn_cerrar_dialogo" onclick="ocultar();">Cerrar</button>
                     <ul id="tabs">
-                        <li><a href="#" title="tab1">Destino</a></li>
-                        <li><a href="#" title="tab2">Planes</a></li>
+                        <li><a href="#" onclick="mostrarInfoDestino();" title="destino">Destino</a></li>
+                        <li><a href="#" title="plan">Planes</a></li>
                         <li><a href="#" title="tab3">Galería</a></li>
                         <li><a href="#" title="tab4">Adicionales</a></li>
                     </ul>
@@ -85,87 +85,6 @@
 		<script src="js/cbpFixedScrollLayout.js"></script>
         <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
         <script src="js/jquery-ui-1.10.3.custom.js"></script>
-		<script>
-      var NUM_ENLACES_SEGMENTO = 3;
-
-      var numEnlace = 1;
-      var posX;
-      var posY;
-
-      var numNavs = $('nav').children().length;
-      var segmento = Math.ceil(numNavs / NUM_ENLACES_SEGMENTO);
-
-      $(function () {
-          cbpFixedScrollLayout.init();
-      });
-
-      function mostrar() {
-
-          //alert($(this).attr("title"));
-          posX = window.pageXOffset;
-          posY = window.pageYOffset;
-
-          $("body").css("overflow", "hidden");
-          $("#dialogo").show();
-          scrollTo(posX, posY);
-          //$("#dialogo").dialog({ modal: true });
-      }
-
-      function ocultar() {//aun no funciona este codigo
-
-          scrollTo(posX, posY);
-          $("body").css("overflow", "visible");
-          $("#dialogo").css("display", "none");
-          //$("#dialogo").dialog({ modal: true });
-      }
-
-      function bajar() {
-
-          numEnlace++;
-          var index = (NUM_ENLACES_SEGMENTO * (numEnlace - 1)) - 1;
-          
-          if (numEnlace <= segmento) {
-              $enlace = $('nav > a:eq(' + index + ')');
-              var itemNext = $enlace.attr("id");
-             
-              $('nav').animate({  scrollTop: 44 * index }, 1000);
-              
-          } else {
-
-          }
-
-      }
-
-      function subir() {
-
-          numEnlace--;
-          var index = (NUM_ENLACES_SEGMENTO * (numEnlace - 1)) -1;
-
-          if (numEnlace >= 1) {
-              $enlace = $('nav > a:eq(' + index + ')');
-              var itemNext = $enlace.attr("id");
-              $('nav').animate({  scrollTop: 44 * index }, 1000);
-             
-          } else {
-
-          }
-
-      }
-
-      $(document).ready(function () {
-          $("#content div").hide();
-          $("#tabs li:first").attr("id", "current");
-          $("#content div:first").fadeIn();
-
-          $('#tabs a').click(function (e) {
-              e.preventDefault();
-              $("#content div").hide();
-              $("#tabs li").attr("id", "");
-              $(this).parent().attr("id", "current");
-              $('#' + $(this).attr('title')).fadeIn();
-
-          });
-      });
-		</script>
+         <script src="js/funciones.js"></script>
 	</body>
 </html>
