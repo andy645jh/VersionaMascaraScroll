@@ -9,16 +9,9 @@ if(!$conn){
     die("\nNO conectado");
 }
 	
-	mysql_select_db('viajes', $conn);
-	return $conn;
+mysql_select_db('viajes', $conn);
+return $conn;
 	
-}
-
-$sql = "select * from destino";
-$res = mysql_query($sql,conectar());
-
-while($row = mysql_fetch_array($res)){
-    echo $row["nombre"];
 }
 
 ?>
