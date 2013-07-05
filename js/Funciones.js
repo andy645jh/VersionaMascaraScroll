@@ -14,7 +14,7 @@ $(function () {
 
 function mostrar(tag) {
 
-    //alert($tag);
+    alert("mensaje");
     posX = window.pageXOffset;
     posY = window.pageYOffset;
 
@@ -85,3 +85,8 @@ function mostrarInfoDestino(){
 
     alert("mostrar info destino");
 }
+
+$('#fbsection2').click(function(e){
+     var $id = e.target;
+        alert("id: "+$id);
+ });  
