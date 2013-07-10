@@ -100,9 +100,15 @@ a {
 .container > header nav a:hover:after {
 	opacity: 1;
 }
-
-.container > header nav a:hover {
-	background: #47a3da;
+/*
+.container > header nav a:visited {
+	color: red;
+}
+.container > header nav a:link{
+	color:  #89c8cc;
+}*/
+.container > header nav a:hover {	
+    color: #0b878b;
 }
 
 .icon-drop:before, 
