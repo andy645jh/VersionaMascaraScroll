@@ -1,10 +1,13 @@
-var NUM_ENLACES_SEGMENTO = 3;
+var NUM_ENLACES_SEGMENTO = 6;
+var ALTURA_ETIQUETA = 31;
 
 var seccionActual = null;
 var numEnlace = 1;
 var posX;
 var posY;
 
+var altura = ALTURA_ETIQUETA * NUM_ENLACES_SEGMENTO;
+$('nav').height(altura);
 var numNavs = $('nav').children().length;
 var segmento = Math.ceil(numNavs / NUM_ENLACES_SEGMENTO);
 
