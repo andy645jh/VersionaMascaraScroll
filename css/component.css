@@ -1,4 +1,5 @@
 /* Set all parents to full height */
+
 html, body, 
 .container,
 .cbp-fbscroller,
@@ -28,9 +29,11 @@ header{
 #logo {
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
+    background-position-x :center; 
     height: 145px;
-    width:260px;
+    width:30%;
     margin: 0 auto;
+    float: left;
 }
 
 
@@ -140,7 +143,7 @@ section > a{
     height: 500px;
     width: 500px;
     margin: 200px 35%;
-    position: absolute;
+    position: fixed;
 }
 #fbsection1 {
     background-image: url(../images/img1.jpg);
