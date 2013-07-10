@@ -13,7 +13,7 @@ var cbpFixedScrollLayout = (function() {
 	// cache and initialize some values
 	var config = {
 		// the cbp-fbscroller's sections
-		$sections : $( '#cbp-fbscroller > section' ),
+		$sections : $( '#cbp-fbscroller > section ' ),
 		// the navigation links
 		$navlinks : $( '#cbp-fbscroller >#menu> nav:first > a' ),
 		// index of current link / section

@@ -83,6 +83,9 @@ header{
 }
 .perfil{
     height: 64px;
+    position: inherit;   
+    bottom: 0px;
+    right: 0px;
     width: 193px;
     background-image: url(../images/verperfil.png);
 }
@@ -134,19 +137,21 @@ section > a{
 .contenido_seccion{
     background-image: url(../images/circulo.png);
     background-size: cover;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     margin: 200px 35%;
     position: absolute;
-    z-index: 900;
 }
 #fbsection1 {
-	background-image: url(../images/patron_azul.png);
-    background-repeat: repeat;
+    background-image: url(../images/img1.jpg);
+	/*background-image: url(../images/patron_azul.png);
+    background-repeat: repeat;*/
 }
 
 #fbsection2 {
 	background-image: url(../images/img2.jpg);
+    /*background-image: url(../images/patron_rojo.jpg);
+    background-repeat: repeat;*/
 }
 
 #fbsection3 {
