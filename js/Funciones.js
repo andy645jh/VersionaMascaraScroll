@@ -55,7 +55,7 @@ function conectarAjax(_destino){
 function conectarSinAjax(_destino){
     $.ajax({
         // la URL para la petición
-        url: _destino+'.txt',     
+        url:'/info/'+ _destino+'.txt',     
               
         // el tipo de información que se espera de respuesta
         dataType: 'text',
