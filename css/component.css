@@ -86,11 +86,22 @@ header{
 }
 .perfil{
     height: 64px;
-    position: inherit;   
-    bottom: 0px;
-    right: 0px;
+    position: absolute;   
+    margin: 500px 800px;
     width: 193px;
     background-image: url(../images/verperfil.png);
+}
+#subir{
+    background-image: url(../images/flecha_arriba.png);
+    background-repeat: no-repeat;
+    background-position: top;   
+    height: 14px;
+}
+#bajar{
+    background-image: url(../images/flecha_arriba.png);
+    background-repeat: no-repeat;
+    background-position: bottom;    
+    height: 14px;
 }
 .flecha_menu{
     padding: 5px 20px;
@@ -100,8 +111,13 @@ header{
     cursor: pointer;
     text-align: center;
 }
-.flecha_menu:hover{   
-    background: #5fb0ab; 
+#subir:hover{   
+    background-image: url(../images/flecha_over.png); 
+    background-position: top; 
+}
+#bajar:hover{   
+     background-image: url(../images/flecha_over.png);
+     background-position: bottom; 
 }
 #header_menu{       
     height: 20px;
@@ -131,7 +147,7 @@ section > a{
 	position: relative;
 	background-position: top center;
 	background-repeat: no-repeat;
-	/*background-size: cover;*/
+	background-size: cover;
 }
 
 .no-touch .cbp-fbscroller section {
@@ -168,3 +184,8 @@ section > a{
 #fbsection5 {
 	background-image: url(../images/img5.jpg);
 }
+
+#fbsection6 {
+	background-image: url(../images/img6.jpg);
+}
+

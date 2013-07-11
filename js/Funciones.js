@@ -1,5 +1,5 @@
 var NUM_ENLACES_SEGMENTO = 6;
-var ALTURA_ETIQUETA = 31;
+var ALTURA_ETIQUETA = 32;
 
 var seccionActual = null;
 var numEnlace = 1;
@@ -25,8 +25,8 @@ function mostrar(tag) {
     $("#dialogo").show();
     scrollTo(posX, posY);
 
-    conectarAjax(tag);
-    
+    //conectarAjax(tag);
+    conectarSinAjax(tag);
 }
 
 function conectarAjax(_destino){
@@ -52,6 +52,21 @@ function conectarAjax(_destino){
     }); 
 }
 
+function conectarSinAjax(_destino){
+    $.ajax({
+        // la URL para la petición
+        url: _destino+'.txt',     
+              
+        // el tipo de información que se espera de respuesta
+        dataType: 'text',
+
+        // código a ejecutar si la petición es satisfactoria;
+        // la respuesta es pasada como argumento a la función
+        success: function (datos) {
+            $('#tab1').html(datos);
+        }
+    }); 
+}
 function ocultar() {//aun no funciona este codigo
 
     scrollTo(posX, posY);
