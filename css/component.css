@@ -25,14 +25,16 @@ header{
     /* IE 5.5 - 7 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#111111');
 }
-
-#logo {
+#logo{
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
-    background-position-x :center; 
-    height: 145px;
-    width:30%;
+    width: 200px;
+    height: 130px;
     margin: 0 auto;
+}
+#contenedor_logo {   
+    height: 145px;
+    width:30%;    
     float: left;
 }
 
