@@ -1,6 +1,6 @@
 var NUM_ENLACES_SEGMENTO = 6;
 var ALTURA_ETIQUETA = 32;
-
+var tabTemp;
 var seccionActual = null;
 var numEnlace = 1;
 var posX;
@@ -17,10 +17,12 @@ $(function () {
 
 function mostrar(tag) {
 
-    if((tag!='') && (seccionActual == null) && tag!=null){
-        seccionActual = tag;
-    }
-   
+    /*if((tag!='') && (seccionActual == null) && tag!=null){
+       
+    }*/
+    //seccionActual = tag;
+    tabTemp = new TabInfo(tag);
+
     posX = window.pageXOffset;
     posY = window.pageYOffset;
 
@@ -29,7 +31,7 @@ function mostrar(tag) {
     scrollTo(posX, posY);
 
     //conectarAjax(tag);
-    conectarSinAjax(seccionActual);
+   // conectarSinAjax(seccionActual);
 }
 
 function conectarAjax(_destino){
@@ -50,7 +52,7 @@ function conectarAjax(_destino){
         // código a ejecutar si la petición es satisfactoria;
         // la respuesta es pasada como argumento a la función
         success: function (datos) {
-            $('#tab1').html(datos);
+            $('#tab1').html(datos);           
         }
     }); 
 }
@@ -61,8 +63,8 @@ function mostrario(tag){
 function conectarSinAjax(_destino){
     $.ajax({
         // la URL para la petición
-        url:'/info/'+ _destino+'.html',     
-              
+        url: '/info/' + _destino + '.html',
+
         // el tipo de información que se espera de respuesta
         dataType: 'text',
 
@@ -70,15 +72,22 @@ function conectarSinAjax(_destino){
         // la respuesta es pasada como argumento a la función
         success: function (datos) {
             $('#tab1').html(datos);
+            $('#contenido_destino').css('display', '');
+            $('#imagen_destino').css('display', '');
         }
     }); 
 }
+
+function mostrarInfo(tipo){
+    tabTemp.mostrar(tipo);
+}
+
 function ocultar() {
     seccionActual = null;
+    tabTemp = null;
     scrollTo(posX, posY);
     $("body").css("overflow", "visible");
-    $("#dialogo").css("display", "none");
-    //$("#dialogo").dialog({ modal: true });
+    $("#dialogo").hide();   
 }
 
 function bajar() {

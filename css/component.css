@@ -40,13 +40,13 @@ header{
     float: left;
     width: 50%;
     overflow: auto;
-    max-height: 350px;
+    max-height: 350px;    
 }
 #imagen_destino{
     float: right;
     width: 50%;
 }
-#tab1{
+#tab1, #tab2, #tab3{
     height: 350px;
 }
 img{
