@@ -11,7 +11,7 @@ TabInfo.prototype.mostrar = function () {
    // this.cargarInfo('#tab3', 'galeria');
 }
 
-TabInfo.prototype.cargarInfo= function(tab,destino){
+TabInfo.prototype.cargarInfo = function(tab,destino){
     $.ajax({
         // la URL para la petición
         url:'/info/'+ destino+'/'+this.seccionActual+'.html',     
