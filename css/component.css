@@ -9,7 +9,8 @@ html, body,
 button{
     cursor: pointer;
 }
-header{    
+header{
+    
     background-color: #808080;
     background-image: url(../images/header2.jpg);
     background-repeat: repeat-x;
@@ -24,18 +25,17 @@ header{
     /* IE 5.5 - 7 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#111111');
 }
-#logo{
+
+#logo {
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
-    width: 200px;
-    height: 130px;
-    margin: 0 auto;
-}
-#contenedor_logo {   
+    background-position-x :center; 
     height: 145px;
-    width:30%;    
+    width:30%;
+    margin: 0 auto;
     float: left;
 }
+
 #contenido_destino {   
     float: left;
     width: 50%;
@@ -87,7 +87,7 @@ img{
     padding: 6px 20px;
     display: block;
     text-align: center;
-    color: #111;
+    color: rgb(90, 89, 89);
 }
 #menu{
     position: fixed;

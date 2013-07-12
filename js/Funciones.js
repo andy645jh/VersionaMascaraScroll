@@ -17,7 +17,10 @@ $(function () {
 
 function mostrar(tag) {
 
-    
+    if((tag!='') && (seccionActual == null) && tag!=null){
+        seccionActual = tag;
+    }
+   
     posX = window.pageXOffset;
     posY = window.pageYOffset;
 
@@ -26,7 +29,7 @@ function mostrar(tag) {
     scrollTo(posX, posY);
 
     //conectarAjax(tag);
-    conectarSinAjax(tag);
+    conectarSinAjax(seccionActual);
 }
 
 function conectarAjax(_destino){
@@ -52,6 +55,9 @@ function conectarAjax(_destino){
     }); 
 }
 
+function mostrario(tag){
+    alert(tag);
+}
 function conectarSinAjax(_destino){
     $.ajax({
         // la URL para la petición
@@ -67,8 +73,8 @@ function conectarSinAjax(_destino){
         }
     }); 
 }
-function ocultar() {//aun no funciona este codigo
-
+function ocultar() {
+    seccionActual = null;
     scrollTo(posX, posY);
     $("body").css("overflow", "visible");
     $("#dialogo").css("display", "none");
@@ -123,13 +129,3 @@ $(document).ready(function () {
 
     });
 });
-
-function mostrarInfoDestino(){
-
-    alert("mostrar info destino");
-}
-/*
-$('#fbsection2').click(function(e){
-     var $id = e.target;
-        alert("id: "+$id);
- });  */
