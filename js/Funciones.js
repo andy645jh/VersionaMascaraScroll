@@ -17,10 +17,6 @@ $(function () {
 
 function mostrar(tag) {
 
-    /*if((tag!='') && (seccionActual == null) && tag!=null){
-       
-    }*/
-    //seccionActual = tag;
     tabTemp = new TabInfo(tag);
 
     posX = window.pageXOffset;
@@ -30,52 +26,6 @@ function mostrar(tag) {
     $("#dialogo").show();
     scrollTo(posX, posY);
 
-    //conectarAjax(tag);
-   // conectarSinAjax(seccionActual);
-}
-
-function conectarAjax(_destino){
-    $.ajax({
-        // la URL para la petición
-        url: '../php/info_destino.php',
-
-        // la información a enviar
-        // (también es posible utilizar una cadena de datos)
-        data: { "destino": _destino },
-
-        // especifica si será una petición POST o GET
-        type: 'post',
-
-        // el tipo de información que se espera de respuesta
-        dataType: 'html',
-
-        // código a ejecutar si la petición es satisfactoria;
-        // la respuesta es pasada como argumento a la función
-        success: function (datos) {
-            $('#tab1').html(datos);           
-        }
-    }); 
-}
-
-function mostrario(tag){
-    alert(tag);
-}
-function conectarSinAjax(_destino){
-    $.ajax({
-        // la URL para la petición
-        url: '/info/' + _destino + '.html',
-
-        // el tipo de información que se espera de respuesta
-        dataType: 'text',
-
-        // código a ejecutar si la petición es satisfactoria;
-        // la respuesta es pasada como argumento a la función
-        success: function (datos) {
-            $('#tab1').html(datos);
-            $('#contenido_destino').css('display', '');
-            $('#imagen_destino').css('display', '');
-        }
-    }); 
 }
 
 function mostrarInfo(tipo){
@@ -137,4 +87,20 @@ $(document).ready(function () {
         $('#' + $(this).attr('title')).fadeIn();
 
     });
+
+    function moverPerfil() {
+        var anchoVentana = window.innerWidth;
+        var altoVentana = window.innerHeight;
+        var avgAlto = altoVentana * 0.7;
+        var avgAncho = anchoVentana * 0.7;
+        $('.perfil').css('left', avgAncho);
+        $('.perfil').css('top', avgAlto);
+    }       
+   
+    $(window).resize(function() {
+        moverPerfil();
+    });
+
+    moverPerfil();
+
 });

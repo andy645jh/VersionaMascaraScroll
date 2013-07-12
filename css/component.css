@@ -103,7 +103,7 @@ img{
 .perfil{
     height: 64px;
     position: absolute;   
-    margin: 500px 800px;
+    /*margin: 500px 800px;*/
     width: 193px;
     background-image: url(../images/verperfil.png);
 }
@@ -139,10 +139,6 @@ img{
     height: 20px;
     border-top-right-radius: 10px;
     background-image: url(../images/header_menu.png);
-}
-section > a{
-    position: absolute;
-    margin: 500px 800px;    
 }
 
 #footer_menu{  
