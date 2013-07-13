@@ -42,6 +42,15 @@ header{
     overflow: auto;
     max-height: 350px;    
 }
+#img_movil{
+    background-image: url(../images/img_amazonas.png);
+    background-size: cover;  
+    position: fixed; 
+    top: 250px;
+    left: 500px;
+    width: 400px;
+    height: 400px;  
+}
 #imagen_destino{
     float: right;
     width: 50%;
@@ -173,8 +182,18 @@ img{
     margin: 200px 35%;
     position: fixed;
 }
+#titulo1{
+    background-image: url(../images/titulo.png);
+    background-size: cover;
+    height: 104px;
+    top: 200px;
+    left: 500px;
+    position: absolute;    
+    width: 40%;    
+    z-index: 10;
+}
 #fbsection1 {
-    background-image: url(../images/img1.jpg);
+    background-image: url(../images/img.jpg);
 	/*background-image: url(../images/patron_azul.png);
     background-repeat: repeat;*/
 }
