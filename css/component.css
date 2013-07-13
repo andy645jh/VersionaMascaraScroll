@@ -42,15 +42,6 @@ header{
     overflow: auto;
     max-height: 350px;    
 }
-#img_movil{
-    background-image: url(../images/img_amazonas.png);
-    background-size: cover;  
-    position: fixed; 
-    top: 250px;
-    left: 500px;
-    width: 400px;
-    height: 400px;  
-}
 #imagen_destino{
     float: right;
     width: 50%;
@@ -161,6 +152,7 @@ img{
 
 .cbp-fbscroller > #menu > nav a.cbp-fbcurrent {
 	background: rgb(156, 120, 120);
+    color: white;
 }
 
 /* background-attachment does the trick */
@@ -185,12 +177,21 @@ img{
 #titulo1{
     background-image: url(../images/titulo.png);
     background-size: cover;
-    height: 104px;
+    height: 165px;
     top: 200px;
     left: 500px;
-    position: absolute;    
+    position: fixed;    
     width: 40%;    
-    z-index: 10;
+   
+}
+#img_movil{
+    background-image: url(../images/san_gil.jpg);
+    background-size: cover;  
+    position: absolute; 
+    top: 250px;
+    left: 550px;
+    width: 550px;
+    height: 450px;  
 }
 #fbsection1 {
     background-image: url(../images/img.jpg);
