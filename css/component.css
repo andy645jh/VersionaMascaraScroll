@@ -181,8 +181,27 @@ img{
     top: 200px;
     left: 500px;
     position: fixed;    
-    width: 40%;    
+    width: 600px;    
    
+}
+#titulo2{
+    background-image: url(../images/titulo_llanos.png);
+    background-size: cover;
+    height: 165px;
+    top: 200px;
+    left: 500px;
+    position: fixed;    
+    width: 600px;    
+   
+}
+.circulo{
+    background-image: url(../images/circulo.png);
+    background-size: cover;
+    height: 400px;
+    top: 200px;
+    left: 500px;
+    position: fixed;    
+    width: 400px;  
 }
 #img_movil{
     background-image: url(../images/san_gil.jpg);
@@ -193,8 +212,17 @@ img{
     width: 550px;
     height: 450px;  
 }
+#img_movil2{
+    background-image: url(../images/img_amazonas.png);
+    background-size: cover;  
+    position: absolute; 
+    top: 250px;
+    left: 550px;
+    width: 550px;
+    height: 450px;  
+}
 #fbsection1 {
-    background-image: url(../images/img.jpg);
+    background-image: url(../images/img1.jpg);
 	/*background-image: url(../images/patron_azul.png);
     background-repeat: repeat;*/
 }

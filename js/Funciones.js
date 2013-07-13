@@ -85,7 +85,6 @@ $(document).ready(function () {
         $("#tabs li").attr("id", "");
         $(this).parent().attr("id", "current");
         $('#' + $(this).attr('title')).fadeIn();
-
     });
 
     function moverPerfil() {
@@ -93,11 +92,17 @@ $(document).ready(function () {
         var altoVentana = window.innerHeight;
         var avgAlto = altoVentana * 0.7;
         var avgAncho = anchoVentana * 0.7;
+        var posTituloX = (anchoVentana / 2) - ($('#titulo1').width() / 2);
+        var posImgMovilX = (anchoVentana / 2) - ($('#img_movil').width() / 2);
+       
         $('.perfil').css('left', avgAncho);
         $('.perfil').css('top', avgAlto);
-    }       
-   
-    $(window).resize(function() {
+        $('#titulo1').css('left', posTituloX);
+        $('#img_movil').css('left', posImgMovilX);
+         $('#img_movil2').css('left', posImgMovilX);
+    }
+
+    $(window).resize(function () {
         moverPerfil();
     });
 
