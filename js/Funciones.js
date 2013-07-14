@@ -99,7 +99,11 @@ $(document).ready(function () {
         $('.perfil').css('top', avgAlto);
         $('#titulo1').css('left', posTituloX);
         $('#img_movil').css('left', posImgMovilX);
-         $('#img_movil2').css('left', posImgMovilX);
+        $('#img_movil2').css('left', posImgMovilX);
+        $('#img_movil3').css('left', posImgMovilX);
+        $('#img_movil4').css('left', posImgMovilX);
+        $('#img_movil5').css('left', posImgMovilX);
+        $('#img_movil6').css('left', posImgMovilX);
     }
 
     $(window).resize(function () {
