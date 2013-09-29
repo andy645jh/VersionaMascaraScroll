@@ -11,11 +11,11 @@
 		<meta name="keywords" content="background scrolling, fixed background, background-attachment, jquery" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="../css/default.css" />
+		<link rel="stylesheet" type="text/css" href="../css/component.css" />
         <link href='http://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
-        <link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
-		<script src="js/modernizr.custom.js"></script>
+        <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+		<script src="../js/modernizr.custom.js"></script>
        
 	</head>
 	<body>
@@ -83,15 +83,15 @@
        
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
-		<script src="js/jquery.easing.min.js"></script>
+		<script src="../js/jquery.easing.min.js"></script>
 		<!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
-		<script src="js/waypoints.min.js"></script>
+		<script src="../js/waypoints.min.js"></script>
 		<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
-		<script src="js/jquery.debouncedresize.js"></script>
-		<script src="js/cbpFixedScrollLayout.js"></script>
-        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-        <script src="js/jquery-ui-1.10.3.custom.js"></script>
-        <script src="js/TabInfo.js"></script>
-        <script src="js/Funciones.js"></script>
+		<script src="../js/jquery.debouncedresize.js"></script>
+		<script src="../js/cbpFixedScrollLayout.js"></script>
+        <script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="../js/jquery-ui-1.10.3.custom.js"></script>
+        <script src="../js/TabInfo.js"></script>
+        <script src="../js/Funciones.js"></script>
 	</body>
 </html>
