@@ -76,12 +76,12 @@ $pathCssDefault = $path."css/default.css";
                     <div id="bajar" class="flecha_menu" onclick="bajar();"></div>
                     <div id="footer_menu" class="menu"></div>
             </div>
-				<section id="fbsection1"><div id="img_movil"></div><a href="javascript:mostrar('san_gil')" title="section1" class="perfil"></a></section>
-               	<section id="fbsection2"><div id="img_movil2"></div><a href="javascript:mostrar('llanos_orientales')" title="section2" class="perfil"></a></section>                        
-				<section id="fbsection3"><div id="img_movil3"></div><a href="javascript:mostrar('san_andres')" title="section3" class="perfil"></a></section>
-				<section id="fbsection4"><div id="img_movil4"></div><a href="javascript:mostrar('eje_cafetero')" title="section4" class="perfil"></a></section>
-				<section id="fbsection5"><div id="img_movil5"></div><a href="javascript:mostrar('baru')" title="section5" class="perfil"></a></section>
-                <section id="fbsection6"><div id="img_movil6"></div><a href="javascript:mostrar('amazonas')" title="section6" class="perfil"></a></section>				           
+				<section id="fbsection1"><div id="img_movil" class="base_imgs_moviles"  style="background-image: url(../images/img_sangil.jpg)"></div><a href="javascript:mostrar('san_gil')" title="section1" class="perfil"></a></section>
+               	<section id="fbsection2"><div id="img_movil2" class="base_imgs_moviles"  style="background-image: url(../images/img_llanos.png)"></div><a href="javascript:mostrar('llanos_orientales')" title="section2" class="perfil"></a></section>                        
+				<section id="fbsection3"><div id="img_movil3" class="base_imgs_moviles"  style="background-image: url(../images/img_san_andres.png)"></div><a href="javascript:mostrar('san_andres')" title="section3" class="perfil"></a></section>
+				<section id="fbsection4"><div id="img_movil4" class="base_imgs_moviles"  style="background-image: url(../images/img_ejecafetero.png)"></div><a href="javascript:mostrar('eje_cafetero')" title="section4" class="perfil"></a></section>
+				<section id="fbsection5"><div id="img_movil5" class="base_imgs_moviles"  style="background-image: url(../images/img_baru.png)"></div><a href="javascript:mostrar('baru')" title="section5" class="perfil"></a></section>
+                <section id="fbsection6"><div id="img_movil6" class="base_imgs_moviles"  style="background-image: url(../images/img_amazonas.png)"></div><a href="javascript:mostrar('amazonas')" title="section6" class="perfil"></a></section>				           
 			</div>
            
 		</div>

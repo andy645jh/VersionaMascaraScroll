@@ -203,61 +203,34 @@ img{
     position: fixed;    
     width: 400px;  
 }
-#img_movil{
-    background-image: url(../images/img_sangil.jpg);
+.base_imgs_moviles {
     background-size: cover;  
     position: absolute; 
     top: 250px;
     left: 550px;
     width: 650px;
     height: 400px;   
+}
+/*
+#img_movil{
+    background-image: url(../images/img_sangil.jpg);  
 }
 #img_movil2{
-    background-image: url(../images/img_llanos.png);
-    background-size: cover;  
-    position: absolute; 
-    top: 250px;
-    left: 550px;
-    width: 650px;
-    height: 400px;   
+    background-image: url(../images/img_llanos.png);   
 }
 #img_movil3{
-    background-image: url(../images/img_san_andres.png);
-    background-size: cover;  
-    position: absolute; 
-    top: 250px;
-    left: 550px;
-    width: 650px;
-    height: 400px;  
+    background-image: url(../images/img_san_andres.png);   
 }
 #img_movil4{
-    background-image: url(../images/img_ejecafetero.png);
-    background-size: cover;  
-    position: absolute; 
-    top: 250px;
-    left: 550px;
-    width: 650px;
-    height: 400px;  
+    background-image: url(../images/img_ejecafetero.png);   
 }
 #img_movil5{
-    background-image: url(../images/img_baru.png);
-    background-size: cover;  
-    position: absolute; 
-    top: 250px;
-    left: 550px;
-    width: 650px;
-    height: 400px;   
+    background-image: url(../images/img_baru.png);   
 }
 #img_movil6{
-    background-image: url(../images/img_amazonas.png);
-    background-size: cover;  
-    position: absolute; 
-    top: 250px;
-    left: 550px;
-    width: 650px;
-    height: 400px;  
+    background-image: url(../images/img_amazonas.png);   
 }
-
+*/
 #fbsection1 {
     background-image: url(../images/img1.jpg);
 	/*background-image: url(../images/patron_azul.png);

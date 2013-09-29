@@ -61,22 +61,14 @@
                    <div id="header_menu" class="menu" ></div>
                    <div id="subir" class="flecha_menu" onclick="subir();"></div>
                         <nav>                        
-                            <a href="#fbsection1" title="section1" id="san_gil" class="cbp-fbcurrent">SAN GIL</a>
-                            <a href="#fbsection2" title="section2" id="llanos_orientales">LLANOS ORIENTALES</a>                            
-                            <a href="#fbsection3" title="section3" id="san_andres">SAN ANDRES</a>       
-                            <a href="#fbsection4" title="section4" id="eje_cafetero">EJE CAFETERO</a>                                                                         
-                            <a href="#fbsection5" title="section5" id="baru">BARÚ</a>         
-                            <a href="#fbsection6" title="section6" id="amazonas">AMAZONAS</a> 
+                            <a href="#fbsection1" title="section1" id="nosotros" class="cbp-fbcurrent">SOBRE NOSOTROS</a>
+                            <a href="#fbsection2" title="section2" id="valores">VALORES CORPORATIVOS ORIENTALES</a>                     
                         </nav>
                     <div id="bajar" class="flecha_menu" onclick="bajar();"></div>
                     <div id="footer_menu" class="menu"></div>
             </div>
-				<section id="fbsection1"><div id="img_movil"></div><a href="javascript:mostrar('san_gil')" title="section1" class="perfil"></a></section>
-               	<section id="fbsection2"><div id="img_movil2"></div><a href="javascript:mostrar('llanos_orientales')" title="section2" class="perfil"></a></section>                        
-				<section id="fbsection3"><div id="img_movil3"></div><a href="javascript:mostrar('san_andres')" title="section3" class="perfil"></a></section>
-				<section id="fbsection4"><div id="img_movil4"></div><a href="javascript:mostrar('eje_cafetero')" title="section4" class="perfil"></a></section>
-				<section id="fbsection5"><div id="img_movil5"></div><a href="javascript:mostrar('baru')" title="section5" class="perfil"></a></section>
-                <section id="fbsection6"><div id="img_movil6"></div><a href="javascript:mostrar('amazonas')" title="section6" class="perfil"></a></section>				           
+				<section id="fbsection1"><div id="img_movil"  class="base_imgs_moviles" style="background-color: #ff6a00"></div><a href="javascript:mostrar('san_gil')" title="section1" class="perfil"></a></section>
+               	<section id="fbsection2"><div id="img_movil2" class="base_imgs_moviles" style="background-color: #ff6a00"></div><a href="javascript:mostrar('llanos_orientales')" title="section2" class="perfil"></a></section>                        							           
 			</div>
            
 		</div>
