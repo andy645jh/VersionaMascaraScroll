@@ -72,6 +72,9 @@ $pathCssDefault = $path."css/default.css";
                             <a href="#fbsection4" title="section4" id="eje_cafetero">EJE CAFETERO</a>                                                                         
                             <a href="#fbsection5" title="section5" id="baru">BARÚ</a>         
                             <a href="#fbsection6" title="section6" id="amazonas">AMAZONAS</a> 
+                            <a href="#fbsection7" title="section7" id="medellin">MEDELLIN</a> 
+                            <a href="#fbsection8" title="section8" id="boyaca">BOYACA</a>
+                            <a href="#fbsection9" title="section9" id="guajira">GUAJIRA</a>
                         </nav>
                     <div id="bajar" class="flecha_menu" onclick="bajar();"></div>
                     <div id="footer_menu" class="menu"></div>
@@ -81,7 +84,10 @@ $pathCssDefault = $path."css/default.css";
 				<section id="fbsection3"><div id="img_movil3" class="base_imgs_moviles"  style="background-image: url(../images/img_san_andres.png)"></div><a href="javascript:mostrar('san_andres')" title="section3" class="perfil"></a></section>
 				<section id="fbsection4"><div id="img_movil4" class="base_imgs_moviles"  style="background-image: url(../images/img_ejecafetero.png)"></div><a href="javascript:mostrar('eje_cafetero')" title="section4" class="perfil"></a></section>
 				<section id="fbsection5"><div id="img_movil5" class="base_imgs_moviles"  style="background-image: url(../images/img_baru.png)"></div><a href="javascript:mostrar('baru')" title="section5" class="perfil"></a></section>
-                <section id="fbsection6"><div id="img_movil6" class="base_imgs_moviles"  style="background-image: url(../images/img_amazonas.png)"></div><a href="javascript:mostrar('amazonas')" title="section6" class="perfil"></a></section>				           
+                <section id="fbsection6"><div id="img_movil6" class="base_imgs_moviles"  style="background-image: url(../images/img_amazonas.png)"></div><a href="javascript:mostrar('amazonas')" title="section6" class="perfil"></a></section>				          
+                <section id="fbsection7"><div id="img_movil7" class="base_imgs_moviles"  style="background-image: url(../images/img_medellin.png)"></div><a href="javascript:mostrar('medellin')" title="section7" class="perfil"></a></section>				           
+                <section id="fbsection8"><div id="img_movil8" class="base_imgs_moviles"  style="background-image: url(../images/img_boyaca.png)"></div><a href="javascript:mostrar('boyaca')" title="section8" class="perfil"></a></section>				            
+                <section id="fbsection9"><div id="img_movil9" class="base_imgs_moviles"  style="background-image: url(../images/img_guajira.png)"></div><a href="javascript:mostrar('guajira')" title="section9" class="perfil"></a></section>				             
 			</div>
            
 		</div>
