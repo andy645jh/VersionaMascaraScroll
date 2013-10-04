@@ -68,7 +68,9 @@ $pathCssDefault = $path."css/default.css";
                         <nav>                        
                             <a href="#fbsection1" title="section1" id="san_gil" class="cbp-fbcurrent">SAN GIL</a>
                             <a href="#fbsection2" title="section2" id="llanos_orientales">LLANOS ORIENTALES</a>                            
-                            <a href="#fbsection4" title="section4" id="eje_cafetero">EJE CAFETERO</a>                         
+                            <a href="#fbsection3" title="section3" id="san_andres">SAN ANDRES</a>       
+                            <a href="#fbsection4" title="section4" id="eje_cafetero">EJE CAFETERO</a>                                                                         
+                            <a href="#fbsection5" title="section5" id="baru">BARÚ</a>         
                             <a href="#fbsection6" title="section6" id="amazonas">AMAZONAS</a> 
                             <a href="#fbsection7" title="section7" id="medellin">MEDELLIN</a> 
                             <a href="#fbsection8" title="section8" id="boyaca">BOYACA</a>
@@ -79,7 +81,9 @@ $pathCssDefault = $path."css/default.css";
             </div>
 				<section id="fbsection1"><div id="img_movil" class="base_imgs_moviles"  style="background-image: url(../images/img_sangil.jpg)"></div><a href="javascript:mostrar('san_gil')" title="section1" class="perfil"></a></section>
                	<section id="fbsection2"><div id="img_movil2" class="base_imgs_moviles"  style="background-image: url(../images/img_llanos.png)"></div><a href="javascript:mostrar('llanos_orientales')" title="section2" class="perfil"></a></section>                        
-				<section id="fbsection4"><div id="img_movil4" class="base_imgs_moviles"  style="background-image: url(../images/img_ejecafetero.png)"></div><a href="javascript:mostrar('eje_cafetero')" title="section4" class="perfil"></a></section>		
+				<section id="fbsection3"><div id="img_movil3" class="base_imgs_moviles"  style="background-image: url(../images/img_san_andres.png)"></div><a href="javascript:mostrar('san_andres')" title="section3" class="perfil"></a></section>
+				<section id="fbsection4"><div id="img_movil4" class="base_imgs_moviles"  style="background-image: url(../images/img_ejecafetero.png)"></div><a href="javascript:mostrar('eje_cafetero')" title="section4" class="perfil"></a></section>
+				<section id="fbsection5"><div id="img_movil5" class="base_imgs_moviles"  style="background-image: url(../images/img_baru.png)"></div><a href="javascript:mostrar('baru')" title="section5" class="perfil"></a></section>
                 <section id="fbsection6"><div id="img_movil6" class="base_imgs_moviles"  style="background-image: url(../images/img_amazonas.png)"></div><a href="javascript:mostrar('amazonas')" title="section6" class="perfil"></a></section>				          
                 <section id="fbsection7"><div id="img_movil7" class="base_imgs_moviles"  style="background-image: url(../images/img_medellin.png)"></div><a href="javascript:mostrar('medellin')" title="section7" class="perfil"></a></section>				           
                 <section id="fbsection8"><div id="img_movil8" class="base_imgs_moviles"  style="background-image: url(../images/img_boyaca.png)"></div><a href="javascript:mostrar('boyaca')" title="section8" class="perfil"></a></section>				            
