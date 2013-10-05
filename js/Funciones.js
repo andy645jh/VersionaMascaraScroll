@@ -104,6 +104,7 @@ $(document).ready(function () {
         $('#img_movil4').css('left', posImgMovilX);
         $('#img_movil5').css('left', posImgMovilX);
         $('#img_movil6').css('left', posImgMovilX);
+        $('#img_movil7').css('left', posImgMovilX);
     }
 
     $(window).resize(function () {

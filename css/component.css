@@ -230,17 +230,16 @@ img{
 #img_movil6{
     background-image: url(../images/img_amazonas.png);   
 }
-*/
+
 #fbsection1 {
     background-image: url(../images/img1.jpg);
 	/*background-image: url(../images/patron_azul.png);
-    background-repeat: repeat;*/
+    background-repeat: repeat;
 }
 
 #fbsection2 {
 	background-image: url(../images/img2.jpg);
-    /*background-image: url(../images/patron_rojo.jpg);
-    background-repeat: repeat;*/
+    background-repeat: repeat;
 }
 
 #fbsection3 {
@@ -271,5 +270,5 @@ img{
 	background-image: url(../images/img9.jpg);
 }
 
-
+*/
 
