@@ -22,15 +22,11 @@
                 <div id="info_destino" >
                     <button id="btn_cerrar_dialogo" onclick="ocultar();">Cerrar</button>
                     <ul id="tabs">
-                        <li><a href="#" title="tab1">Destino</a></li>
-                        <li><a href="#" title="tab2">Planes</a></li>
-                        <li><a href="#" title="tab3">Galería</a></li>                       
+                        <li><a href="#" title="tab1">Destino</a></li>                                        
                     </ul>
 
                     <div id="content">
-                        <div id="tab1">1</div>
-                        <div id="tab2">2</div>
-                        <div id="tab3">3</div>                       
+                        <div id="tab1">1</div>                                           
                     </div>
                 </div>
             </div>
@@ -39,8 +35,8 @@
 			<header class="clearfix">
                 <nav>
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">EMPRESA</a></li>                       
+                        <li><a href="Home.php">HOME</a></li>
+                        <li><a href="Empresa.php">EMPRESA</a></li>                       
                     </ul>
                 </nav>
 				  <div id="contenedor_logo"><div id="logo"></div></div>          
