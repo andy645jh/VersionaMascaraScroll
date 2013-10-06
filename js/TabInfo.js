@@ -1,21 +1,22 @@
 var TabInfo = function (seccion) {
 
-    this.tabActual = "destino";
+    this.tabActual = "planes";
     this.seccionActual = seccion;
     this.mostrar();
 }
 
 TabInfo.prototype.mostrar = function () {        
-    this.cargarInfo('#tab1', 'destino');      
-    this.cargarInfo('#tab2', 'planes');
+    //this.cargarInfo('#tab1', 'destino');      
+    this.cargarInfo('#tab1', 'planes');
    // this.cargarInfo('#tab3', 'galeria');
 }
 
 TabInfo.prototype.cargarInfo = function(tab,destino){
+    
     $.ajax({
         // la URL para la petición
         url:'/info/'+ destino+'/'+this.seccionActual+'.html',     
-              
+       
         // el tipo de información que se espera de respuesta
         dataType: 'html',
 
@@ -25,4 +26,5 @@ TabInfo.prototype.cargarInfo = function(tab,destino){
             $(tab).html(datos);
         }
     }); 
+  
 }
