@@ -48,7 +48,7 @@ $pathCssDefault = $path."css/default.css";
                  <nav>
                     <ul>                     
                         <li><a href="#">GALERÍA</a></li>
-                        <li><a href="#">CONTACTO</a></li>
+                        <li><a href="Contacto.php">CONTACTO</a></li>
                     </ul>
                 </nav>
 			</header>
@@ -59,13 +59,13 @@ $pathCssDefault = $path."css/default.css";
                    <div id="header_menu" class="menu" ></div>
                    <div id="subir" class="flecha_menu" onclick="subir();"></div>
                         <nav>        
-                            <a href="#fbsection1" title="section1" id="amazonas">AMAZONAS</a>  
+                            <a href="#fbsection1" title="section1" id="amazonas" class="cbp-fbcurrent">AMAZONAS</a>  
                             <a href="#fbsection2" title="section2" id="boyaca">BOYACA</a>         
                             <a href="#fbsection3" title="section3" id="eje_cafetero">EJE CAFETERO</a>  
                             <a href="#fbsection4" title="section4" id="guajira">GUAJIRA</a>       
                             <a href="#fbsection5" title="section5" id="llanos_orientales">LLANOS ORIENTALES</a>
                             <a href="#fbsection6" title="section6" id="medellin">MEDELLIN</a>
-                            <a href="#fbsection7" title="section7" id="san_gil" class="cbp-fbcurrent">SAN GIL</a>
+                            <a href="#fbsection7" title="section7" id="san_gil" >SAN GIL</a>
                          </nav>
                     <div id="bajar" class="flecha_menu" onclick="bajar();"></div>
                     <div id="footer_menu" class="menu"></div>
