@@ -44,30 +44,29 @@ $pathCssDefault = $path."css/default.css";
              <div id="cuerpo">
                 <div id="contacto">
                     <div id="formulario">
-                        <table>
-                            <form method="post" action="../php/envioContacto.php" enctype="application/x-www-form-urlencoded">
+                        <form method="post" action="../php/envioContacto.php" enctype="application/x-www-form-urlencoded">
+                            <table>                           
                                 <tr>
-                                    <td><input type="text" name="nombre" value="Nombre:" size="60" MAXLENGTH="60" ></td>
+                                    <td><input type="text" name="nombre" value="Nombre:" size="60" MAXLENGTH="60" onfocus="limpiar(this);"></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" name="tel" value="Telefono:" size="60" MAXLENGTH="60"></td>
+                                    <td><input type="text" name="tel" value="Telefono:" size="60" MAXLENGTH="60" onfocus="limpiar(this);"></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" name="correo" value="Correo:" size="60" MAXLENGTH="60"></td>
+                                    <td><input type="text" name="correo" value="Correo:" size="60" MAXLENGTH="60" onfocus="limpiar(this);"></td>
                                 </tr>
                                 <tr>
-                                    <td><textarea name="mensaje" rows="6" cols="46">Mensaje:</textarea></td>
-                                </tr>
-                            </form>
-                        </table>    
-                       
-                    </div>
-                    <div id="datos_contacto">
-                    
-                    </div>
-                </div>
-                <div id="img_contacto">
-                
+                                    <td><textarea name="mensaje" rows="6" cols="46" onfocus="limpiar(this);">Mensaje:</textarea></td>
+                                </tr>                           
+                           </table>   
+                           <div id="datos_contacto">
+                                <p>Cel: 312 449 2722- 316 865 0769</p>
+                                <p>Email: terrazsan@gmail.com - Terrazsantours@gmail.com</p>
+                           </div>  
+                           <div id="btnEnviar"><input src="../images/enviar.png" type="image"></div>
+                     </form>
+                  </div>
+                 <div id="img_contacto"></div>  
                 </div>
             </div>      
         </div>

@@ -9,19 +9,13 @@ $pathCssDefault = $path."css/default.css";
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Terrasan- Agencia de Viajes</title> 
-        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-          <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<title>Terrasan- Agencia de Viajes</title>      
 		<meta name="description" content="Blueprint: Fixed Background Scrolling Layout" />
 		<meta name="keywords" content="background scrolling, fixed background, background-attachment, jquery" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../css/default.css" />
-		<link rel="stylesheet" type="text/css" href="../css/component.css" />
-        <link href='http://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
-        <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
-		<script src="../js/modernizr.custom.js"></script>
-       
+		<link rel="stylesheet" type="text/css" href="../css/component.css" />  
 	</head>
 	<body>
         <div id="dialogo">

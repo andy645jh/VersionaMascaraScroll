@@ -57,6 +57,9 @@ function bajar() {
     }
 
 }
+function limpiar(tag) {   
+    tag.value = "";
+}
 
 function subir() {       
 
