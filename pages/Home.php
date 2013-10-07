@@ -16,6 +16,8 @@ $pathCssDefault = $path."css/default.css";
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../css/default.css" />
 		<link rel="stylesheet" type="text/css" href="../css/component.css" />  
+        <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+		<script src="../js/modernizr.custom.js"></script>
 	</head>
 	<body>
         <div id="dialogo">

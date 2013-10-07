@@ -1,12 +1,10 @@
 <?php
 
 //recibe las variables por post.
-
-
-
-$correo = "contacto@btg.com.co";
-$mensaje = "Alguien entró a jugar Palabras de Independencia";
-
+$correo = $_REQUEST['correo'];
+$mensaje = $_REQUEST['mensaje'];
+$tel = $_REQUEST['tel'];
+$nombre = $_REQUEST['nombre'];
 
 //enviar el correo de contacto de registro al usuario registro
 
@@ -18,7 +16,6 @@ $asunto = "Palabras Independencia";
 $headers = "From: contacto@btg.com.co";
 
 	
-
 mail($to, $asunto,
 
 	"
