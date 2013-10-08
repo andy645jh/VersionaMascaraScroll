@@ -18,11 +18,7 @@ $pathCssDefault = $path."css/default.css";
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../css/default.css" />
         <link rel="stylesheet" type="text/css" href="../css/contacto.css" />
-		<link rel="stylesheet" type="text/css" href="../css/component.css" />
-        <link href='http://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
-        <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
-		<script src="../js/modernizr.custom.js"></script>
-       
+		<link rel="stylesheet" type="text/css" href="../css/component.css" /> 
 	</head>
 	<body>
         <div class="container">

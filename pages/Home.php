@@ -15,9 +15,9 @@ $pathCssDefault = $path."css/default.css";
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../css/default.css" />
-		<link rel="stylesheet" type="text/css" href="../css/component.css" />  
-        <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
-		<script src="../js/modernizr.custom.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/component.css" /> 
+         <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+		<script src="../js/modernizr.custom.js"></script> 
 	</head>
 	<body>
         <div id="dialogo">
@@ -36,8 +36,8 @@ $pathCssDefault = $path."css/default.css";
 			<header class="clearfix">
                 <nav>
                     <ul>
-                        <li><a href="Home.php">HOME</a></li>
-                        <li><a href="Empresa.php">EMPRESA</a></li>                       
+                       <li><a href="Home.php">HOME</a></li>
+                       <li><a href="Empresa.php">EMPRESA</a></li>                                 
                     </ul>
                 </nav>
 				  <div id="contenedor_logo"><div id="logo"></div></div>          

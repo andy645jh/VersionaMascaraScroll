@@ -60,7 +60,13 @@
                     <div id="bajar" class="flecha_menu" onclick="bajar();"></div>
                     <div id="footer_menu" class="menu"></div>
             </div>
-				<section id="fbsection1"><div id="img_movil"  class="base_imgs_moviles" style="background-color: #ff6a00"></div><a href="javascript:mostrar('san_gil')" title="section1" class="perfil"></a></section>
+				<section id="fbsection1">
+                    <div id="img_movil"  class="base_imgs_moviles" style="background-color: #ff6a00">
+                       <p>EMPRESA</p> 
+                        <p>Terrazsantours es una agencia de viajes y turismo dedicada a la organización de planes e itinerarios además, de la venta de productos turísticos entre clientes y proveedores, con un fin único de poner bienes y servicios turísticos a disposición de quienes puedan suplir necesidades de disfrute.</p>
+                    </div>
+                    <a href="javascript:mostrar('san_gil')" title="section1" class="perfil"></a>
+                </section>
                	<section id="fbsection2"><div id="img_movil2" class="base_imgs_moviles" style="background-color: #ff6a00"></div><a href="javascript:mostrar('llanos_orientales')" title="section2" class="perfil"></a></section>                        							           
 			</div>
            
