@@ -25,37 +25,21 @@ $pathCssDefault = $path."css/default.css";
 	</head>
 	<body>
         <div id="dialogo">
-            <div id="fondo"></div>
-            <div id="contenido_dialog" >
-                <div id="info_destino" >
-                    <button id="btn_cerrar_dialogo" onclick="ocultar();">Cerrar</button>
-                    <ul id="tabs">
-                        <li><a href="#" title="tab1">Destino</a></li>
-                        <li><a href="#" title="tab2">Planes</a></li>
-                        <li><a href="#" title="tab3">Galería</a></li>                       
-                    </ul>
-
-                    <div id="content">
-                        <div id="tab1">1</div>
-                        <div id="tab2">2</div>
-                        <div id="tab3">3</div>                       
-                    </div>
-                </div>
-            </div>
+            <div id="fondo"></div>           
         </div>
 		<div class="container">
 			<header class="clearfix">
                 <nav>
                     <ul>
-                        <li><a href="#">HOME</a></li>
+                        <li><a href="Home.php">HOME</a></li>
                         <li><a href="Empresa.php">EMPRESA</a></li>                       
                     </ul>
                 </nav>
 				  <div id="contenedor_logo"><div id="logo"></div></div>          
                  <nav>
                     <ul>                     
-                        <li><a href="#">GALERÍA</a></li>
-                        <li><a href="#">CONTACTO</a></li>
+                        <li><a href="#">DECAMERUN</a></li>
+                        <li><a href="Contacto.php">CONTACTO</a></li>
                     </ul>
                 </nav>
 			</header>
@@ -76,12 +60,30 @@ $pathCssDefault = $path."css/default.css";
                     <div id="bajar" class="flecha_menu" onclick="bajar();"></div>
                     <div id="footer_menu" class="menu"></div>
             </div>
-				<section id="fbsection1"><div id="img_movil" class="base_imgs_moviles"  style="background-image: url(../images/img_baru.jpg)"></div><a href="javascript:mostrar('baru')" title="section1" class="perfil"></a></section>
-               	<section id="fbsection2"><div id="img_movil2" class="base_imgs_moviles"  style="background-image: url(../images/img_cartagena.png)"></div><a href="javascript:mostrar('cartagena')" title="section2" class="perfil"></a></section>                        
-				<section id="fbsection3"><div id="img_movil3" class="base_imgs_moviles"  style="background-image: url(../images/img_isla_palma.png)"></div><a href="javascript:mostrar('isla_palma')" title="section3" class="perfil"></a></section>
-				<section id="fbsection4"><div id="img_movil4" class="base_imgs_moviles"  style="background-image: url(../images/img_providencia.png)"></div><a href="javascript:mostrar('providencia')" title="section4" class="perfil"></a></section>
-				<section id="fbsection5"><div id="img_movil5" class="base_imgs_moviles"  style="background-image: url(../images/img_san_andres.png)"></div><a href="javascript:mostrar('san_andres')" title="section5" class="perfil"></a></section>
-                <section id="fbsection6"><div id="img_movil6" class="base_imgs_moviles"  style="background-image: url(../images/img_santamarta.png)"></div><a href="javascript:mostrar('santamarta')" title="section6" class="perfil"></a></section>				          
+				<section id="fbsection1">
+                    <div id="img_movil" class="base_imgs_moviles" style="background-image: url(../images/img_baru.jpg)">
+                    </div>
+                </section>
+               	<section id="fbsection2">
+                       <div id="img_movil2" class="base_imgs_moviles" style="background-image: url(../images/img_cartagena.png)">
+                       </div>
+                   </section>                        
+				<section id="fbsection3">
+                    <div id="img_movil3" class="base_imgs_moviles" style="background-image: url(../images/img_isla_palma.png)">
+                    </div>
+                </section>
+				<section id="fbsection4">
+                    <div id="img_movil4" class="base_imgs_moviles" style="background-image: url(../images/img_providencia.png)">
+                    </div>
+                </section>
+				<section id="fbsection5">
+                    <div id="img_movil5" class="base_imgs_moviles" style="background-image: url(../images/img_san_andres.png)">
+                    </div>
+                </section>
+                <section id="fbsection6">
+                    <div id="img_movil6" class="base_imgs_moviles" style="background-image: url(../images/img_santamarta.png)">
+                    </div>
+                </section>				          
                			             
 			</div>
            

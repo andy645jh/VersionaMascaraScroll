@@ -43,7 +43,7 @@ $pathCssDefault = $path."css/default.css";
 				  <div id="contenedor_logo"><div id="logo"></div></div>          
                  <nav>
                     <ul>                     
-                        <li><a href="#">GALERÍA</a></li>
+                        <li><a href="Decamerun.php">DECAMERUN</a></li>
                         <li><a href="Contacto.php">CONTACTO</a></li>
                     </ul>
                 </nav>
