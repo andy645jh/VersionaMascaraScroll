@@ -67,23 +67,27 @@ $pathCssDefault = $path."css/default.css";
                 </section>
                	<section id="fbsection2">
                        <div id="img_movil2" class="base_imgs_moviles" style="background-image: url(../images/img_cartagena.png)">
-                      
+                         <?php echo file_get_contents("../info/decamerun/cartagena.html"); ?>
                       </div>
                    </section>                        
 				<section id="fbsection3">
                     <div id="img_movil3" class="base_imgs_moviles" style="background-image: url(../images/img_isla_palma.png)">
+                         <?php echo file_get_contents("../info/decamerun/palma.html"); ?>
                     </div>
                 </section>
 				<section id="fbsection4">
                     <div id="img_movil4" class="base_imgs_moviles" style="background-image: url(../images/img_providencia.png)">
+                         <?php echo file_get_contents("../info/decamerun/providencia.html"); ?>
                     </div>
                 </section>
 				<section id="fbsection5">
                     <div id="img_movil5" class="base_imgs_moviles" style="background-image: url(../images/img_san_andres.png)">
+                         <?php echo file_get_contents("../info/decamerun/san_andres.html"); ?>
                     </div>
                 </section>
                 <section id="fbsection6">
                     <div id="img_movil6" class="base_imgs_moviles" style="background-image: url(../images/img_santamarta.png)">
+                         <?php echo file_get_contents("../info/decamerun/santamarta.html"); ?>
                     </div>
                 </section>				          
                			             
