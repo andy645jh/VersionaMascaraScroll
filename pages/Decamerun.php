@@ -61,12 +61,14 @@ $pathCssDefault = $path."css/default.css";
                     <div id="footer_menu" class="menu"></div>
             </div>
 				<section id="fbsection1">
-                    <div id="img_movil" class="base_imgs_moviles" style="background-image: url(../images/img_baru.jpg)">
+                    <div class="base_imgs_moviles img_movil" style="background-image: url(../images/img_baru.jpg)">
+                          <?php echo file_get_contents("../info/decamerun/baru.html"); ?>
                     </div>
                 </section>
                	<section id="fbsection2">
                        <div id="img_movil2" class="base_imgs_moviles" style="background-image: url(../images/img_cartagena.png)">
-                       </div>
+                      
+                      </div>
                    </section>                        
 				<section id="fbsection3">
                     <div id="img_movil3" class="base_imgs_moviles" style="background-image: url(../images/img_isla_palma.png)">
