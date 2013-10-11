@@ -23,7 +23,7 @@ $pathCssDefault = $path."css/default.css";
 		<script src="../js/modernizr.custom.js"></script>
        
 	</head>
-	<body>
+	<body class="body_decamerun">
         <div id="dialogo">
             <div id="fondo"></div>           
         </div>
@@ -61,32 +61,32 @@ $pathCssDefault = $path."css/default.css";
                     <div id="footer_menu" class="menu"></div>
             </div>
 				<section id="fbsection1">
-                    <div class="base_imgs_moviles img_movil" style="background-image: url(../images/img_baru.jpg)">
+                    <div class="base_imgs_moviles img_movil">
                           <?php echo file_get_contents("../info/decamerun/baru.html"); ?>
                     </div>
                 </section>
                	<section id="fbsection2">
-                       <div id="img_movil2" class="base_imgs_moviles" style="background-image: url(../images/img_cartagena.png)">
+                     <div class="base_imgs_moviles img_movil" >
                          <?php echo file_get_contents("../info/decamerun/cartagena.html"); ?>
-                      </div>
+                     </div>
                    </section>                        
 				<section id="fbsection3">
-                    <div id="img_movil3" class="base_imgs_moviles" style="background-image: url(../images/img_isla_palma.png)">
+                    <div class="base_imgs_moviles img_movil" >
                          <?php echo file_get_contents("../info/decamerun/palma.html"); ?>
                     </div>
                 </section>
 				<section id="fbsection4">
-                    <div id="img_movil4" class="base_imgs_moviles" style="background-image: url(../images/img_providencia.png)">
+                    <div class="base_imgs_moviles img_movil">
                          <?php echo file_get_contents("../info/decamerun/providencia.html"); ?>
                     </div>
                 </section>
 				<section id="fbsection5">
-                    <div id="img_movil5" class="base_imgs_moviles" style="background-image: url(../images/img_san_andres.png)">
+                    <div class="base_imgs_moviles img_movil">
                          <?php echo file_get_contents("../info/decamerun/san_andres.html"); ?>
                     </div>
                 </section>
                 <section id="fbsection6">
-                    <div id="img_movil6" class="base_imgs_moviles" style="background-image: url(../images/img_santamarta.png)">
+                    <div class="base_imgs_moviles" style="background-image: url(../images/img_santamarta.png)">
                          <?php echo file_get_contents("../info/decamerun/santamarta.html"); ?>
                     </div>
                 </section>				          
