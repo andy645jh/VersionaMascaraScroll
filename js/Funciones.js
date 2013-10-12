@@ -97,7 +97,7 @@ $(document).ready(function () {
         var avgAncho = anchoVentana * 0.7;
         var posTituloX = (anchoVentana / 2) - ($('#titulo1').width() / 2);
         var posImgMovilX = (anchoVentana / 2) - ($('#img_movil').width() / 2);
-       
+
         $('.perfil').css('left', avgAncho);
         $('.perfil').css('top', avgAlto);
         $('#titulo1').css('left', posTituloX);
@@ -110,10 +110,24 @@ $(document).ready(function () {
         $('#img_movil7').css('left', posImgMovilX);
     }
 
+
     $(window).resize(function () {
+        redimensionarImagenes();
         moverPerfil();
     });
 
+    function redimensionarImagenes() {
+        banner = 165;
+        var anchoVentana = window.innerWidth;
+        var altoVentana = window.innerHeight;
+        var $secciones = $('section');
+        //sacar cada seccion y calcular el espacio 
+        //luego modificar el tamaño decada imagen
+        alert("altoContenido: "+ $secciones[0].attr('id'));
+        altoVentana -= banner;
+
+    }
+    redimensionarImagenes();
     moverPerfil();
 
 });
