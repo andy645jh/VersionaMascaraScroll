@@ -67,31 +67,31 @@ $pathCssDefault = $path."css/default.css";
                     <div id="footer_menu" class="menu"></div>
             </div>
                  <section id="fbsection1" style="background-image: url(../images/img1.jpg)">
-                    <div id="img_movil" class="base_imgs_moviles" style="background-image: url(../images/img_amazonas.png)">
+                    <div id="img_movil" class="base_imgs_moviles dimension_img" style="background-image: url(../images/img_amazonas.png)">
                     </div><a href="javascript:mostrar('amazonas')" title="section1" class="perfil"></a>
                 </section>		
                  <section id="fbsection2" style="background-image: url(../images/img2.jpg)">
-                    <div id="img_movil2" class="base_imgs_moviles"  style="background-image: url(../images/img_boyaca.png)">
+                    <div id="img_movil2" class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_boyaca.png)">
                     </div><a href="javascript:mostrar('boyaca')" title="section2" class="perfil"></a>
                 </section>	
                 <section id="fbsection3" style="background-image: url(../images/img3.jpg)">
-                    <div id="img_movil3" class="base_imgs_moviles"  style="background-image: url(../images/img_ejecafetero.png)"></div>
+                    <div id="img_movil3" class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_ejecafetero.png)"></div>
                     <a href="javascript:mostrar('eje_cafetero')" title="section3" class="perfil"></a>
                 </section>	
                 <section id="fbsection4" style="background-image: url(../images/img4.jpg)">
-                    <div id="img_movil4" class="base_imgs_moviles"  style="background-image: url(../images/img_guajira.png)">
+                    <div id="img_movil4" class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_guajira.png)">
                     </div><a href="javascript:mostrar('guajira')" title="section4" class="perfil"></a>
                 </section>					
                	<section id="fbsection5" style="background-image: url(../images/img5.jpg)">
-                       <div id="img_movil5" class="base_imgs_moviles"  style="background-image: url(../images/img_llanos.png)"></div>
+                       <div id="img_movil5" class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_llanos.png)"></div>
                        <a href="javascript:mostrar('llanos_orientales')" title="section5" class="perfil"></a>
                 </section>              		          
                 <section id="fbsection6" style="background-image: url(../images/img6.jpg)">
-                    <div id="img_movil6" class="base_imgs_moviles"  style="background-image: url(../images/img_medellin.png)">
+                    <div id="img_movil6" class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_medellin.png)">
                     </div><a href="javascript:mostrar('medellin')" title="section6" class="perfil"></a>
                 </section>				           
                 <section id="fbsection7" style="background-image: url(../images/img7.jpg)">
-                    <div id="img_movil7" class="base_imgs_moviles" style="background-image: url(../images/img_sangil.jpg)"></div>
+                    <div id="img_movil7" class="base_imgs_moviles dimension_img" style="background-image: url(../images/img_sangil.jpg)"></div>
                     <a href="javascript:mostrar('san_gil')" title="section7" class="perfil"></a>
                 </section>			            
                 			             

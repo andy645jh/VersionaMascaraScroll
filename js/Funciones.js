@@ -118,13 +118,32 @@ $(document).ready(function () {
 
     function redimensionarImagenes() {
         banner = 165;
+        porcentaje = 0.95;
+        proporcionImg = 670/542;
         var anchoVentana = window.innerWidth;
         var altoVentana = window.innerHeight;
-        var $secciones = $('section');
+        var espacioImgs = altoVentana - 165;
+        anchoImg = Math.ceil(espacioImgs * porcentaje);
+        altoImg = Math.ceil(anchoImg / proporcionImg);
+
+        alert("ancho: " + anchoImg + ", alto: " + altoImg);
+        var $secciones = $('.dimension_img');
         //sacar cada seccion y calcular el espacio 
-        //luego modificar el tamaño decada imagen
-        alert("altoContenido: "+ $secciones[0].attr('id'));
-        altoVentana -= banner;
+        //luego modificar el tamaño decada imagen       
+        $.each($secciones,
+            function () {
+                
+                $divImg = $(this).filter(':first');
+                alert("div: "+$divImg.length);
+                $divImg.css({
+                    width: anchoImg,
+                    height: altoImg
+                });
+            }
+        );
+
+
+        //altoVentana -= banner;
 
     }
     redimensionarImagenes();
