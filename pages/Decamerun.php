@@ -86,7 +86,7 @@ $pathCssDefault = $path."css/default.css";
                     </div>
                 </section>
                 <section id="fbsection6">
-                    <div class="base_imgs_moviles" style="background-image: url(../images/img_santamarta.png)">
+                    <div class="base_imgs_moviles img_movil" style="background-image: url(../images/img_santamarta.png)">
                          <?php echo file_get_contents("../info/decamerun/santamarta.html"); ?>
                     </div>
                 </section>				          
@@ -106,6 +106,9 @@ $pathCssDefault = $path."css/default.css";
         <script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
         <script src="../js/jquery-ui-1.10.3.custom.js"></script>
         <script src="../js/TabInfo.js"></script>
+         <script type="text/javascript">
+           var PAGINA_ACTUAL = "DECAMERUN";
+        </script>
         <script src="../js/Funciones.js"></script>
 	</body>
 </html>

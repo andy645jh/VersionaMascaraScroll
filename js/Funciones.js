@@ -1,12 +1,15 @@
 var NUM_ENLACES_SEGMENTO = 6;
 var ALTURA_ETIQUETA = 32;
+var BANNER= 165;
 var tabTemp;
 var seccionActual = null;
 var numEnlace = 1;
 var posX;
 var posY;
+var _espacioImgs;
 var _anchoVentana = window.innerWidth;
 var _altoVentana = window.innerHeight;
+var _paginaActual = PAGINA_ACTUAL; //se obtiene en el script del html de cada pagina
 
 var altura = ALTURA_ETIQUETA * NUM_ENLACES_SEGMENTO;
 $('nav').height(altura);
@@ -97,18 +100,11 @@ $(document).ready(function () {
         var avgAlto = _altoVentana * 0.7;
         var avgAncho = _anchoVentana * 0.7;
         var posTituloX = (_anchoVentana / 2) - ($('#titulo1').width() / 2);
-        var posImgMovilX = (_anchoVentana / 2) - ($('#img_movil').width() / 2);
+
 
         $('.perfil').css('left', avgAncho);
         $('.perfil').css('top', avgAlto);
         $('#titulo1').css('left', posTituloX);
-        $('#img_movil').css('left', posImgMovilX);
-        $('#img_movil2').css('left', posImgMovilX);
-        $('#img_movil3').css('left', posImgMovilX);
-        $('#img_movil4').css('left', posImgMovilX);
-        $('#img_movil5').css('left', posImgMovilX);
-        $('#img_movil6').css('left', posImgMovilX);
-        $('#img_movil7').css('left', posImgMovilX);
     }
 
 
@@ -119,37 +115,71 @@ $(document).ready(function () {
 
     function redimensionarImagenes() {
 
-        banner = 165;
+
         porcentaje = 0.95;
         porcentajeEspacioPosImg = 0.25;
         proporcionImg = 670 / 542;
 
-        var espacioImgs = _altoVentana - banner;
-        anchoImg = Math.ceil(espacioImgs * porcentaje);
+        _espacioImgs = _altoVentana - BANNER;
+        anchoImg = Math.ceil(_espacioImgs * porcentaje);
         altoImg = Math.floor(anchoImg / proporcionImg);
-        posImg = banner + (espacioImgs * porcentajeEspacioPosImg);
-        alert("ancho: " + anchoImg + ", alto: " + altoImg);
+        posImg = BANNER + (_espacioImgs * porcentajeEspacioPosImg);
+
         var $secciones = $('.dimension_img');
-        //sacar cada seccion y calcular el espacio 
-        //luego modificar el tamaño decada imagen       
+
+        // posicionar en el centro horizontalmente       
+        $('.base_imgs_moviles').css('left', getPosCentroHorizontal(anchoImg));
+        
+        //luego modificar el tamaño de cada imagen       
         $.each($secciones,
             function () {
-
+                alert("pagina actual:"+_paginaActual);
                 $divImg = $(this).filter(':first');
-                alert("div: " + $divImg.length);
+
                 $divImg.css({
                     width: anchoImg,
                     height: altoImg,
-                    top:posImg
+                    top: posImg
                 });
+                 
+                if (_paginaActual == "DECAMERUN") {
+                    alert("mensaje:");
+                   /* $divImg.css('height', 'auto');
+                    alturaDiv = $divImg.height();                   
+                    $divImg.css('top', centrarVerticalmente(_espacioImgs, alturaDiv));*/
+                }
+                if (_paginaActual == "EMPRESA") {
+                    $('#contenido').css('max-width', '800px');
+                }
             }
         );
+        
+    }
+
+    function getPosCentroHorizontal(anchoDiv) {
+        return ((_anchoVentana / 2) - (anchoDiv / 2));
+    }
+
+    function modificarEspecificamente() {
+        switch (_paginaActual) {
+            case "DECAMERUN":
+
+                break;
+
+            case "EMPRESA":
 
 
-        //altoVentana -= banner;
+            case "HOME":
 
+                break;
+        }
+    }
+
+    function centrarVerticalmente(altoEspacio, alturaImg) {
+        return ((altoEspacio / 2) - (alturaImg / 2) + BANNER);
     }
     redimensionarImagenes();
+    // modificarEspecificamente();
     moverPerfil();
 
 });

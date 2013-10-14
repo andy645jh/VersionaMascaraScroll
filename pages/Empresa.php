@@ -55,19 +55,21 @@
                    <div id="subir" class="flecha_menu" onclick="subir();"></div>
                         <nav>                        
                             <a href="#fbsection1" title="section1" id="nosotros" class="cbp-fbcurrent">SOBRE NOSOTROS</a>
-                            <a href="#fbsection2" title="section2" id="valores">VALORES CORPORATIVOS ORIENTALES</a>                     
+                            <a href="#fbsection2" title="section2" id="valores">VALORES CORPORATIVOS</a>                     
                         </nav>
                     <div id="bajar" class="flecha_menu" onclick="bajar();"></div>
                     <div id="footer_menu" class="menu"></div>
             </div>
 				<section id="fbsection1">
-                    <div id="img_movil"  class="base_imgs_moviles" style="background-color: #ff6a00">
-                       <p>EMPRESA</p> 
-                        <p>Terrazsantours es una agencia de viajes y turismo dedicada a la organización de planes e itinerarios además, de la venta de productos turísticos entre clientes y proveedores, con un fin único de poner bienes y servicios turísticos a disposición de quienes puedan suplir necesidades de disfrute.</p>
-                    </div>
-                    <a href="javascript:mostrar('san_gil')" title="section1" class="perfil"></a>
+                    <div  class="base_imgs_moviles" style="background-color: #ff6a00">
+                        <?php echo file_get_contents("../info/empresa/mision.html"); ?>
+                    </div>                   
                 </section>
-               	<section id="fbsection2"><div id="img_movil2" class="base_imgs_moviles" style="background-color: #ff6a00"></div><a href="javascript:mostrar('llanos_orientales')" title="section2" class="perfil"></a></section>                        							           
+               	<section id="fbsection2">
+                       <div class="base_imgs_moviles" style="background-color: #ff6a00">
+                           <?php echo file_get_contents("../info/empresa/valores.html"); ?>
+                       </div>
+                </section>                        							           
 			</div>
            
 		</div>
@@ -83,6 +85,10 @@
         <script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
         <script src="../js/jquery-ui-1.10.3.custom.js"></script>
         <script src="../js/TabInfo.js"></script>
-        <script src="../js/Funciones.js"></script>
+        <script type="text/javascript">
+            var PAGINA_ACTUAL = "EMPRESA";
+        </script>
+        <script src="../js/Funciones.js">            
+        </script>
 	</body>
 </html>

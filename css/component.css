@@ -285,17 +285,20 @@ p{
     text-align: justify;    
 }
 
-/*.img_movil {
-    background-image: url(../images/fondoFormulario.png)
-}*/
+.img_movil {
+    width: 800px;
+}
 
 #contenido{
      background-image: url(../images/fondoFormulario.png);
      background-repeat: no-repeat;
      background-size: cover;
+     float: left;
+     padding: 10px 15px;
+     max-width: 450px;
 }
 
 #img{
     width: 325px;
-    margin: 0 auto;
+    float: right;
 }
