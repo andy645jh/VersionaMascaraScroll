@@ -5,6 +5,8 @@ var seccionActual = null;
 var numEnlace = 1;
 var posX;
 var posY;
+var _anchoVentana = window.innerWidth;
+var _altoVentana = window.innerHeight;
 
 var altura = ALTURA_ETIQUETA * NUM_ENLACES_SEGMENTO;
 $('nav').height(altura);
@@ -91,12 +93,11 @@ $(document).ready(function () {
     });
 
     function moverPerfil() {
-        var anchoVentana = window.innerWidth;
-        var altoVentana = window.innerHeight;
-        var avgAlto = altoVentana * 0.7;
-        var avgAncho = anchoVentana * 0.7;
-        var posTituloX = (anchoVentana / 2) - ($('#titulo1').width() / 2);
-        var posImgMovilX = (anchoVentana / 2) - ($('#img_movil').width() / 2);
+
+        var avgAlto = _altoVentana * 0.7;
+        var avgAncho = _anchoVentana * 0.7;
+        var posTituloX = (_anchoVentana / 2) - ($('#titulo1').width() / 2);
+        var posImgMovilX = (_anchoVentana / 2) - ($('#img_movil').width() / 2);
 
         $('.perfil').css('left', avgAncho);
         $('.perfil').css('top', avgAlto);
@@ -117,27 +118,29 @@ $(document).ready(function () {
     });
 
     function redimensionarImagenes() {
+
         banner = 165;
         porcentaje = 0.95;
-        proporcionImg = 670/542;
-        var anchoVentana = window.innerWidth;
-        var altoVentana = window.innerHeight;
-        var espacioImgs = altoVentana - 165;
-        anchoImg = Math.ceil(espacioImgs * porcentaje);
-        altoImg = Math.ceil(anchoImg / proporcionImg);
+        porcentajeEspacioPosImg = 0.25;
+        proporcionImg = 670 / 542;
 
+        var espacioImgs = _altoVentana - banner;
+        anchoImg = Math.ceil(espacioImgs * porcentaje);
+        altoImg = Math.floor(anchoImg / proporcionImg);
+        posImg = banner + (espacioImgs * porcentajeEspacioPosImg);
         alert("ancho: " + anchoImg + ", alto: " + altoImg);
         var $secciones = $('.dimension_img');
         //sacar cada seccion y calcular el espacio 
         //luego modificar el tamaño decada imagen       
         $.each($secciones,
             function () {
-                
+
                 $divImg = $(this).filter(':first');
-                alert("div: "+$divImg.length);
+                alert("div: " + $divImg.length);
                 $divImg.css({
                     width: anchoImg,
-                    height: altoImg
+                    height: altoImg,
+                    top:posImg
                 });
             }
         );
