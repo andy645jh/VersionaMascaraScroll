@@ -243,7 +243,8 @@ p{
      background-image: url(../images/fondoFormulario.png);
      background-repeat: no-repeat;
      background-size: cover;
-      padding: 10px 15px;
+     padding: 10px 15px;
+     height: 100%;
 }
 #img{
     width: 325px;

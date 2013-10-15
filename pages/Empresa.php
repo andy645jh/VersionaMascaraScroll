@@ -61,12 +61,12 @@
                     <div id="footer_menu" class="menu"></div>
             </div>
 				<section id="fbsection1">
-                    <div  class="base_imgs_moviles" style="background-color: #ff6a00">
+                    <div  class="base_imgs_moviles" >
                         <?php echo file_get_contents("../info/empresa/mision.html"); ?>
                     </div>                   
                 </section>
                	<section id="fbsection2">
-                       <div class="base_imgs_moviles" style="background-color: #ff6a00">
+                       <div class="base_imgs_moviles" >
                            <?php echo file_get_contents("../info/empresa/valores.html"); ?>
                        </div>
                 </section>                        							           
