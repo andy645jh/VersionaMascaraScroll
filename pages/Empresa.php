@@ -15,7 +15,7 @@
 		<script src="../js/modernizr.custom.js"></script>
         <title>Terrasan- Agencia de Viajes</title>  
 	</head>
-	<body>
+	<body id="empresa">
         <div id="dialogo">
             <div id="fondo"></div>
             <div id="contenido_dialog" >

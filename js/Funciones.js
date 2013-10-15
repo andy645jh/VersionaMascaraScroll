@@ -57,11 +57,9 @@ function bajar() {
              
         $('nav').animate({  scrollTop: 44 * index }, 1000);
               
-    } else {
-
     }
-
 }
+
 function limpiar(tag) {   
     tag.value = "";
 }
@@ -107,7 +105,6 @@ $(document).ready(function () {
         $('#titulo1').css('left', posTituloX);
     }
 
-
     $(window).resize(function () {
         redimensionarImagenes();
         moverPerfil();
@@ -115,71 +112,106 @@ $(document).ready(function () {
 
     function redimensionarImagenes() {
 
+        if (_paginaActual == "DECAMERUN") {
+            _espacioImgs = _altoVentana - BANNER;
+            anchoImg = 800;
+            //anchoImg = Math.ceil(_espacioImgs * porcentaje);
+            //altoImg = Math.floor(anchoImg / proporcionImg);
+            //posImg = BANNER + (_espacioImgs * porcentajeEspacioPosImg);
 
-        porcentaje = 0.95;
-        porcentajeEspacioPosImg = 0.25;
-        proporcionImg = 670 / 542;
+            var $secciones = $('.img_movil');
+            anchoMenu = $('#menu').width() / 2;
+            // posicionar en el centro horizontalmente       
+            $('.base_imgs_moviles').css('left', getPosCentroHorizontal(anchoImg) + anchoMenu);
 
-        _espacioImgs = _altoVentana - BANNER;
-        anchoImg = Math.ceil(_espacioImgs * porcentaje);
-        altoImg = Math.floor(anchoImg / proporcionImg);
-        posImg = BANNER + (_espacioImgs * porcentajeEspacioPosImg);
+            //luego modificar el tamaño de cada imagen       
+            $.each($secciones,
+                function () {
 
-        var $secciones = $('.dimension_img');
+                    $divImg = $(this);
+                    $divImg.css('height', 'auto');
+                    altoImg = $divImg.height();
+                    var posCentro = centrarVerticalmente(_espacioImgs, altoImg);
 
-        // posicionar en el centro horizontalmente       
-        $('.base_imgs_moviles').css('left', getPosCentroHorizontal(anchoImg));
-        
-        //luego modificar el tamaño de cada imagen       
-        $.each($secciones,
-            function () {
-                alert("pagina actual:"+_paginaActual);
-                $divImg = $(this).filter(':first');
-
-                $divImg.css({
-                    width: anchoImg,
-                    height: altoImg,
-                    top: posImg
-                });
-                 
-                if (_paginaActual == "DECAMERUN") {
-                    alert("mensaje:");
-                   /* $divImg.css('height', 'auto');
-                    alturaDiv = $divImg.height();                   
-                    $divImg.css('top', centrarVerticalmente(_espacioImgs, alturaDiv));*/
+                    $divImg.css({
+                        width: anchoImg,
+                        height: altoImg,
+                        top: posCentro
+                    });
                 }
-                if (_paginaActual == "EMPRESA") {
-                    $('#contenido').css('max-width', '800px');
+            );
+
+        }
+
+        if (_paginaActual == "HOME") {
+            porcentaje = 0.95;
+            porcentajeEspacioPosImg = 0.25;
+            proporcionImg = 670 / 542;
+
+            _espacioImgs = _altoVentana - BANNER;
+            anchoImg = Math.ceil(_espacioImgs * porcentaje);
+            altoImg = Math.floor(anchoImg / proporcionImg);
+            posImg = BANNER + (_espacioImgs * porcentajeEspacioPosImg);
+
+            var $secciones = $('.dimension_img');
+
+            // posicionar en el centro horizontalmente       
+            $('.base_imgs_moviles').css('left', getPosCentroHorizontal(anchoImg));
+
+            //luego modificar el tamaño de cada imagen       
+            $.each($secciones,
+                function () {
+
+                    $divImg = $(this).filter(':first');
+
+                    $divImg.css({
+                        width: anchoImg,
+                        height: altoImg,
+                        top: posImg
+                    });
                 }
-            }
-        );
-        
+            );
+        }
+
+        if (_paginaActual == "EMPRESA") {
+
+            _espacioImgs = _altoVentana - BANNER;
+            anchoImg = 800;
+
+            var $secciones = $('.base_imgs_moviles');
+            anchoMenu = $('#menu').width() / 2;
+            // posicionar en el centro horizontalmente       
+            $('.base_imgs_moviles').css('left', getPosCentroHorizontal(anchoImg) + anchoMenu);
+
+            //luego modificar el tamaño de cada imagen       
+            $.each($secciones,
+                function () {
+                    $divImg = $(this).filter(':first');                    
+                    $divImg.css('height', 'auto');
+                    altoImg = $divImg.height();
+                    var posCentro = centrarVerticalmente(_espacioImgs, altoImg);
+                    $divImg.css('max-width', anchoImg);
+                    $divImg.css({
+                        width: anchoImg,
+                        height: altoImg,
+                        top: posCentro
+                    });
+                }
+            );
+
+        }
     }
 
     function getPosCentroHorizontal(anchoDiv) {
         return ((_anchoVentana / 2) - (anchoDiv / 2));
     }
 
-    function modificarEspecificamente() {
-        switch (_paginaActual) {
-            case "DECAMERUN":
-
-                break;
-
-            case "EMPRESA":
-
-
-            case "HOME":
-
-                break;
-        }
-    }
-
     function centrarVerticalmente(altoEspacio, alturaImg) {
-        return ((altoEspacio / 2) - (alturaImg / 2) + BANNER);
+        poscentro = ((altoEspacio / 2) - (alturaImg / 2) + BANNER);
+        return poscentro;
     }
+
     redimensionarImagenes();
-    // modificarEspecificamente();
     moverPerfil();
 
 });

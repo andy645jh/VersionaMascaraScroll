@@ -204,6 +204,7 @@ img{
     width: 400px;  
 }
 .base_imgs_moviles {
+    background-repeat: no-repeat;
     background-size: cover;  
     position: absolute; 
     top: 250px;
@@ -211,66 +212,6 @@ img{
     width: 650px;
     height: 400px;   
 }
-/*
-#img_movil{
-    background-image: url(../images/img_sangil.jpg);  
-}
-#img_movil2{
-    background-image: url(../images/img_llanos.png);   
-}
-#img_movil3{
-    background-image: url(../images/img_san_andres.png);   
-}
-#img_movil4{
-    background-image: url(../images/img_ejecafetero.png);   
-}
-#img_movil5{
-    background-image: url(../images/img_baru.png);   
-}
-#img_movil6{
-    background-image: url(../images/img_amazonas.png);   
-}
-
-#fbsection1 {
-    background-image: url(../images/img1.jpg);
-	/*background-image: url(../images/patron_azul.png);
-    background-repeat: repeat;
-}
-
-#fbsection2 {
-	background-image: url(../images/img2.jpg);
-    background-repeat: repeat;
-}
-
-#fbsection3 {
-	background-image: url(../images/img3.jpg);
-}
-
-#fbsection4 {
-	background-image: url(../images/img4.jpg);
-}
-
-#fbsection5 {
-	background-image: url(../images/img5.jpg);
-}
-
-#fbsection6 {
-	background-image: url(../images/img6.jpg);
-}
-
-#fbsection7 {
-	background-image: url(../images/img7.jpg);
-}
-
-#fbsection8 {
-	background-image: url(../images/img8.jpg);
-}
-
-#fbsection9 {
-	background-image: url(../images/img9.jpg);
-}
-
-*/
 
 /* DECAMERUN*/
 .body_decamerun {
@@ -287,6 +228,7 @@ p{
 
 .img_movil {
     width: 800px;
+    min-height: 244px;
 }
 
 #contenido{
@@ -297,8 +239,17 @@ p{
      padding: 10px 15px;
      max-width: 450px;
 }
-
+.contenido_empresa{
+     background-image: url(../images/fondoFormulario.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+      padding: 10px 15px;
+}
 #img{
     width: 325px;
     float: right;
+}
+
+#empresa{
+    background-image: url(../images/patron_rojo.jpg);
 }
