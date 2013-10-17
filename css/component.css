@@ -25,6 +25,9 @@ header{
     /* IE 5.5 - 7 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#111111');
 }
+#contenedor_logo{
+    margin: 0 auto;
+}
 
 #logo {
     background-image: url(../images/logo.png);
@@ -223,9 +226,12 @@ img{
 }
 
 p{
-    text-align: justify;    
+    text-align: justify; 
+    color: rgb(90, 89, 89);   
 }
-
+.titulo{
+    
+}
 .img_movil {
     width: 800px;
     min-height: 244px;
