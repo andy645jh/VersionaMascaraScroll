@@ -39,11 +39,18 @@ header{
     float: left;
 }
 
+#btn_cerrar_dialogo {
+    margin: 15px;
+}
+
 #contenido_destino {   
     float: left;
     width: 50%;
     overflow: auto;
-    max-height: 350px;    
+    max-height: 350px;  
+    padding: 15px;
+    text-align: justify; 
+    color: rgb(90, 89, 89);     
 }
 #imagen_destino{
     float: right;
@@ -229,8 +236,8 @@ p{
     text-align: justify; 
     color: rgb(90, 89, 89);   
 }
-.titulo{
-    
+h3{
+    color: #5fb0ab;
 }
 .img_movil {
     width: 800px;

@@ -1,4 +1,4 @@
-var NUM_ENLACES_SEGMENTO = 6;
+var NUM_ENLACES_SEGMENTO = 7;
 var ALTURA_ETIQUETA = 32;
 var BANNER= 165;
 var tabTemp;
@@ -150,7 +150,7 @@ $(document).ready(function () {
 
             _espacioImgs = _altoVentana - BANNER;
             anchoImg = Math.ceil(_espacioImgs * porcentaje);
-            altoImg = Math.floor(anchoImg / proporcionImg);
+            altoImg = anchoImg / proporcionImg;
             posImg = BANNER + (_espacioImgs * porcentajeEspacioPosImg);
 
             var $secciones = $('.dimension_img');
@@ -166,7 +166,7 @@ $(document).ready(function () {
 
                     $divImg.css({
                         width: anchoImg,
-                        height: altoImg,
+                        height: altoImg-10,//numero para kuadrar
                         top: posImg
                     });
                 }
