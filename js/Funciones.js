@@ -166,7 +166,7 @@ $(document).ready(function () {
 
                     $divImg.css({
                         width: anchoImg,
-                        height: altoImg-10,//numero para kuadrar
+                        height: altoImg - 10, //numero para kuadrar
                         top: posImg
                     });
                 }
@@ -186,18 +186,22 @@ $(document).ready(function () {
             //luego modificar el tamaño de cada imagen       
             $.each($secciones,
                 function () {
-                    $divImg = $(this).filter(':first');                    
+                    $divImg = $(this).filter(':first');
                     $divImg.css('height', 'auto');
                     altoImg = $divImg.height();
                     var posCentro = centrarVerticalmente(_espacioImgs, altoImg);
                     $divImg.css('max-width', anchoImg);
+                    $contenido = $(this).filter('.contenido_empresa');
+                    alert("empresa: "+$contenido);
+                    $contenido.css('background-size', 'cover');
                     $divImg.css({
                         width: anchoImg,
-                        height: altoImg,
                         top: posCentro
                     });
                 }
             );
+
+            // $('.contenido_empresa').css('background.cover', );
 
         }
     }
