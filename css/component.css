@@ -267,3 +267,10 @@ h3{
 #empresa{
     background-image: url(../images/patron_rojo.jpg);
 }
+.titulo_decamerun{    
+    text-align: center;
+    width: 100%;
+}
+.imagen_titulo{      
+    height: 49px;
+}

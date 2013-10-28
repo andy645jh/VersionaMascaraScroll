@@ -191,9 +191,9 @@ $(document).ready(function () {
                     altoImg = $divImg.height();
                     var posCentro = centrarVerticalmente(_espacioImgs, altoImg);
                     $divImg.css('max-width', anchoImg);
-                    $contenido = $(this).filter('.contenido_empresa');
-                    alert("empresa: "+$contenido);
-                    $contenido.css('background-size', 'cover');
+                    contenido = $('.contenido_empresa').attr('id');
+                    alert("alto imagen: "+contenido);
+                    $contenido.css('background-size',anchoImg+'px '+altoImg+'px');
                     $divImg.css({
                         width: anchoImg,
                         top: posCentro
