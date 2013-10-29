@@ -1,23 +1,19 @@
-/* General Blueprint Style */
-/*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Merienda);*/
-/*@font-face {
-	font-family: 'fontawesome';
-	src:url('../fonts/fontawesome.eot');
-	src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
-		url('../fonts/fontawesome.woff') format('woff'),
-		url('../fonts/fontawesome.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}*/
-
 @font-face {
 	font-family: 'War_Zone_97';
 	src:url('../fonts/War_Zone_97.eot');
 	src:url('../fonts/War_Zone_97.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/War_Zone_97.svg#War_Zone_97') format('svg'),		
 		url('../fonts/War_Zone_97.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Knight2';
+	src:url('../fonts/Knight2.eot');
+	src:url('../fonts/Knight2.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Knight2.svg#Knight2') format('svg'),		
+		url('../fonts/Knight2.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -29,8 +25,7 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 
-body {
-    /*font-family: 'Lato', Calibri, Arial, sans-serif;*/
+body {  
     font-family: 'War_Zone_97', cursive;
     font-size: small;
     font-weight: bold;
