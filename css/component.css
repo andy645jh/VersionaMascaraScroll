@@ -1,4 +1,13 @@
 /* Set all parents to full height */
+@font-face {
+	font-family: 'Knight2';
+	src:url('../fonts/Knight2.eot');
+	src:url('../fonts/Knight2.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Knight2.svg#Knight2') format('svg'),		
+		url('../fonts/Knight2.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
 html, body, 
 .container,
@@ -267,9 +276,14 @@ h3{
 #empresa{
     background-image: url(../images/patron_rojo.jpg);
 }
-.titulo_decamerun{    
+.titulo_decamerun{   
+    color: #41ADB4;  
+    font-size: 30px;
+    font-family: Knight2; 
     text-align: center;
     width: 100%;
+    font-weight: 100;
+    text-shadow: 2px 1px 2px #111;
 }
 .imagen_titulo{      
     height: 49px;

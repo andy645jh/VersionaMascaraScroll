@@ -86,7 +86,7 @@ $pathCssDefault = $path."css/default.css";
                     </div>
                 </section>
                 <section id="fbsection6">
-                    <div class="base_imgs_moviles img_movil" style="background-image: url(../images/img_santamarta.png)">
+                    <div class="base_imgs_moviles img_movil">
                          <?php echo file_get_contents("../info/decamerun/santamarta.html"); ?>
                     </div>
                 </section>				          
