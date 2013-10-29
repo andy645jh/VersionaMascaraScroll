@@ -279,7 +279,8 @@ h3{
 .titulo_decamerun{   
     color: #41ADB4;  
     font-size: 30px;
-    font-family: Knight2; 
+    /*font-family: Knight2;*/ 
+    font-family:'Joti One';
     text-align: center;
     width: 100%;
     font-weight: 100;
