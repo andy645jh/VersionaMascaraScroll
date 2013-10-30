@@ -11,15 +11,15 @@ $pathCssDefault = $path."css/default.css";
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Terrasan- Agencia de Viajes</title> 
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-          <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 		<meta name="description" content="Blueprint: Fixed Background Scrolling Layout" />
 		<meta name="keywords" content="background scrolling, fixed background, background-attachment, jquery" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../css/default.css" />
 		<link rel="stylesheet" type="text/css" href="../css/component.css" />
-        <link href='http://fonts.googleapis.com/css?family=Joti+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Joti+One' rel='stylesheet' type='text/css'>
         <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
 		<script src="../js/modernizr.custom.js"></script>
        
@@ -39,7 +39,7 @@ $pathCssDefault = $path."css/default.css";
 				  <div id="contenedor_logo"><div id="logo"></div></div>          
                  <nav>
                     <ul>                     
-                        <li><a href="#">DECAMERUN</a></li>
+                        <li><a href="#">DECAMERON</a></li>
                         <li><a href="Contacto.php">CONTACTO</a></li>
                     </ul>
                 </nav>
