@@ -68,10 +68,12 @@ header{
 #tab1, #tab2, #tab3{
     height: 350px;
 }
-img{
+
+#img img{
     width: 100%;
     height: 100%;
 }
+
 /* The nav is fixed on the right side  and we center it by translating it 50% 
 (we don't know it's height so we can't use the negative margin trick) */
 .cbp-fbscroller > #menu > nav {

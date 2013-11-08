@@ -9,30 +9,61 @@ $pathCssDefault = $path."css/default.css";
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Terrasan- Agencia de Viajes</title> 
-        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-		<meta name="description" content="Blueprint: Fixed Background Scrolling Layout" />
-		<meta name="keywords" content="background scrolling, fixed background, background-attachment, jquery" />
-		<meta name="author" content="Codrops" />
+		<title>Terrazsantours- Agencia de Viajes</title>       
+       
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../css/default.css" />
 		<link rel="stylesheet" type="text/css" href="../css/component.css" />
         <link href='http://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Joti+One' rel='stylesheet' type='text/css'>
         <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
-		<script src="../js/modernizr.custom.js"></script>
+        <link href="../css/galleria.css" rel="stylesheet">
+
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+	    <script type="text/javascript" src="../js/jquery.galleria.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script src="../js/modernizr.custom.js"></script>        
        
+       <style media="screen,projection" type="text/css">
+	
+	    /* BEGIN DEMO STYLE */  	   
+	    .caption{font-style:italic;color:#887;}
+	    .demo{position:relative;margin-top:2em;}
+	    .gallery_demo{width:600px;margin:0 auto;}
+	    .gallery_demo li{width:68px;height:50px;border:3px double #111;margin: 0 2px;background:#000;}
+	    .gallery_demo li div{left:240px}
+	    .gallery_demo li div .caption{font:italic 0.7em/1.4 georgia,serif;}
+	
+	    #main_image{margin:0 auto 60px auto;height:438px;width:700px;background:black;}
+	    #main_image img{margin-bottom:10px;}
+	
+	    .nav{padding-top:15px;clear:both;font:80% 'helvetica neue',sans-serif;letter-spacing:3px;text-transform:uppercase;}
+
+	
+    </style>
 	</head>
 	<body class="body_decamerun">
         <div id="dialogo">
             <div id="fondo"></div> 
             <div id="contenido_dialog" > 
                 <button id="btn_cerrar_dialogo" onclick="ocultar();">Cerrar</button>
-                <div id="info_destino" >                                    
-                    <div id="content">
-                        <div id="tab1">1</div>                                           
-                    </div>
+                <div id="info_destino" >     
+                    <div class="demo">
+                        <div id="main_image"></div>
+                        <ul class="gallery_demo_unstyled">
+                            <li><img src="../images/imgBaru/flowing-rock.jpg" alt="Flowing Rock" title="Flowing Rock Caption"></li>
+                            <li><img src="../images/imgBaru/stones.jpg" alt="Stones" title="Stones - from Apple images"></li>
+                            <li class="active"><img src="../images/imgBaru/grass-blades.jpg" alt="Grass Blades" title="Apple nature desktop images"></li>
+                            <li><img src="../images/imgBaru/ladybug.jpg" alt="Ladybug" title="Ut rutrum, lectus eu pulvinar elementum, lacus urna vestibulum ipsum"></li>
+                            <li><img src="../images/imgBaru/lightning.jpg" alt="Lightning" title="Black &amp; White"></li>
+                            <li><img src="../images/imgBaru/lotus.jpg" alt="Lotus" title="Fusce quam mi, sagittis nec, adipiscing at, sodales quis"></li>
+                            <li><img src="../images/imgBaru/mojave.jpg" alt="Mojave" title="Suspendisse volutpat posuere dui. Suspendisse sit amet lorem et risus faucibus pellentesque."></li>
+                            <li><img src="../images/imgBaru/pier.jpg" alt="Pier" title="Proin erat nisi"></li>
+                            <li><img src="../images/imgBaru/sea-mist.jpg" alt="Sea Mist" title="Caption text from title"></li>
+                        </ul>
+                        <p class="nav"><a href="#" onclick="$.galleria.prev(); return false;">&laquo; previous</a> | <a href="#" onclick="$.galleria.next(); return false;">next &raquo;</a></p>
+                        </div>
                 </div>
             </div>          
         </div>
