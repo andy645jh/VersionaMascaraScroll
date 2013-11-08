@@ -26,7 +26,15 @@ $pathCssDefault = $path."css/default.css";
 	</head>
 	<body class="body_decamerun">
         <div id="dialogo">
-            <div id="fondo"></div>           
+            <div id="fondo"></div> 
+            <div id="contenido_dialog" > 
+                <button id="btn_cerrar_dialogo" onclick="ocultar();">Cerrar</button>
+                <div id="info_destino" >                                    
+                    <div id="content">
+                        <div id="tab1">1</div>                                           
+                    </div>
+                </div>
+            </div>          
         </div>
 		<div class="container">
 			<header class="clearfix">
@@ -65,6 +73,7 @@ $pathCssDefault = $path."css/default.css";
                     <div class="base_imgs_moviles img_movil">
                           <?php echo file_get_contents("../info/decamerun/baru.html"); ?>
                     </div>
+                    
                 </section>
                	<section id="fbsection2">
                      <div class="base_imgs_moviles img_movil" >

@@ -20,6 +20,12 @@ $(function () {
     cbpFixedScrollLayout.init();
 });
 
+ function mostrarGaleria(tag) {
+     $("body").css("overflow", "hidden");
+    $("#dialogo").show();
+    alert(tag);
+ }
+
 function mostrar(tag) {
 
     tabTemp = new TabInfo(tag);
@@ -193,7 +199,7 @@ $(document).ready(function () {
                     $divImg.css('max-width', anchoImg);
                     contenido = $('.contenido_empresa').attr('id');
                     //alert("alto imagen: "+contenido);
-                    $('#'+contenido).css('background-size',anchoImg+'px '+altoImg+'px');
+                    $('#' + contenido).css('background-size', anchoImg + 'px ' + altoImg + 'px');
                     $divImg.css({
                         width: anchoImg,
                         top: posCentro
@@ -213,7 +219,7 @@ $(document).ready(function () {
     function centrarVerticalmente(altoEspacio, alturaImg) {
         poscentro = ((altoEspacio / 2) - (alturaImg / 2) + BANNER);
         return poscentro;
-    }
+    }   
 
     redimensionarImagenes();
     moverPerfil();
