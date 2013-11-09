@@ -107,7 +107,7 @@ $pathCssDefault = $path."css/default.css";
 			</div>
            
 		</div>
-       
+       <footer></footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
 		<script src="../js/jquery.easing.min.js"></script>
