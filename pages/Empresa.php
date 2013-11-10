@@ -13,7 +13,7 @@
         <link href='http://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
         <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
 		<script src="../js/modernizr.custom.js"></script>
-        <title>Terrasan- Agencia de Viajes</title>  
+        <title>Terrazsantours- Agencia de Viajes</title> 
 	</head>
 	<body id="empresa">
         <div id="dialogo">

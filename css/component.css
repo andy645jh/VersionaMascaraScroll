@@ -35,23 +35,22 @@ header{
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#111111');
 }
 #contenedor_logo{
+    float: left;
+    height: 160px;
     margin: 0 auto;
+    width: 30%;
 }
-
 #logo {
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
     background-position-x :center; 
     height: 145px;
-    width:30%;
     margin: 0 auto;
-    float: left;
+    width: 250px;
 }
-
 #btn_cerrar_dialogo {
     margin: 15px;
 }
-
 #contenido_destino {   
     float: left;
     width: 50%;
@@ -239,12 +238,14 @@ header{
     background-image: url(../images/patron_rojo.jpg);
 }
 
-.btn_galeria{
-    height: 64px;
-    position: absolute;
-    margin-left: 60px;   
-    width: 193px;
-    background-image: url(../images/verperfil.png);
+#img a{   
+    margin: 0 auto;   
+    width: 80px;   
+    display: block;
+}
+
+#img a:hover{   
+    color: #f9f5f1;
 }
 
 #imagen_centrada{
