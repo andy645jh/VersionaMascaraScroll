@@ -49,21 +49,7 @@ $pathCssDefault = $path."css/default.css";
             <div id="contenido_dialog" > 
                 <button id="btn_cerrar_dialogo" onclick="ocultar();">Cerrar</button>
                 <div id="info_destino" >     
-                    <div class="demo">
-                        <div id="main_image"></div>
-                        <ul class="gallery_demo_unstyled">
-                            <li><img src="../images/imgBaru/flowing-rock.jpg" alt="Flowing Rock" title="Flowing Rock Caption"></li>
-                            <li><img src="../images/imgBaru/stones.jpg" alt="Stones" title="Stones - from Apple images"></li>
-                            <li class="active"><img src="../images/imgBaru/grass-blades.jpg" alt="Grass Blades" title="Apple nature desktop images"></li>
-                            <li><img src="../images/imgBaru/ladybug.jpg" alt="Ladybug" title="Ut rutrum, lectus eu pulvinar elementum, lacus urna vestibulum ipsum"></li>
-                            <li><img src="../images/imgBaru/lightning.jpg" alt="Lightning" title="Black &amp; White"></li>
-                            <li><img src="../images/imgBaru/lotus.jpg" alt="Lotus" title="Fusce quam mi, sagittis nec, adipiscing at, sodales quis"></li>
-                            <li><img src="../images/imgBaru/mojave.jpg" alt="Mojave" title="Suspendisse volutpat posuere dui. Suspendisse sit amet lorem et risus faucibus pellentesque."></li>
-                            <li><img src="../images/imgBaru/pier.jpg" alt="Pier" title="Proin erat nisi"></li>
-                            <li><img src="../images/imgBaru/sea-mist.jpg" alt="Sea Mist" title="Caption text from title"></li>
-                        </ul>
-                        <p class="nav"><a href="#" onclick="$.galleria.prev(); return false;">&laquo; previous</a> | <a href="#" onclick="$.galleria.next(); return false;">next &raquo;</a></p>
-                        </div>
+                     <?php echo file_get_contents("../pages/Galeria.php"); ?>
                 </div>
             </div>          
         </div>
