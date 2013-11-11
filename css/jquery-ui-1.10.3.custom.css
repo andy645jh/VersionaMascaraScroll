@@ -26,11 +26,11 @@
     z-index: -1; 
 }
 #contenido_dialog{
+    background-color: #000000;
+    background-image: url("../images/header2.jpg");
+    height: 430px;
     margin: 100px auto;
-    height: 480px;
-    width: 1000px; 
-    background-color: black; 
-    background-image: url(../images/header2.jpg);
+    width: 800px;
     
 }
 #info_destino{
@@ -42,6 +42,8 @@
    
 }
 #btn_cerrar_dialogo{
+    background-color: #999999;
+    border: 1px solid #333333;
     float: right;
 }
 #tabs{

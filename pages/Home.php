@@ -23,7 +23,7 @@ $pathCssDefault = $path."css/default.css";
         <div id="dialogo">
             <div id="fondo"></div>
             <div id="contenido_dialog" > 
-                <button id="btn_cerrar_dialogo" onclick="ocultar();">Cerrar</button>
+                <button id="btn_cerrar_dialogo" onclick="ocultar();">X</button>
                 <div id="info_destino" >
                                     
                     <div id="content">
