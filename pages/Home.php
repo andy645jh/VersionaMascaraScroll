@@ -27,7 +27,7 @@ $pathCssDefault = $path."css/default.css";
                 <div id="info_destino" >
                                     
                     <div id="content">
-                        <div id="tab1">1</div>                                           
+                        <div id="tab1">Cargando...</div>                                           
                     </div>
                 </div>
             </div>

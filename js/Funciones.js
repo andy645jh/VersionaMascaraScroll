@@ -23,7 +23,7 @@ $(function () {
  function mostrarGaleria(tag) {
      $("body").css("overflow", "hidden");
     $("#dialogo").show();
-    alert(tag);
+   
  }
 
 function mostrar(tag) {
@@ -208,6 +208,10 @@ $(document).ready(function () {
             posImg = BANNER + (_espacioImgs * porcentajeEspacioPosImg);
 
             var $secciones = $('.dimension_img');
+
+            //centrar el popup
+            var posPopup = centrarVerticalmente(_altoVentana, $('#contenido_dialog').height());
+            $('#contenido_dialog').css('margin-top', posPopup-BANNER);
 
             // posicionar en el centro horizontalmente       
             $('.base_imgs_moviles').css('left', getPosCentroHorizontal(anchoImg));

@@ -28,10 +28,10 @@
 #contenido_dialog{
     background-color: #000000;
     background-image: url("../images/header2.jpg");
-    height: 430px;
+    height: 490px;
     margin: 100px auto;
-    width: 800px;
-    
+    width: 1000px;
+    border-radius: 15px 15px;
 }
 #info_destino{
     color: black;
