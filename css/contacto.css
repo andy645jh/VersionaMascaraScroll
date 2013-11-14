@@ -28,6 +28,10 @@ body {
     text-align: center;
 }
 
+#datos_contacto p{   
+   color: rgb(224, 214, 214);
+}
+
 
 #formulario {
     margin-top: -10px;

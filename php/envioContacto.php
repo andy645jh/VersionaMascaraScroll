@@ -1,5 +1,6 @@
 <?php
 
+$correoEnvio = 'william@terrazsan.com';
 //recibe las variables por post.
 $correo = $_REQUEST['correo'];
 $mensaje = $_REQUEST['mensaje'];
@@ -9,17 +10,17 @@ $nombre = $_REQUEST['nombre'];
 //enviar el correo de contacto de registro al usuario registro
 
 
-$to  = 'nitacu@gmail.com' . ', '; // note the comma
-$to .= 'carlos.andres.rocha@gmail.com';
-$asunto = "Palabras Independencia";
+$to  = 'william@terrazsan.com' . ', '; // note the comma
+$to .= 'andy645jh@gmail.com';
+$asunto = "Contacto Web Terrazsan";
 
-$headers = "From: contacto@btg.com.co";
+$headers = "From: william@terrazsan.com";
 
-	
-mail($to, $asunto,
 
-	"
-
+$body=	"
+    Nombre: $nombre
+    Tel: $tel
+    Correo: $correo
 	------------------------------------------------------------------------------------------
 	
 	Mensaje:
@@ -30,6 +31,8 @@ mail($to, $asunto,
 
 	------------------------------------------------------------------------------------------
 
-", $headers, $correo);
+";
+@mail($to, $asunto, $body, $headers, $correoEnvio);
+header("Location:../pages/Contacto.php")
 
 ?> 

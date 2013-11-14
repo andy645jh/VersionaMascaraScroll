@@ -57,7 +57,7 @@ $pathCssDefault = $path."css/default.css";
                            </table>   
                            <div id="datos_contacto">
                                 <p>Cel: 312 449 2722- 316 865 0769</p>
-                                <p>Email: terrazsan@gmail.com - Terrazsantours@gmail.com</p>
+                                <p>Email: william@terrazsan.com</p>
                            </div>  
                            <div id="btnEnviar"><input src="../images/enviar.png" type="image"></div>
                      </form>
