@@ -37,12 +37,14 @@ $pathCssDefault = $path."css/default.css";
                 <nav>
                     <ul>
                        <li><a href="Home.php">HOME</a></li>
-                       <li><a href="Empresa.php">EMPRESA</a></li>                                 
+                       <li><a href="Empresa.php">EMPRESA</a></li>  
+                       <li><a href="#">VACACIONALES</a></li>                                  
                     </ul>
                 </nav>
 				  <div id="contenedor_logo"><div id="logo"></div></div>          
                  <nav>
-                    <ul>                     
+                    <ul>      
+                        <li><a href="Galeria.php">GALERIA</a></li>               
                         <li><a href="Decamerun.php">DECAMERON</a></li>
                         <li><a href="Contacto.php">CONTACTO</a></li>
                     </ul>
@@ -61,7 +63,8 @@ $pathCssDefault = $path."css/default.css";
                             <a href="#fbsection4" title="section4" id="guajira">GUAJIRA</a>       
                             <a href="#fbsection5" title="section5" id="llanos_orientales">LLANOS ORIENTALES</a>
                             <a href="#fbsection6" title="section6" id="medellin">MEDELLIN</a>
-                            <a href="#fbsection7" title="section7" id="san_gil" >SAN GIL</a>
+                            <a href="#fbsection7" title="section7" id="san_andres" >SAN ANDRES</a>
+                            <a href="#fbsection8" title="section8" id="san_gil" >SAN GIL</a>
                          </nav>
                     <div id="bajar" class="flecha_menu" onclick="bajar();"></div>
                     <div id="footer_menu" class="menu"></div>
@@ -91,9 +94,13 @@ $pathCssDefault = $path."css/default.css";
                     </div><a href="javascript:mostrar('medellin')" title="section6" class="perfil"></a>
                 </section>				           
                 <section id="fbsection7" style="background-image: url(../images/img7.jpg)">
+                    <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/img_san_andres.png)"></div>
+                    <a href="javascript:mostrar('san_andres')" title="section7" class="perfil"></a>
+                </section>	
+                 <section id="fbsection8" style="background-image: url(../images/img8.jpg)">
                     <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/img_sangil.jpg)"></div>
-                    <a href="javascript:mostrar('san_gil')" title="section7" class="perfil"></a>
-                </section>			            
+                    <a href="javascript:mostrar('san_gil')" title="section8" class="perfil"></a>
+                </section>				            
                 			             
 			</div>
            
@@ -110,7 +117,7 @@ $pathCssDefault = $path."css/default.css";
         <script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
         <script src="../js/jquery-ui-1.10.3.custom.js"></script>
         <script src="../js/TabInfo.js"></script>
-         <script type="text/javascript">
+        <script type="text/javascript">
             var PAGINA_ACTUAL = "HOME";
         </script>
         <script src="../js/Funciones.js"></script>

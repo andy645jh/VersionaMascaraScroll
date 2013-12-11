@@ -34,10 +34,13 @@ $pathCssDefault = $path."css/default.css";
             <div id="fondo"></div> 
             <div id="contenido_dialog" > 
                 <button id="btn_cerrar_dialogo" onclick="ocultar();">X</button>
-                <div id="info_destino" >     
-                     <?php echo file_get_contents("../pages/Galeria2.html"); ?>
+                <div id="info_destino" >
+                                    
+                    <div id="content">
+                        <div id="tab1">Cargando...</div>                                           
+                    </div>
                 </div>
-            </div>          
+            </div>         
         </div>
 		<div class="container">
 			<header class="clearfix">
