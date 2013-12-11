@@ -36,9 +36,10 @@ $pathCssDefault = $path."css/default.css";
 			<header class="clearfix">
                 <nav>
                     <ul>
+                       <li><a href="#">SALIDAS PEDAGOGICAS</a></li>  
                        <li><a href="Home.php">HOME</a></li>
                        <li><a href="Empresa.php">EMPRESA</a></li>  
-                       <li><a href="#">VACACIONALES</a></li>                                  
+                                                      
                     </ul>
                 </nav>
 				  <div id="contenedor_logo"><div id="logo"></div></div>          
