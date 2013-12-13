@@ -39,6 +39,17 @@ function mostrar(tag) {
 
 }
 
+function mostrarPublicidad()
+{
+    
+    posX = window.pageXOffset;
+    posY = window.pageYOffset;
+
+    $("body").css("overflow", "hidden");
+    $("#dialogo").show();
+    scrollTo(posX, posY);
+}
+
 function mostrarInfo(tipo){
     tabTemp.mostrar(tipo);
 }
