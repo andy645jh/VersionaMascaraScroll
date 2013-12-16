@@ -118,8 +118,14 @@ $pathCssDefault = $path."css/default.css";
         <script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
         <script src="../js/jquery-ui-1.10.3.custom.js"></script>
         <script src="../js/TabInfo.js"></script>
+        
         <script type="text/javascript">
             var PAGINA_ACTUAL = "HOME";
+
+            $(document).ready(function () {
+                mostrar('popup');
+            });
+            
         </script>
         <script src="../js/Funciones.js"></script>
 	</body>
