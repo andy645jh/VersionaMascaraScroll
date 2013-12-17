@@ -314,3 +314,7 @@ h3{
 .imagen_titulo{      
     height: 49px;
 }
+
+.current_page{
+    color: #e86011;
+}

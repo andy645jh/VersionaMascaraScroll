@@ -19,7 +19,7 @@ $pathCssDefault = $path."css/default.css";
          <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
 		<script src="../js/modernizr.custom.js"></script> 
 	</head>
-	<body>
+	<body style="display: none">
         <div id="dialogo">
             <div id="fondo"></div>
             <div id="contenido_dialog" > 
@@ -36,9 +36,9 @@ $pathCssDefault = $path."css/default.css";
 			<header class="clearfix">
                 <nav>
                     <ul>
-                       <li><a href="#">SALIDAS PEDAGOGICAS</a></li>  
-                       <li><a href="Home.php">HOME</a></li>
+                       <li><a href="#">SALIDAS PEDAGOGICAS</a></li>                        
                        <li><a href="Empresa.php">EMPRESA</a></li>  
+                       <li><a href="Home.php" class="current_page">HOME</a></li>
                                                       
                     </ul>
                 </nav>
@@ -118,14 +118,14 @@ $pathCssDefault = $path."css/default.css";
         <script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
         <script src="../js/jquery-ui-1.10.3.custom.js"></script>
         <script src="../js/TabInfo.js"></script>
-        
+
         <script type="text/javascript">
             var PAGINA_ACTUAL = "HOME";
 
-            $(document).ready(function () {
-                mostrar('popup');
+            $(document).ready(function () {               
+                $('body').show();
+                 mostrar('popup');
             });
-            
         </script>
         <script src="../js/Funciones.js"></script>
 	</body>
