@@ -21,7 +21,8 @@ $(function () {
 });
 
  function mostrarGaleria(tag) {
-     $("body").css("overflow", "hidden");
+    
+    $("body").css("overflow", "hidden");
     $("#dialogo").show();
    
  }
