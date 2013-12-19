@@ -35,13 +35,15 @@
 			<header class="clearfix">
                 <nav>
                     <ul>
-                        <li><a href="Home.php">HOME</a></li>
-                        <li><a href="Empresa.php">EMPRESA</a></li>                       
+                        <li><a href="#">SALIDAS PEDAGOGICAS</a></li>
+                        <li><a href="Empresa.php">EMPRESA</a></li>  
+                        <li><a href="Home.php">HOME</a></li>                    
                     </ul>
                 </nav>
 				  <div id="contenedor_logo"><div id="logo"></div></div>          
                  <nav>
-                    <ul>                     
+                    <ul>    
+                        <li><a href="Galeria.php">GALERIA</a></li>                 
                         <li><a href="Decamerun.php">DECAMERON</a></li>
                         <li><a href="Contacto.php">CONTACTO</a></li>
                     </ul>

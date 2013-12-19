@@ -318,3 +318,9 @@ h3{
 .current_page{
     color: #e86011;
 }
+
+#footer{
+    height: 100px;
+    width: 100px;
+    background-color: #e86011;
+}
