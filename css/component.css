@@ -23,7 +23,7 @@ header{
     background-color: #808080;
     background-image: url(../images/header2.jpg);
     background-repeat: repeat-x;
-    height: 165px;
+    height: 130px;
     padding-top: 15px;
     width: auto; 
      -moz-box-shadow: 3px 3px 20px #111;
@@ -36,7 +36,7 @@ header{
 }
 #contenedor_logo{
     float: left;
-    height: 160px;
+    height: 130px;
     margin: 0 auto;
     width: 30%;
 }
@@ -44,9 +44,10 @@ header{
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
     background-position-x :center; 
-    height: 145px;
+    background-size: contain;
+    height: 110px;
     margin: 0 auto;
-    width: 250px;
+    width: 200px;
 }
 #btn_cerrar_dialogo {
     margin: 15px;
@@ -320,7 +321,15 @@ h3{
 }
 
 #footer{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 200px;
     background-color: #e86011;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+#cont_imagen_info a img{
+    width: 900px;
+    height: 600px;
 }
