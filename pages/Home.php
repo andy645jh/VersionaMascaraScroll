@@ -72,35 +72,35 @@ $pathCssDefault = $path."css/default.css";
             </div>
                  <section id="fbsection1" style="background-image: url(../images/img1.jpg)">
                     <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/img_amazonas.png)">
-                    </div><a href="javascript:mostrar('amazonas')" title="section1" class="perfil"></a>
+                    </div><a href="javascript:mostrar('amazonas','planes','html')" title="section1" class="perfil"></a>
                 </section>		
                  <section id="fbsection2" style="background-image: url(../images/img2.jpg)">
                     <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_boyaca.png)">
-                    </div><a href="javascript:mostrar('boyaca')" title="section2" class="perfil"></a>
+                    </div><a href="javascript:mostrar('boyaca','planes','html')" title="section2" class="perfil"></a>
                 </section>	
                 <section id="fbsection3" style="background-image: url(../images/img3.jpg)">
                     <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_ejecafetero.png)"></div>
-                    <a href="javascript:mostrar('eje_cafetero')" title="section3" class="perfil"></a>
+                    <a href="javascript:mostrar('eje_cafetero','planes','html')" title="section3" class="perfil"></a>
                 </section>	
                 <section id="fbsection4" style="background-image: url(../images/img4.jpg)">
                     <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_guajira.png)">
-                    </div><a href="javascript:mostrar('guajira')" title="section4" class="perfil"></a>
+                    </div><a href="javascript:mostrar('guajira','planes','html')" title="section4" class="perfil"></a>
                 </section>					
                	<section id="fbsection5" style="background-image: url(../images/img5.jpg)">
                        <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_llanos.png)"></div>
-                       <a href="javascript:mostrar('llanos_orientales')" title="section5" class="perfil"></a>
+                       <a href="javascript:mostrar('llanos_orientales','planes','html')" title="section5" class="perfil"></a>
                 </section>              		          
                 <section id="fbsection6" style="background-image: url(../images/img6.jpg)">
                     <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_medellin.png)">
-                    </div><a href="javascript:mostrar('medellin')" title="section6" class="perfil"></a>
+                    </div><a href="javascript:mostrar('medellin','planes','html')" title="section6" class="perfil"></a>
                 </section>				           
                 <section id="fbsection7" style="background-image: url(../images/img7.jpg)">
                     <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/img_san_andres.png)"></div>
-                    <a href="javascript:mostrar('san_andres')" title="section7" class="perfil"></a>
+                    <a href="javascript:mostrar('san_andres','planes','html')" title="section7" class="perfil"></a>
                 </section>	
                  <section id="fbsection8" style="background-image: url(../images/img8.jpg)">
                     <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/img_sangil.jpg)"></div>
-                    <a href="javascript:mostrar('san_gil')" title="section8" class="perfil"></a>
+                    <a href="javascript:mostrar('san_gil','planes','html')" title="section8" class="perfil"></a>
                     <div id="footer"></div>
                 </section>				            
                 			             
@@ -125,7 +125,7 @@ $pathCssDefault = $path."css/default.css";
 
             $(document).ready(function () {               
                 $('body').show();
-                 mostrar('popup');
+                 mostrar('popup','planes','html');
             });
         </script>
         <script src="../js/Funciones.js"></script>

@@ -26,7 +26,7 @@ $pathCssDefault = $path."css/default.css";
 		<script src="../js/modernizr.custom.js"></script>    
         
        <link href="../css/galeria.css" rel="stylesheet">
-       <script type="text/javascript" src="../js/galeria.js"></script>         
+       <!--<script type="text/javascript" src="../js/galeria.js"></script>         -->
       
 	</head>
 	<body class="body_decamerun">

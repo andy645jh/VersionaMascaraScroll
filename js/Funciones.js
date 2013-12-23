@@ -27,9 +27,9 @@ $(function () {
    
  }
 
-function mostrar(tag) {
+function mostrar(tag,pageInfo,type) {
 
-    tabTemp = new TabInfo(tag);
+    tabTemp = new TabInfo(tag,pageInfo,type);
 
     posX = window.pageXOffset;
     posY = window.pageYOffset;
