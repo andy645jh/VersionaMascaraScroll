@@ -329,7 +329,7 @@ h3{
     right: 0px;
 }
 
-#cont_imagen_info a img{
-    width: 900px;
-    height: 600px;
+#cont_imagen_info> a> img{
+    width: 800px;
+    height: 400px;
 }
