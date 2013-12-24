@@ -37,7 +37,13 @@ function mostrar(tag,pageInfo,type) {
     $("body").css("overflow", "hidden");
     $("#dialogo").show();
     scrollTo(posX, posY);
+    $contenido = $('#contenido_dialog');
+    var altura = window.innerHeight;
+    var alturaDialogo = $contenido.height();
+    posNew = altura/2 - alturaDialogo/2;
 
+    $contenido.css('margin-top',posNew);
+    
 }
 
 function mostrarPublicidad()
@@ -223,7 +229,7 @@ $(document).ready(function () {
 
             //centrar el popup
             var posPopup = centrarVerticalmente(_altoVentana, $('#contenido_dialog').height());
-            $('#contenido_dialog').css('margin-top', posPopup-BANNER);
+            $('#contenido_dialog').css('margin-top', posPopup - BANNER);
 
             // posicionar en el centro horizontalmente       
             $('.base_imgs_moviles').css('left', getPosCentroHorizontal(anchoImg));
@@ -273,6 +279,11 @@ $(document).ready(function () {
 
             // $('.contenido_empresa').css('background.cover', );
 
+        }
+
+        if (_paginaActual == 'GALERIA') {
+
+            $('.container').css('height','150');
         }
     }
 

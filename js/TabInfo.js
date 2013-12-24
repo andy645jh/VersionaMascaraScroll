@@ -13,13 +13,7 @@ TabInfo.prototype.mostrar = function () {
 
 TabInfo.prototype.cargarInfo = function (tab, destino) {
 
-    var folder;
-
-    if (this.type == 'html') {
-        folder = '/info/' + destino + '/' + this.seccionActual + '.html';
-    } else {
-        folder = '/images/' + destino + '/' + this.seccionActual + '.jpg';
-    }
+    var folder = '/info/' + destino + '/' + this.seccionActual + '.html';
 
     $.ajax({
         // la URL para la petición

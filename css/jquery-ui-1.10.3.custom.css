@@ -28,7 +28,7 @@
 #contenido_dialog{
     background-color: #000000;
     background-image: url("../images/header2.jpg");
-    height: 490px;
+    height: 530px;
     margin: 100px auto;
     width: 1000px;
     border-radius: 15px 15px;
@@ -108,7 +108,7 @@
 {
     background: #fff;
     padding: 2em;
-    height: 400px;
+    height: 440px;
     position: relative;
     z-index: 2;
     border-radius: 0 5px 5px 5px;

@@ -329,7 +329,8 @@ h3{
     right: 0px;
 }
 
-#cont_imagen_info> a> img{
+#cont_imagen_info{
+    text-align: center;
     width: 800px;
-    height: 400px;
+    height: 350px;
 }
