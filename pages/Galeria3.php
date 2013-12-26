@@ -57,58 +57,18 @@ $pathCssDefault = $path."css/default.css";
                         <li><a href="Contacto.php">CONTACTO</a></li>
                     </ul>
                 </nav>
-			</header>
-            
-			<div id="cbp-fbscroller" class="cbp-fbscroller">
-                <div id="menu">
-                   
-                   <div id="header_menu" class="menu" ></div>
-                   <div id="subir" class="flecha_menu" onclick="subir();"></div>
-                        <nav>                        
-                            <a href="javascript:mostrar()" title="section1" id="baru" class="cbp-fbcurrent">BARU</a>
-                            <a href="#fbsection2" title="section2" id="cartagena">CARTAGENA</a>                            
-                            <a href="#fbsection3" title="section3" id="isla_palma">ISLA PALMA</a>       
-                            <a href="#fbsection4" title="section4" id="providencia">PROVIDENCIA</a>                                                                         
-                            <a href="#fbsection5" title="section5" id="san_andres">SAN ANDRES</a>         
-                            <a href="#fbsection6" title="section6" id="santamarta">SANTAMARTA</a>                           
-                        </nav>
-                    <div id="bajar" class="flecha_menu" onclick="bajar();"></div>
-                    <div id="footer_menu" class="menu"></div>
-            </div>
-				<!--<section id="fbsection1">
-                    <div class="base_imgs_moviles img_movil">
-                          <?php echo file_get_contents("../info/decamerun/baru.html"); ?>
-                    </div>
-                    
-                </section>
-               	<section id="fbsection2">
-                     <div class="base_imgs_moviles img_movil" >
-                         <?php echo file_get_contents("../info/decamerun/cartagena.html"); ?>
-                     </div>
-                   </section>                        
-				<section id="fbsection3">
-                    <div class="base_imgs_moviles img_movil" >
-                         <?php echo file_get_contents("../info/decamerun/palma.html"); ?>
-                    </div>
-                </section>
-				<section id="fbsection4">
-                    <div class="base_imgs_moviles img_movil">
-                         <?php echo file_get_contents("../info/decamerun/providencia.html"); ?>
-                    </div>
-                </section>
-				<section id="fbsection5">
-                    <div class="base_imgs_moviles img_movil">
-                         <?php echo file_get_contents("../info/decamerun/san_andres.html"); ?>
-                    </div>
-                </section>
-                <section id="fbsection6">
-                    <div class="base_imgs_moviles img_movil">
-                         <?php echo file_get_contents("../info/decamerun/santamarta.html"); ?>
-                    </div>
-                </section>	-->			          
-               			             
-			</div>
-           
+			</header>      
+			
+                <div id="menu"> 
+                    <nav>                        
+                        <a href="javascript:mostrar()" title="section1" id="baru" class="cbp-fbcurrent">BARU</a>
+                        <a href="#fbsection2" title="section2" id="cartagena">CARTAGENA</a>                            
+                        <a href="#fbsection3" title="section3" id="isla_palma">ISLA PALMA</a>       
+                        <a href="#fbsection4" title="section4" id="providencia">PROVIDENCIA</a>                                                                         
+                        <a href="#fbsection5" title="section5" id="san_andres">SAN ANDRES</a>         
+                        <a href="#fbsection6" title="section6" id="santamarta">SANTAMARTA</a>                           
+                    </nav>
+            </div>          
 		</div>
        <footer></footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
