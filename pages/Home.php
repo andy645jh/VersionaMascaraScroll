@@ -101,7 +101,7 @@ $pathCssDefault = $path."css/default.css";
                  <section id="fbsection8" style="background-image: url(../images/img8.jpg)">
                     <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/img_sangil.jpg)"></div>
                     <a href="javascript:mostrar('san_gil','planes','html')" title="section8" class="perfil"></a>
-                    <div id="footer"></div>
+                    <footer> <?php echo file_get_contents("../info/extras/footer.html"); ?></footer>
                 </section>				            
                 			             
 			</div>

@@ -320,13 +320,13 @@ h3{
     color: #e86011;
 }
 
-#footer{
-    height: 50px;
-    width: 200px;
+footer{
+    height: 250px;
+    width: 250px;
     background-color: #e86011;
     position: fixed;
-    bottom: 0px;
-    right: 0px;
+    bottom: 150px;
+    left: 0px;
 }
 
 #cont_imagen_info{
