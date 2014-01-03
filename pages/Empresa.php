@@ -35,7 +35,7 @@
 			<header class="clearfix">
                 <nav>
                     <ul>
-                        <li><a href="SalidasPedagogicas">SALIDAS PEDAGOGICAS</a></li>
+                        <li><a href="SalidasPedagogicas.html">SALIDAS PEDAGOGICAS</a></li>
                         <li><a href="Empresa.php">EMPRESA</a></li>  
                         <li><a href="Home.php">HOME</a></li>                    
                     </ul>
@@ -73,7 +73,7 @@
                        </div>
                 </section>                        							           
 			</div>
-           
+            <footer> <?php echo file_get_contents("../info/extras/footer.html"); ?></footer>
 		</div>
        
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

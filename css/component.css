@@ -321,12 +321,15 @@ h3{
 }
 
 footer{
-    height: 250px;
+    text-align: center;
+    height: 80px;
     width: 250px;
-    background-color: #e86011;
+    /*background-color: #e86011;*/
     position: fixed;
-    bottom: 150px;
+    bottom: 0px;
     left: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 #cont_imagen_info{

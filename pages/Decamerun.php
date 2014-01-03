@@ -108,11 +108,10 @@ $pathCssDefault = $path."css/default.css";
                          <?php echo file_get_contents("../info/decamerun/santamarta.html"); ?>
                     </div>
                 </section>				          
-               			             
+               	 <footer> <?php echo file_get_contents("../info/extras/footer.html"); ?></footer>		             
 			</div>
            
-		</div>
-       <footer></footer>
+		</div>       
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
 		<script src="../js/jquery.easing.min.js"></script>
