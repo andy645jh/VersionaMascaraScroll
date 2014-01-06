@@ -57,18 +57,15 @@ $pathCssDefault = $path."css/default.css";
                         <li><a href="Contacto.php">CONTACTO</a></li>
                     </ul>
                 </nav>
-			</header>      
-			
-                <div id="menu"> 
-                    <nav>                        
-                        <a href="javascript:mostrar()" title="section1" id="baru" class="cbp-fbcurrent">BARU</a>
-                        <a href="#fbsection2" title="section2" id="cartagena">CARTAGENA</a>                            
-                        <a href="#fbsection3" title="section3" id="isla_palma">ISLA PALMA</a>       
-                        <a href="#fbsection4" title="section4" id="providencia">PROVIDENCIA</a>                                                                         
-                        <a href="#fbsection5" title="section5" id="san_andres">SAN ANDRES</a>         
-                        <a href="#fbsection6" title="section6" id="santamarta">SANTAMARTA</a>                           
-                    </nav>
-            </div>          
+			</header> 	
+                <div id="caja_galeria">                                                            
+                    <div><a href="javascript:mostrar()" title="section1" id="baru" class="cbp-fbcurrent">BARU</a></div>
+                    <div><a href="#fbsection2" title="section2" id="cartagena">CARTAGENA</a></div>                            
+                    <div><a href="#fbsection3" title="section3" id="isla_palma">ISLA PALMA</a></div>       
+                    <div><a href="#fbsection4" title="section4" id="providencia">PROVIDENCIA</a></div>                                                                         
+                    <div><a href="#fbsection5" title="section5" id="san_andres">SAN ANDRES</a></div>         
+                    <div><a href="#fbsection6" title="section6" id="santamarta">SANTAMARTA</a></div>                           
+                </div>	
 		</div>
        <footer></footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -83,7 +80,7 @@ $pathCssDefault = $path."css/default.css";
         <script src="../js/jquery-ui-1.10.3.custom.js"></script>
         <script src="../js/TabInfo.js"></script>
          <script type="text/javascript">
-           var PAGINA_ACTUAL = "DECAMERUN";
+           var PAGINA_ACTUAL = "GALERIA";
         </script>
         <script src="../js/Funciones.js"></script>
 	</body>

@@ -343,3 +343,20 @@ footer{
     margin: 150px auto;
     width: 400px;    
 }
+
+#caja_galeria{
+   display: -ms-flexbox;
+    position: absolute;   
+    -ms-flex-pack: distribute;
+    top: 200px;
+    left: 200px;
+    width: 70%;   
+}
+
+#caja_galeria > div{  
+    display:-webkit-box;
+    height: 50px;
+    min-width: 150px;
+    text-decoration: none;
+    float: left;
+}
