@@ -49,9 +49,8 @@ body {
 table {    
     width: 425px;
     height: 250px;
-    float: right;
-    /*background-color: #fff;*/
-    background-image: url(../images/fondoFormulario.png);
+    float: right;   
+    background-image: url(../images/contacto/fondoFormulario.png);
     background-size: 425px 250px;
 }
 
@@ -59,7 +58,7 @@ table {
     width: 350px;
     float: left;
     height: 250px;
-    background-image: url(../images/pantallaso.jpg);
+    /*background-image: url(../images/pantallaso.jpg);*/
 }
 td {
     padding: 5px 10px;

@@ -11,10 +11,7 @@ $pathCssDefault = $path."css/default.css";
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Terrazsantours- Agencia de Viajes</title>
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-          <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-		<meta name="description" content="Blueprint: Fixed Background Scrolling Layout" />
-		<meta name="keywords" content="background scrolling, fixed background, background-attachment, jquery" />
-		<meta name="author" content="Codrops" />
+          <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>	
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../css/default.css" />
         <link rel="stylesheet" type="text/css" href="../css/contacto.css" />
@@ -61,7 +58,7 @@ $pathCssDefault = $path."css/default.css";
                                 <p>Cel: 312 449 2722- 316 865 0769</p>
                                 <p>Email: william@terrazsan.com</p>
                            </div>  
-                           <div id="btnEnviar"><input src="../images/enviar.png" type="image"></div>
+                           <div id="btnEnviar"><input src="../images/contacto/enviar.png" type="image"></div>
                      </form>
                   </div>
                  <div id="img_contacto"></div>  
@@ -80,6 +77,11 @@ $pathCssDefault = $path."css/default.css";
         <script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
         <script src="../js/jquery-ui-1.10.3.custom.js"></script>
         <script src="../js/TabInfo.js"></script>
+         <script type="text/javascript">
+            var PAGINA_ACTUAL = "CONTACTO";
+            
+        </script>
         <script src="../js/Funciones.js"></script>
+        
 	</body>
 </html>

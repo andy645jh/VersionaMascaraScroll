@@ -1,5 +1,5 @@
 var NUM_ENLACES_SEGMENTO = 7;
-var ALTURA_ETIQUETA = 32;
+var ALTURA_ETIQUETA = 31;
 var BANNER= 165;
 var tabTemp;
 var seccionActual = null;

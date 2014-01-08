@@ -9,14 +9,11 @@ $pathCssDefault = $path."css/default.css";
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Terrazsantours- Agencia de Viajes</title>      
-		<meta name="description" content="Blueprint: Fixed Background Scrolling Layout" />
-		<meta name="keywords" content="background scrolling, fixed background, background-attachment, jquery" />
-		<meta name="author" content="Codrops" />
+		<title>Terrazsantours- Agencia de Viajes</title>      		
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../css/default.css" />
 		<link rel="stylesheet" type="text/css" href="../css/component.css" /> 
-         <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+        <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
 		<script src="../js/modernizr.custom.js"></script> 
 	</head>
 	<body style="display: none">
@@ -70,36 +67,36 @@ $pathCssDefault = $path."css/default.css";
                     <div id="bajar" class="flecha_menu" onclick="bajar();"></div>
                     <div id="footer_menu" class="menu"></div>
             </div>
-                 <section id="fbsection1" style="background-image: url(../images/img1.jpg)">
-                    <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/img_amazonas.png)">
+                 <section id="fbsection1" style="background-image: url(../images/home/bg/img1.jpg)">
+                    <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/home/img_destino/img_amazonas.png)">
                     </div><a href="javascript:mostrar('amazonas','planes','html')" title="section1" class="perfil"></a>
                 </section>		
-                 <section id="fbsection2" style="background-image: url(../images/img2.jpg)">
-                    <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_boyaca.png)">
+                 <section id="fbsection2" style="background-image: url(../images/home/bg/img2.jpg)">
+                    <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/home/img_destino/img_boyaca.png)">
                     </div><a href="javascript:mostrar('boyaca','planes','html')" title="section2" class="perfil"></a>
                 </section>	
-                <section id="fbsection3" style="background-image: url(../images/img3.jpg)">
-                    <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_ejecafetero.png)"></div>
+                <section id="fbsection3" style="background-image: url(../images/home/bg/img3.jpg)">
+                    <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/home/img_destino/img_ejecafetero.png)"></div>
                     <a href="javascript:mostrar('eje_cafetero','planes','html')" title="section3" class="perfil"></a>
                 </section>	
-                <section id="fbsection4" style="background-image: url(../images/img4.jpg)">
-                    <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_guajira.png)">
+                <section id="fbsection4" style="background-image: url(../images/home/bg/img4.jpg)">
+                    <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/home/img_destino/img_guajira.png)">
                     </div><a href="javascript:mostrar('guajira','planes','html')" title="section4" class="perfil"></a>
                 </section>					
-               	<section id="fbsection5" style="background-image: url(../images/img5.jpg)">
-                       <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_llanos.png)"></div>
+               	<section id="fbsection5" style="background-image: url(../images/home/bg/img5.jpg)">
+                       <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/home/img_destino/img_llanos.png)"></div>
                        <a href="javascript:mostrar('llanos_orientales','planes','html')" title="section5" class="perfil"></a>
                 </section>              		          
-                <section id="fbsection6" style="background-image: url(../images/img6.jpg)">
-                    <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/img_medellin.png)">
+                <section id="fbsection6" style="background-image: url(../images/home/bg/img6.jpg)">
+                    <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/home/img_destino/img_medellin.png)">
                     </div><a href="javascript:mostrar('medellin','planes','html')" title="section6" class="perfil"></a>
                 </section>				           
-                <section id="fbsection7" style="background-image: url(../images/img7.jpg)">
-                    <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/img_san_andres.png)"></div>
+                <section id="fbsection7" style="background-image: url(../images/home/bg/img7.jpg)">
+                    <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/home/img_destino/img_san_andres.png)"></div>
                     <a href="javascript:mostrar('san_andres','planes','html')" title="section7" class="perfil"></a>
                 </section>	
-                 <section id="fbsection8" style="background-image: url(../images/img8.jpg)">
-                    <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/img_sangil.jpg)"></div>
+                 <section id="fbsection8" style="background-image: url(../images/home/bg/img8.jpg)">
+                    <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/home/img_destino/img_sangil.jpg)"></div>
                     <a href="javascript:mostrar('san_gil','planes','html')" title="section8" class="perfil"></a>
                     <footer> <?php echo file_get_contents("../info/extras/footer.html"); ?></footer>
                 </section>				            

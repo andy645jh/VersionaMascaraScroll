@@ -21,7 +21,7 @@ button{
 header{
     
     background-color: #808080;
-    background-image: url(../images/header2.jpg);
+    background-image: url(../images/header/header.jpg);
     background-repeat: repeat-x;
     height: 130px;
     padding-top: 15px;
@@ -41,7 +41,7 @@ header{
     width: 30%;
 }
 #logo {
-    background-image: url(../images/logo.png);
+    background-image: url(../images/header/logo.png);
     background-repeat: no-repeat;
     background-position-x :center; 
     background-size: contain;
@@ -127,16 +127,16 @@ header{
     position: absolute;   
     /*margin: 500px 800px;*/
     width: 193px;
-    background-image: url(../images/verperfil.png);
+    background-image: url(../images/home/verperfil.png);
 }
 #subir{
-    background-image: url(../images/flecha_arriba.png);
+    background-image: url(../images/menu/flecha.png);
     background-repeat: no-repeat;
     background-position: top;   
     height: 14px;
 }
 #bajar{
-    background-image: url(../images/flecha_arriba.png);
+    background-image: url(../images/menu/flecha.png);
     background-repeat: no-repeat;
     background-position: bottom;    
     height: 14px;
@@ -150,23 +150,23 @@ header{
     text-align: center;
 }
 #subir:hover{   
-    background-image: url(../images/flecha_over.png); 
+    background-image: url(../images/menu/flecha_over.png); 
     background-position: top; 
 }
 #bajar:hover{   
-     background-image: url(../images/flecha_over.png);
+     background-image: url(../images/menu/flecha_over.png);
      background-position: bottom; 
 }
 #header_menu{       
     height: 20px;
     border-top-right-radius: 10px;
-    background-image: url(../images/header_menu.png);
+    background-image: url(../images/menu/header_menu.png);
 }
 
 #footer_menu{  
     height: 20px;
     border-bottom-right-radius: 10px;        
-    background-image: url(../images/footer_menu.png);
+    background-image: url(../images/menu/footer_menu.png);
 }
 .no-touch .cbp-fbscroller > #menu > nav a:hover {
 	background: #5fb0ab;
@@ -267,7 +267,7 @@ h3{
 }
 
 #contenido{
-     background-image: url(../images/fondoFormulario2.png);
+     background-image: url(../images/contacto/fondoFormulario2.png);
      background-repeat: no-repeat;
      background-size: 100% 100%;
      height: 100%;
@@ -276,7 +276,7 @@ h3{
      max-width: 450px;
 }
 .contenido_empresa{
-     /*background-image: url(../images/fondoFormulario.png);*/ 
+    
      background-color: #f9f5f1;
      background-repeat: no-repeat;
      background-size: cover;  
