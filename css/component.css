@@ -321,15 +321,16 @@ h3{
 }
 
 footer{
+    background-image: url(../images/header/header.jpg);
     text-align: center;
     height: 80px;
-    width: 250px;
-    /*background-color: #e86011;*/
+    width: 250px; 
+    color: #41ADB4;   
     position: fixed;
     bottom: 0px;
-    left: 0px;
-    padding-left: 20px;
+    left: 0px;   
     padding-top: 20px;
+    border-top-right-radius: 10px;
 }
 
 #cont_imagen_info{

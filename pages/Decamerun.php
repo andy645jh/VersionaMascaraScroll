@@ -55,7 +55,7 @@ $pathCssDefault = $path."css/default.css";
                  <nav>
                     <ul>            
                         <li><a href="Galeria.html">GALERIA</a></li>         
-                        <li><a href="#">DECAMERON</a></li>
+                        <li><a href="#" class="current_page">DECAMERON</a></li>
                         <li><a href="Contacto.php">CONTACTO</a></li>
                     </ul>
                 </nav>

@@ -32,7 +32,7 @@ $pathCssDefault = $path."css/default.css";
                         <ul>        
                             <li><a href="Galeria.html">GALERIA</a></li>               
                             <li><a href="Decamerun.php">DECAMERON</a></li>
-                            <li><a href="#">CONTACTO</a></li>
+                            <li><a href="#" class="current_page">CONTACTO</a></li>
                         </ul>
                     </nav>
 			    </header>

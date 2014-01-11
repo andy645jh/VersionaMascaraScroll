@@ -1,7 +1,13 @@
 <?php 
-$path = $_SERVER['DOCUMENT_ROOT']. "/";
-$pathCssDefault = $path."css/default.css";
-//echo $pathCssDefault;
+
+require_once('../php/const/Constantes.php');
+require_once(FOLDER_BD.'ControlDataBase.php');
+
+
+
+$controlBd = new ControlDataBase;
+$listaDestinos = $controlBd->getDestinos();
+
 ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -54,52 +60,29 @@ $pathCssDefault = $path."css/default.css";
                    
                    <div id="header_menu" class="menu" ></div>
                    <div id="subir" class="flecha_menu" onclick="subir();"></div>
-                        <nav>        
-                            <a href="#fbsection1" title="section1" id="amazonas" class="cbp-fbcurrent">AMAZONAS</a>  
-                            <a href="#fbsection2" title="section2" id="boyaca">BOYACA</a>         
-                            <a href="#fbsection3" title="section3" id="eje_cafetero">EJE CAFETERO</a>  
-                            <a href="#fbsection4" title="section4" id="guajira">GUAJIRA</a>       
-                            <a href="#fbsection5" title="section5" id="llanos_orientales">LLANOS ORIENTALES</a>
-                            <a href="#fbsection6" title="section6" id="medellin">MEDELLIN</a>
-                            <a href="#fbsection7" title="section7" id="san_andres" >SAN ANDRES</a>
-                            <a href="#fbsection8" title="section8" id="san_gil" >SAN GIL</a>
+                        <nav> <!--MENU LATERAL-->
+                            <?php
+                                foreach( $listaDestinos as $destino)
+                                {
+                                    echo "<a href='#".$destino->idTag."' id= '".$destino->destino."'>".strtoupper($destino->nombre)."</a>";
+                                }
+                            ?>                          
                          </nav>
                     <div id="bajar" class="flecha_menu" onclick="bajar();"></div>
                     <div id="footer_menu" class="menu"></div>
-            </div>
-                 <section id="fbsection1" style="background-image: url(../images/home/bg/img1.jpg)">
-                    <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/home/img_destino/img_amazonas.png)">
-                    </div><a href="javascript:mostrar('amazonas','planes','html')" title="section1" class="perfil"></a>
-                </section>		
-                 <section id="fbsection2" style="background-image: url(../images/home/bg/img2.jpg)">
-                    <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/home/img_destino/img_boyaca.png)">
-                    </div><a href="javascript:mostrar('boyaca','planes','html')" title="section2" class="perfil"></a>
-                </section>	
-                <section id="fbsection3" style="background-image: url(../images/home/bg/img3.jpg)">
-                    <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/home/img_destino/img_ejecafetero.png)"></div>
-                    <a href="javascript:mostrar('eje_cafetero','planes','html')" title="section3" class="perfil"></a>
-                </section>	
-                <section id="fbsection4" style="background-image: url(../images/home/bg/img4.jpg)">
-                    <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/home/img_destino/img_guajira.png)">
-                    </div><a href="javascript:mostrar('guajira','planes','html')" title="section4" class="perfil"></a>
-                </section>					
-               	<section id="fbsection5" style="background-image: url(../images/home/bg/img5.jpg)">
-                       <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/home/img_destino/img_llanos.png)"></div>
-                       <a href="javascript:mostrar('llanos_orientales','planes','html')" title="section5" class="perfil"></a>
-                </section>              		          
-                <section id="fbsection6" style="background-image: url(../images/home/bg/img6.jpg)">
-                    <div class="base_imgs_moviles dimension_img"  style="background-image: url(../images/home/img_destino/img_medellin.png)">
-                    </div><a href="javascript:mostrar('medellin','planes','html')" title="section6" class="perfil"></a>
-                </section>				           
-                <section id="fbsection7" style="background-image: url(../images/home/bg/img7.jpg)">
-                    <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/home/img_destino/img_san_andres.png)"></div>
-                    <a href="javascript:mostrar('san_andres','planes','html')" title="section7" class="perfil"></a>
-                </section>	
-                 <section id="fbsection8" style="background-image: url(../images/home/bg/img8.jpg)">
-                    <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/home/img_destino/img_sangil.jpg)"></div>
-                    <a href="javascript:mostrar('san_gil','planes','html')" title="section8" class="perfil"></a>
-                    <footer> <?php echo file_get_contents("../info/extras/footer.html"); ?></footer>
-                </section>				            
+            </div><!-- SECCIONES DE CADA DESTINO-->
+                 <?php
+                    foreach( $listaDestinos as $destino)
+                    {
+                 ?>
+                        <section id="#<?php echo $destino->idTag ?>" style="background-image: url(<?php echo $destino->urlFondo ?>)">
+                        <div class="base_imgs_moviles dimension_img" style="background-image: url(<?php echo $destino->urlDestino ?>)"></div>
+                        <a href="javascript:mostrar('<?php echo $destino->destino ?>','planes','html')" class='perfil'></a>
+                        </section>
+                <?php
+                    }
+                    echo "<footer>".file_get_contents('../info/extras/footer.html')."</footer>";
+                 ?>        
                 			             
 			</div>
            

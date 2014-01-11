@@ -36,7 +36,7 @@
                 <nav>
                     <ul>
                         <li><a href="SalidasPedagogicas.html">SALIDAS PEDAGOGICAS</a></li>
-                        <li><a href="Empresa.php">EMPRESA</a></li>  
+                        <li><a href="#" class="current_page">EMPRESA</a></li>  
                         <li><a href="Home.php">HOME</a></li>                    
                     </ul>
                 </nav>
