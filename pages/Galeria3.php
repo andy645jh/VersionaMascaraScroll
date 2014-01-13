@@ -59,12 +59,12 @@ $pathCssDefault = $path."css/default.css";
                 </nav>
 			</header> 	
                 <div id="caja_galeria">                                                            
-                    <div><a href="javascript:mostrar()" title="section1" id="baru" class="cbp-fbcurrent">BARU</a></div>
-                    <div><a href="#fbsection2" title="section2" id="cartagena">CARTAGENA</a></div>                            
-                    <div><a href="#fbsection3" title="section3" id="isla_palma">ISLA PALMA</a></div>       
-                    <div><a href="#fbsection4" title="section4" id="providencia">PROVIDENCIA</a></div>                                                                         
-                    <div><a href="#fbsection5" title="section5" id="san_andres">SAN ANDRES</a></div>         
-                    <div><a href="#fbsection6" title="section6" id="santamarta">SANTAMARTA</a></div>                           
+                    <div style="background-image: url(../images/galeria/baru/btn_galeria_baru.png)"><a href="javascript:mostrar()" title="section1" id="baru" class="cbp-fbcurrent">BARU</a></div>
+                    <div style="background-image: url(../images/galeria/cartagena/btn_galeria_cartagena.png)"><a href="#fbsection2" title="section2" id="cartagena">CARTAGENA</a></div>                            
+                    <div style="background-image: url(../images/galeria/isla_palma/btn_galeria_isla_palma.png)"><a href="#fbsection3" title="section3" id="isla_palma">ISLA PALMA</a></div>       
+                    <div style="background-image: url(../images/galeria/providencia/btn_galeria_providencia.png)"><a href="#fbsection4" title="section4" id="providencia">PROVIDENCIA</a></div>                                                                         
+                    <div style="background-image: url(../images/galeria/san_andres/btn_galeria_san_andres.png)"><a href="#fbsection5" title="section5" id="san_andres">SAN ANDRES</a></div>         
+                    <div style="background-image: url(../images/galeria/santamarta/btn_galeria_santamarta.png)"><a href="#fbsection6" title="section6" id="santamarta">SANTAMARTA</a></div>                           
                 </div>	
 		</div>
        <footer></footer>
