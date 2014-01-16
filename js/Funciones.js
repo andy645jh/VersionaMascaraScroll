@@ -22,8 +22,38 @@ $(function () {
 
  function mostrarGaleria(tag) {
     
+   posX = window.pageXOffset;
+    posY = window.pageYOffset;
+
+     var folder = '/php/index.php';
+
+    $.ajax({
+        // la URL para la petición
+        url: folder,
+
+        // el tipo de información que se espera de respuesta
+        type: 'post',
+
+        //parametros
+        data:{ 'tag':tag },
+
+        // código a ejecutar si la petición es satisfactoria;
+        // la respuesta es pasada como argumento a la función
+        success: function (datos) {
+            $('#info_destino').html(datos);
+        }
+    });
+
+
     $("body").css("overflow", "hidden");
     $("#dialogo").show();
+    scrollTo(posX, posY);
+    $contenido = $('#contenido_dialog');
+    var altura = window.innerHeight;
+    var alturaDialogo = $contenido.height();
+    posNew = altura/2 - alturaDialogo/2;
+
+    $contenido.css('margin-top',posNew);   
    
  }
 

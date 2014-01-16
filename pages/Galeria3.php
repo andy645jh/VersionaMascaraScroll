@@ -1,7 +1,10 @@
 <?php 
-$path = $_SERVER['DOCUMENT_ROOT']. "/";
-$pathCssDefault = $path."css/default.css";
-//echo $pathCssDefault;
+require_once('../php/const/Constantes.php');
+require_once(FOLDER_BD.'ControlDataBase.php');
+
+$controlDataBase = new ControlDataBase;
+$controlDataBase->getImagenesGaleria('baru');
+
 ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -35,7 +38,7 @@ $pathCssDefault = $path."css/default.css";
             <div id="contenido_dialog" > 
                 <button id="btn_cerrar_dialogo" onclick="ocultar();">X</button>
                 <div id="info_destino" >     
-                     <?php echo file_get_contents("../pages/Galeria2.html"); ?>
+                     <!--<?php //echo file_get_contents("../pages/Galeria2.html"); ?>-->
                 </div>
             </div>          
         </div>
@@ -59,7 +62,7 @@ $pathCssDefault = $path."css/default.css";
                 </nav>
 			</header> 	
                 <div id="caja_galeria">                                                            
-                    <div style="background-image: url(../images/galeria/baru/btn_galeria_baru.png)"><a href="javascript:mostrar()" title="section1" id="baru" class="cbp-fbcurrent">BARU</a></div>
+                    <div style="background-image: url(../images/galeria/baru/btn_galeria_baru.png)"><a href="javascript:mostrarGaleria('baru')" title="section1" id="baru" class="cbp-fbcurrent">BARU</a></div>
                     <div style="background-image: url(../images/galeria/cartagena/btn_galeria_cartagena.png)"><a href="#fbsection2" title="section2" id="cartagena">CARTAGENA</a></div>                            
                     <div style="background-image: url(../images/galeria/isla_palma/btn_galeria_isla_palma.png)"><a href="#fbsection3" title="section3" id="isla_palma">ISLA PALMA</a></div>       
                     <div style="background-image: url(../images/galeria/providencia/btn_galeria_providencia.png)"><a href="#fbsection4" title="section4" id="providencia">PROVIDENCIA</a></div>                                                                         
