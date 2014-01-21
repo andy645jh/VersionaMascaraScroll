@@ -1,0 +1,3 @@
+mysqldump –u root -p viajes > E:/pruebas.sql
+
+Ejecutar komo adminsitrador en consola

@@ -21,8 +21,8 @@ $(function () {
 });
 
  function mostrarGaleria(tag) {
-    
-   posX = window.pageXOffset;
+     
+    posX = window.pageXOffset;
     posY = window.pageYOffset;
 
     var galeria = "galeria_" + tag;
@@ -33,19 +33,20 @@ $(function () {
         url: folder,
 
         // el tipo de información que se espera de respuesta
-        dataType: 'html',       
+        dataType: 'html',
 
         // código a ejecutar si la petición es satisfactoria;
         // la respuesta es pasada como argumento a la función
         success: function (datos) {
-            //$('#info_destino').html(datos);
+            alert(datos);
+            $('#info_destino').html(datos);
         }
     });
 
 
     $("body").css("overflow", "hidden");
     $("#dialogo").show();
-    $("#" + galeria).show();
+    $("#galeria_baru").show();
     scrollTo(posX, posY);
     $contenido = $('#contenido_dialog');
     var altura = window.innerHeight;
@@ -53,7 +54,7 @@ $(function () {
     posNew = altura/2 - alturaDialogo/2;
 
     $contenido.css('margin-top',posNew);   
-   
+    initGal();   
  }
 
 function mostrar(tag,pageInfo,type) {

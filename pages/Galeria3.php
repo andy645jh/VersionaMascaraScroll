@@ -38,8 +38,7 @@ $controlDataBase->getImagenesGaleria('baru');
             <div id="contenido_dialog" > 
                 <button id="btn_cerrar_dialogo" onclick="ocultar();">X</button>
                 <div id="info_destino" >     
-                     <?php echo file_get_contents("../info/galeria/galeria_baru.html"); ?>
-                     <?php echo file_get_contents("../info/galeria/galeria_cartagena.html"); ?>
+                    
                 </div>
             </div>          
         </div>
