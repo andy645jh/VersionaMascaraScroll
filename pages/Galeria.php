@@ -85,7 +85,7 @@
 	
 </head>
 <body>
-<div class="container">
+<div class="container" style="height: auto">
 	<header class="clearfix">
         <nav>
             <ul>
@@ -105,39 +105,22 @@
         </nav>
 	</header>
     </div>
-	<div id="cbp-fbscroller" class="cbp-fbscroller" style="height: auto">
-        <div id="menu">
-                   
-            <div id="header_menu" class="menu" ></div>
-            <div id="subir" class="flecha_menu" onclick="subir();"></div>
-                <nav>        
-                    <a href="#fbsection1" title="section1" id="amazonas" class="cbp-fbcurrent">AMAZONAS</a>  
-                    <a href="#fbsection2" title="section2" id="boyaca">BOYACA</a>         
-                    <a href="#fbsection3" title="section3" id="eje_cafetero">EJE CAFETERO</a>  
-                    <a href="#fbsection4" title="section4" id="guajira">GUAJIRA</a>       
-                    <a href="#fbsection5" title="section5" id="llanos_orientales">LLANOS ORIENTALES</a>
-                    <a href="#fbsection6" title="section6" id="medellin">MEDELLIN</a>
-                    <a href="#fbsection7" title="section7" id="san_andres" >SAN ANDRES</a>
-                    <a href="#fbsection8" title="section8" id="san_gil" >SAN GIL</a>
-                    </nav>
-            <div id="bajar" class="flecha_menu" onclick="bajar();"></div>
-            <div id="footer_menu" class="menu"></div>
-        </div>
 
-    <div class="demo">
-    <div id="main_image"></div>
-    <ul class="gallery_demo_unstyled">
-        <li><img src="../images/imgBaru/flowing-rock.jpg" alt="Flowing Rock" title="Flowing Rock Caption"></li>
-        <li><img src="../images/imgBaru/stones.jpg" alt="Stones" title="Stones - from Apple images"></li>
-        <li class="active"><img src="../images/imgBaru/grass-blades.jpg" alt="Grass Blades" title="Apple nature desktop images"></li>
-        <li><img src="../images/imgBaru/ladybug.jpg" alt="Ladybug" title="Ut rutrum, lectus eu pulvinar elementum, lacus urna vestibulum ipsum"></li>
-        <li><img src="../images/imgBaru/lightning.jpg" alt="Lightning" title="Black &amp; White"></li>
-        <li><img src="../images/imgBaru/lotus.jpg" alt="Lotus" title="Fusce quam mi, sagittis nec, adipiscing at, sodales quis"></li>
-        <li><img src="../images/imgBaru/mojave.jpg" alt="Mojave" title="Suspendisse volutpat posuere dui. Suspendisse sit amet lorem et risus faucibus pellentesque."></li>
-        <li><img src="../images/imgBaru/pier.jpg" alt="Pier" title="Proin erat nisi"></li>
-        <li><img src="../images/imgBaru/sea-mist.jpg" alt="Sea Mist" title="Caption text from title"></li>
-    </ul>
-    <p class="nav"><a href="#" onclick="$.galleria.prev(); return false;">&laquo; previous</a> | <a href="#" onclick="$.galleria.next(); return false;">next &raquo;</a></p>
+    <div id="contenedor_galeria">
+        <div id="main_image"></div>
+        <ul class="gallery_demo_unstyled">
+            <li><img src="../images/imgBaru/flowing-rock.jpg" alt="Flowing Rock" title="Flowing Rock Caption"></li>
+            <li><img src="../images/imgBaru/stones.jpg" alt="Stones" title="Stones - from Apple images"></li>
+            <li class="active"><img src="../images/imgBaru/grass-blades.jpg" alt="Grass Blades" title="Apple nature desktop images"></li>
+            <li><img src="../images/imgBaru/ladybug.jpg" alt="Ladybug" title="Ut rutrum, lectus eu pulvinar elementum, lacus urna vestibulum ipsum"></li>
+            <li><img src="../images/imgBaru/lightning.jpg" alt="Lightning" title="Black &amp; White"></li>
+            <li><img src="../images/imgBaru/lotus.jpg" alt="Lotus" title="Fusce quam mi, sagittis nec, adipiscing at, sodales quis"></li>
+            <li><img src="../images/imgBaru/mojave.jpg" alt="Mojave" title="Suspendisse volutpat posuere dui. Suspendisse sit amet lorem et risus faucibus pellentesque."></li>
+            <li><img src="../images/imgBaru/pier.jpg" alt="Pier" title="Proin erat nisi"></li>
+            <li><img src="../images/imgBaru/sea-mist.jpg" alt="Sea Mist" title="Caption text from title"></li>
+        </ul>
+        <p class="nav"><a href="#" onclick="$.galleria.prev(); return false;">&laquo; previous</a> | <a href="#" onclick="$.galleria.next(); return false;">next &raquo;</a></p>
+        </div>    
     </div>
 </div>
      <script type="text/javascript">

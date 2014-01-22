@@ -28,7 +28,7 @@ $(function () {
     var galeria = "galeria_" + tag;
     var folder = "/info/galeria/"+galeria+".html";
 
-    $.ajax({
+   /* $.ajax({
         // la URL para la petición
         url: folder,
 
@@ -41,8 +41,8 @@ $(function () {
             alert(datos);
             $('#info_destino').html(datos);
         }
-    });
-
+    });*/
+    $('#info_destino').load('/info/galeria/galeria_baru.html');
 
     $("body").css("overflow", "hidden");
     $("#dialogo").show();
