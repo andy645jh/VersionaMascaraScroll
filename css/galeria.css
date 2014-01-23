@@ -1,4 +1,4 @@
-#gallery { /*display: none;*/ }
+#gallery { display: none; }
 #jgal {padding-left:30px;margin:0;list-style: none; width: 190px; }
 #jgal li { opacity: .5;filter:alpha(opacity=50); float: left; display: block; width: 60px; height: 60px; background-position: 50% 50%; cursor: pointer; border: 3px solid #fff; outline: 1px solid #ddd; margin-right: 10px; margin-bottom: 10px; }
 #jgal li img { position: absolute; top: 0px; left: 200px; display: none; }

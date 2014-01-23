@@ -42,11 +42,11 @@ $(function () {
             $('#info_destino').html(datos);
         }
     });*/
-    $('#info_destino').load('/info/galeria/galeria_baru.html');
+   // $('#info_destino').load('/info/galeria/galeria_baru.html');
 
     $("body").css("overflow", "hidden");
     $("#dialogo").show();
-    $("#galeria_baru").show();
+    $("#galeria").show();
     scrollTo(posX, posY);
     $contenido = $('#contenido_dialog');
     var altura = window.innerHeight;
@@ -54,7 +54,7 @@ $(function () {
     posNew = altura/2 - alturaDialogo/2;
 
     $contenido.css('margin-top',posNew);   
-    initGal();   
+    //initGal();   
  }
 
 function mostrar(tag,pageInfo,type) {

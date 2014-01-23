@@ -1,6 +1,4 @@
-function initGal() {
-    
-    var gal = {
+var gal = {
 init : function() {
 if (!document.getElementById || !document.createElement || !document.appendChild) return false;
 if (document.getElementById('gallery')) document.getElementById('gallery').id = 'jgal';
@@ -32,5 +30,3 @@ obj.attachEvent("on"+type, obj[type+fn]);
 gal.addEvent(window,'load', function() {
 gal.init();
 });
-   
-}
