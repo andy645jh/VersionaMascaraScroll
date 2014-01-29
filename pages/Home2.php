@@ -67,7 +67,7 @@ $pathCssDefault = $path."css/default.css";
                     <div id="bajar" class="flecha_menu" onclick="bajar();"></div>
                     <div id="footer_menu" class="menu"></div>
             </div>
-                 <section id="fbsection1" style="background-image: url(../images/home/bg/img1.jpg)">
+                 <section id="fbsection1" style="background-image: url(../images/cuerpo.png); background-repeat: repeat;">
                     <div class="base_imgs_moviles dimension_img" style="background-image: url(../images/home/img_destino/img_amazonas.png)">
                     </div><a href="javascript:mostrar('amazonas','planes','html')" title="section1" class="perfil"></a>
                 </section>		

@@ -81,7 +81,7 @@ $listaDestinos = $controlBd->getDestinos();
                         </section>
                 <?php
                     }
-                    echo "<footer>".file_get_contents('../info/extras/footer.html')."</footer>";
+                    echo "<footer><div>Derechos Reservados<br>TerrazsanTours<br>2014</div></footer>";
                  ?>        
                 			             
 			</div>

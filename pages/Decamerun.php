@@ -108,7 +108,7 @@ $pathCssDefault = $path."css/default.css";
                          <?php echo file_get_contents("../info/decamerun/santamarta.html"); ?>
                     </div>
                 </section>				          
-               	 <footer> <?php echo file_get_contents("../info/extras/footer.html"); ?></footer>		             
+               	 <footer><div>Derechos Reservados<br>TerrazsanTours<br>2014</div></footer>		             
 			</div>
            
 		</div>       

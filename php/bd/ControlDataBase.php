@@ -8,8 +8,8 @@ class ControlDataBase
     public $conn;
     public function ControlDataBase()
     {
-        //$this->conn =new mysqli('localhost', 'root', '123456', 'viajes'); 
-        $this->conn =new mysqli('localhost', 'terrazsa_admin', 'terrazsa123456', 'terrazsa_viajes'); 
+        $this->conn =new mysqli('localhost', 'root', '123456', 'viajes'); 
+        //$this->conn =new mysqli('localhost', 'terrazsa_admin', 'terrazsa123456', 'terrazsa_viajes'); 
        
         /* comprobar la conexión */
         /*if ($this->conn->connect_errno) {
