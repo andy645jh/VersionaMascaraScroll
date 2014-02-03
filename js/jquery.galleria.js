@@ -89,7 +89,7 @@ $$ = $.fn.galleria = function($options) {
 	var _div = $(document.createElement('div')).addClass('galleria_wrapper');
 	
 	// create a caption span
-	var _span = $(document.createElement('span')).addClass('caption');
+    var _span = $(document.createElement('span')).addClass('caption');
 	
 	// inject the wrapper in in the insert selector
 	_insert.addClass('galleria_container').append(_div).append(_span);

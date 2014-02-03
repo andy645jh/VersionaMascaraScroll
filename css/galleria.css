@@ -7,3 +7,19 @@
 .galleria li img.thumb{cursor:pointer;top:auto;left:auto;display:block;width:auto;height:auto}
 .galleria li .caption{display:block;padding-top:.5em}
 * html .galleria li div span{width:400px} /* MSIE bug */
+
+.caption{display:none;font-style:italic;color:#887;}
+	.demo{position:relative;margin-top:2em;}
+	.gallery_demo{margin: 170px auto;margin-left: 100px;float: left;}
+	.gallery_demo li{width: 60px;height: 50px;border: 3px double #111;background: #000;}
+	.gallery_demo li div{left:240px}
+	.gallery_demo li div .caption{font:italic 0.7em/1.4 georgia,serif;}
+	
+	#main_image{margin-top: 150px;margin-left: 150px;height: 438px;float: left;background: black;}
+	#main_image img{margin-bottom:10px;}
+	
+	.nav{padding-top:15px;clear:both;font:80% 'helvetica neue',sans-serif;letter-spacing:3px;text-transform:uppercase;}
+	
+	.info{text-align:left;width:700px;margin:30px auto;border-top:1px dotted #221;padding-top:30px;}
+	.info p{margin-top:1.6em;}
+body {background-image: url(../images/cuerpo.png);}

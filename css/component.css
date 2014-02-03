@@ -242,11 +242,24 @@ header{
 
 #img a{   
     margin: 0 auto;   
-    width: 80px;   
+    width: 100px;   
     display: block;
 }
 
-#img a:hover{   
+#ver_plan {
+    height: 50px;
+    background-image: url(../images/decamerun/btn_ver_plan.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#ver_plan:hover {
+    background-image: url(../images/decamerun/btn_ver_plan_hover.png);
+    /*background-size: contain;
+    background-repeat: no-repeat;*/
+}
+
+#img a:hover{      
     color: #f9f5f1;
 }
 
