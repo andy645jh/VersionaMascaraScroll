@@ -30,7 +30,7 @@ $pathCssDefault = $path."css/default.css";
 				      <div id="contenedor_logo"><div id="logo"></div></div>          
                      <nav>
                         <ul>        
-                            <li><a href="Galeria.html">GALERIA</a></li>               
+                            <li><a href="Galeria.php">GALERIA</a></li>               
                             <li><a href="Decamerun.php">DECAMERON</a></li>
                             <li><a href="#" class="current_page">CONTACTO</a></li>
                         </ul>
