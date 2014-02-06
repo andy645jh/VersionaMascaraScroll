@@ -34,6 +34,7 @@ header{
     /* IE 5.5 - 7 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#111111');
 }
+
 #contenedor_logo{
     float: left;
     height: 130px;
@@ -369,20 +370,24 @@ footer{
 
 #caja_galeria > div{  
     display:-webkit-box;
-    height: 100px;
-    min-width: 125px;
+    height: 100px;  
     text-decoration: none;
     float: left;
 }
 .contenedor_btn_galeria{
-    height: 100px;   
-    background-image: url(../images/galeria/btn_galeria.png);   
-    padding: 0 30px;
+    height: 100px;  
+    width: 120px; 
+    padding: 20px;
+    background-image: url(../images/galeria/btn_galeria.png); 
+    word-wrap: break-word;
+    text-align: center;
 }
-.contenedor_btn_galeria a{
-     font-size: 18px;
-    padding: 10px 10px;
+.contenedor_btn_galeria a{    
+    width: 100px;
+    font-size: 18px;    
 }
-.contenedor_btn_galeria:hover{
+.contenedor_btn_galeria:hover{  
+     width: 129px;  
      background-position: right; 
+     padding: 20px;
 }
