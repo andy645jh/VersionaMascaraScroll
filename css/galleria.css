@@ -1,4 +1,5 @@
 .galleria{list-style:none;width:200px}
+#contenedor_galeria {height: 400px;width: 1000px;margin: 0 auto;}
 .galleria li{display:block;width:80px;height:80px;overflow:hidden;float:left;margin:0 10px 10px 0}
 .galleria li a{display:none}
 .galleria li div{position:absolute;display:none;top:0;left:180px}
@@ -10,12 +11,12 @@
 
 .caption{display:none;font-style:italic;color:#887;}
 	.demo{position:relative;margin-top:2em;}
-	.gallery_demo{margin: 170px auto;margin-left: 100px;float: left;}
+	.gallery_demo{margin-top: 150px;float: left;}
 	.gallery_demo li{width: 60px;height: 50px;border: 3px double #111;background: #000;}
 	.gallery_demo li div{left:240px}
 	.gallery_demo li div .caption{font:italic 0.7em/1.4 georgia,serif;}
 	
-	#main_image{margin-top: 150px;margin-left: 150px;height: 438px;float: left;background: black;}
+	#main_image{margin: 150px 50px 0px 50px;height: 438px;float: left;background: black;}
 	#main_image img{margin-bottom:10px;}
 	
 	.nav{padding-top:15px;clear:both;font:80% 'helvetica neue',sans-serif;letter-spacing:3px;text-transform:uppercase;}
