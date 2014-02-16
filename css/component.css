@@ -376,7 +376,7 @@ footer{
 }
 .contenedor_btn_galeria{
     height: 100px;  
-    width: 120px; 
+    width: 128px; 
     padding: 20px;
     background-image: url(../images/galeria/btn_galeria.png); 
     word-wrap: break-word;
@@ -387,7 +387,7 @@ footer{
     font-size: 18px;    
 }
 .contenedor_btn_galeria:hover{  
-     width: 129px;  
+     width: 128px;  
      background-position: right; 
      padding: 20px;
 }

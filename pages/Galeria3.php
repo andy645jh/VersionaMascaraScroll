@@ -3,7 +3,7 @@ require_once('../php/const/Constantes.php');
 require_once(FOLDER_BD.'ControlDataBase.php');
 
 $controlDataBase = new ControlDataBase;
-$controlDataBase->getImagenesGaleria('baru');
+$listaSecciones = $controlDataBase->getSeccionesTienenGaleria();
 
 ?>
 <!DOCTYPE html>
@@ -61,11 +61,17 @@ $controlDataBase->getImagenesGaleria('baru');
                     </ul>
                 </nav>
 			</header> 	
-                <div id="caja_galeria">                                                            
-                   <div class="contenedor_btn_galeria"><a href="#fbsection6" title="section6" class="btn_galeria">SANTA MARTA</a></div>                           
+                <div id="caja_galeria">   
+                    <?php
+                        foreach($listaSecciones as $seccion)
+                        {
+                            echo "<div class='contenedor_btn_galeria'><a href='Galeria.php?id=".$seccion->id."' title='section6' class='btn_galeria'>".$seccion->nombre."</a></div>";    
+                        }                        
+                    ?>                     
                 </div>	
+            
 		</div>
-       <footer></footer>
+        <footer><div>Derechos Reservados<br>TerrazsanTours<br>2014</div></footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
 		<script src="../js/jquery.easing.min.js"></script>

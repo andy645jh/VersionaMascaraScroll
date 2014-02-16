@@ -6,12 +6,12 @@ class ImgGaleria
     var $titulo;
     var $alt;
 
-    public function ImgGaleria($imgId, $imgSrc, $imgTitulo, $imgAtl)
+    public function ImgGaleria($imgId, $imgSrc, $imgTitulo, $imgAlt)
     {        
         $this->id= $imgId;
         $this->src = $imgSrc;
         $this->titulo = $imgTitulo;
-        $this->alt = $imgAtl;
+        $this->alt = $imgAlt;
     }
 }
 ?>

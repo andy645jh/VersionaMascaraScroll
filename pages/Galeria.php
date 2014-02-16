@@ -1,3 +1,13 @@
+<?php
+require_once('../php/const/Constantes.php');
+require_once(FOLDER_BD.'ControlDataBase.php');
+
+$controlDataBase = new ControlDataBase;
+$id = $_REQUEST['id'];
+$listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -90,20 +100,12 @@
     <div id="contenedor_galeria">
         <div id="main_image"></div>
         <ul class="gallery_demo_unstyled">
-            <li><img src="../images/imgBaru/flowing-rock.jpg" alt="Flowing Rock" title="Flowing Rock Caption"></li>
-            <li><img src="../images/imgBaru/stones.jpg" alt="Stones" title="Stones - from Apple images"></li>
-            <li class="active"><img src="../images/imgBaru/grass-blades.jpg" alt="Grass Blades" title="Apple nature desktop images"></li>
-            <li><img src="../images/imgBaru/ladybug.jpg" alt="Ladybug" title="Ut rutrum, lectus eu pulvinar elementum, lacus urna vestibulum ipsum"></li>
-            <li><img src="../images/imgBaru/lightning.jpg" alt="Lightning" title="Black &amp; White"></li>
-            <li><img src="../images/imgBaru/lotus.jpg" alt="Lotus" title="Fusce quam mi, sagittis nec, adipiscing at, sodales quis"></li>
-            <li><img src="../images/imgBaru/mojave.jpg" alt="Mojave" title="Suspendisse volutpat posuere dui. Suspendisse sit amet lorem et risus faucibus pellentesque."></li>
-            <li><img src="../images/imgBaru/pier.jpg" alt="Pier" title="Proin erat nisi"></li>
-            <li><img src="../images/imgBaru/sea-mist.jpg" alt="Sea Mist" title="Caption text from title"></li>
-            <li><img src="../images/imgBaru/lotus.jpg" alt="Lotus" title="Fusce quam mi, sagittis nec, adipiscing at, sodales quis"></li>
-            <li><img src="../images/imgBaru/mojave.jpg" alt="Mojave" title="Suspendisse volutpat posuere dui. Suspendisse sit amet lorem et risus faucibus pellentesque."></li>
-            <li><img src="../images/imgBaru/pier.jpg" alt="Pier" title="Proin erat nisi"></li>
-            <li><img src="../images/imgBaru/sea-mist.jpg" alt="Sea Mist" title="Caption text from title"></li>
-            <li><img src="../images/imgBaru/ladybug.jpg" alt="Ladybug" title="Ut rutrum, lectus eu pulvinar elementum, lacus urna vestibulum ipsum"></li>
+            <?php
+                foreach($listaImagenes as $imagen)
+                {     
+                    echo "<li><img src=".$imagen->src." alt=".$imagen->alt." title=".$imagen->titulo."></li>";
+                }
+            ?>
            </ul>       
         </div>    
     </div>

@@ -1,6 +1,6 @@
 <?php
 
-include_once(FOLDER_PAGES.'Destino.php');
+include_once(FOLDER_PAGES.'Seccion.php');
 include_once(FOLDER_PAGES.'ImgGaleria.php');
 
 class ControlDataBase
@@ -48,7 +48,7 @@ class ControlDataBase
     public function getImagenesGaleria($nombreGaleria)
     {
         $listaImgGaleria = array();       
-        $consulta = "Select * from Imagen_Galeria where id_galeria = 1";
+        $consulta = "Select * from Imagen_Galeria where id_seccion = 1";
 
         $id = $this->getIdFromGaleria($nombreGaleria);       
 
@@ -61,6 +61,38 @@ class ControlDataBase
         }        
         
         return $listaImgGaleria; 
+    }
+
+    public function getImagenesGaleriabyId($id)
+    {
+        $listaImgGaleria = array();       
+        $consulta = "Select * from Imagen_Galeria where id_seccion = $id";            
+
+        $result = $this->conn->query($consulta);
+
+        while($row = $result->fetch_assoc())
+        {
+            $imgGaleria = new ImgGaleria($row['id_img'], $row['src'], $row['titulo'],$row['alt']);
+           $listaImgGaleria[] = $imgGaleria;
+        }        
+        
+        return $listaImgGaleria; 
+    }
+
+    public function getSeccionesTienenGaleria()
+    {
+        $listaIdSecciones = array();
+        $consulta = "Select * from home where has_gallery = 1";
+        
+        $result = $this->conn->query($consulta);
+
+        while($row = $result->fetch_assoc())
+        {        
+           $seccion = new Seccion($row['id'],$row['nombre'],$row['destino'],$row['url_fondo'],$row['url_img_destino'],$row['tag_id'],$row['id_page'],$row['has_gallery']);    
+           $listaIdSecciones[] = $seccion;
+        }      
+        
+        return $listaIdSecciones;  
     }
 
     private function getIdFromGaleria($nombre)
