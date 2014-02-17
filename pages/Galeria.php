@@ -101,9 +101,17 @@ $listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
         <div id="main_image"></div>
         <ul class="gallery_demo_unstyled">
             <?php
+                $cont=1;
                 foreach($listaImagenes as $imagen)
                 {     
-                    echo "<li><img src=".$imagen->src." alt=".$imagen->alt." title=".$imagen->titulo."></li>";
+                    if($cont == 1)
+                    {
+                        echo "<li class='active'><img src=".$imagen->src." alt=".$imagen->alt." title=".$imagen->titulo."></li>";
+                        $cont++;
+                    }else{
+                         echo "<li><img src=".$imagen->src." alt=".$imagen->alt." title=".$imagen->titulo."></li>";
+                    }
+                   
                 }
             ?>
            </ul>       

@@ -53,7 +53,11 @@ CREATE TABLE `home` (
   `url_img_destino` varchar(100) NOT NULL,
   `tag_id` varchar(50) NOT NULL,
   `nombre` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
+  `id_page` int(10) DEFAULT NULL,
+  `has_gallery` int(1) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_home_page` (`id_page`),
+  CONSTRAINT `FK_home_page` FOREIGN KEY (`id_page`) REFERENCES `page` (`id_page`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -63,7 +67,7 @@ CREATE TABLE `home` (
 
 LOCK TABLES `home` WRITE;
 /*!40000 ALTER TABLE `home` DISABLE KEYS */;
-INSERT INTO `home` VALUES (1,'amazonas','../images/home/bg/img1.jpg','../images/home/img_destino/img_amazonas.png','fbsection1','Amazonas'),(2,'boyaca','../images/home/bg/img2.jpg','../images/home/img_destino/img_boyaca.png','fbsection2','Boyaca'),(3,'eje_cafetero','../images/home/bg/img3.jpg','../images/home/img_destino/img_eje_cafetero.png','fbsection3','Eje Cafetero'),(4,'guajira','../images/home/bg/img4.jpg','../images/home/img_destino/img_guajira.png','fbsection4','Guajira'),(5,'llanos_orientales','../images/home/bg/img5.jpg','../images/home/img_destino/img_llanos_orientales.png','fbsection5','Llanos Orientales'),(6,'medellin','../images/home/bg/img6.jpg','../images/home/img_destino/img_medellin.png','fbsection6','Medellin'),(7,'san_andres','../images/home/bg/img7.jpg','../images/home/img_destino/img_san_andres.png','fbsection7','San Andres'),(8,'san_gil','../images/home/bg/img8.jpg','../images/home/img_destino/img_san_gil.jpg','fbsection8','San Gil'),(9,'cartagena','../images/home/bg/img10.jpg','../images/home/img_destino/img_cartagena.jpg','fbsection9','Cartagena');
+INSERT INTO `home` VALUES (1,'amazonas','../images/home/bg/img1.jpg','../images/home/img_destino/img_amazonas.png','fbsection1','Amazonas',1,1),(2,'boyaca','../images/home/bg/img2.jpg','../images/home/img_destino/img_boyaca.png','fbsection2','Boyaca',1,1),(3,'eje_cafetero','../images/home/bg/img3.jpg','../images/home/img_destino/img_eje_cafetero.png','fbsection3','Eje Cafetero',1,1),(4,'guajira','../images/home/bg/img4.jpg','../images/home/img_destino/img_guajira.png','fbsection4','Guajira',1,0),(5,'llanos_orientales','../images/home/bg/img5.jpg','../images/home/img_destino/img_llanos_orientales.png','fbsection5','Llanos Orientales',1,0),(6,'medellin','../images/home/bg/img6.jpg','../images/home/img_destino/img_medellin.png','fbsection6','Medellin',1,0),(7,'san_andres','../images/home/bg/img7.jpg','../images/home/img_destino/img_san_andres.png','fbsection7','San Andres',1,0),(8,'san_gil','../images/home/bg/img8.jpg','../images/home/img_destino/img_san_gil.jpg','fbsection8','San Gil',1,0),(9,'cartagena','../images/home/bg/img10.jpg','../images/home/img_destino/img_cartagena.png','fbsection9','Cartagena',1,0);
 /*!40000 ALTER TABLE `home` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -78,12 +82,12 @@ CREATE TABLE `imagen_galeria` (
   `id_img` int(10) NOT NULL AUTO_INCREMENT,
   `titulo` varchar(100) DEFAULT NULL,
   `alt` varchar(100) DEFAULT NULL,
-  `id_galeria` int(10) NOT NULL,
   `src` varchar(150) NOT NULL,
+  `id_seccion` int(10) NOT NULL,
   PRIMARY KEY (`id_img`),
-  KEY `FK_imagen_galeria_galeria` (`id_galeria`),
-  CONSTRAINT `FK_imagen_galeria_galeria` FOREIGN KEY (`id_galeria`) REFERENCES `galeria` (`id_gal`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+  KEY `FK_imagen_galeria_home` (`id_seccion`),
+  CONSTRAINT `FK_imagen_galeria_home` FOREIGN KEY (`id_seccion`) REFERENCES `home` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -92,8 +96,32 @@ CREATE TABLE `imagen_galeria` (
 
 LOCK TABLES `imagen_galeria` WRITE;
 /*!40000 ALTER TABLE `imagen_galeria` DISABLE KEYS */;
-INSERT INTO `imagen_galeria` VALUES (1,'Stones - from Apple images','Stones',1,'../images/galeria/baru/stones.jpg'),(2,'Flowing Rock Caption','Flowing Rock',1,'../images/galeria/baru/flowing-rock.jpg'),(3,'Apple nature desktop images','Grass Blades',1,'../images/galeria/baru/grass-blades.jpg'),(4,'Ut rutrum, lectus eu pulvinar elementum, lacus urna vestibulum ipsum','Ladybug',1,'../images/galeria/baru/ladybug.jpg'),(5,'Black &amp; White','Lightning',1,'../images/galeria/baru/lightning.jpg'),(6,'Fusce quam mi, sagittis nec, adipiscing at, sodales quis','Lotus',1,'../images/galeria/baru/lotus.jpg'),(7,'Suspendisse volutpat posuere dui. Suspendisse sit amet lorem et risus faucibus pellentesque.','Mojave',1,'../images/galeria/baru/mojave.jpg'),(8,'Proin erat nisi','Pier',1,'../images/galeria/baru/pier.jpg'),(9,'Caption text from title','Sea Mist',1,'../images/galeria/baru/sea-mist.jpg');
+INSERT INTO `imagen_galeria` VALUES (1,'Stones - from Apple images','Stones','../images/galeria/baru/stones.jpg',1),(2,'Flowing Rock Caption','Flowing Rock','../images/galeria/baru/flowing-rock.jpg',1),(3,'Apple nature desktop images','Grass Blades','../images/galeria/baru/grass-blades.jpg',1),(4,'Ut rutrum, lectus eu pulvinar elementum, lacus urna vestibulum ipsum','Ladybug','../images/galeria/baru/ladybug.jpg',1),(5,'Black &amp; White','Lightning','../images/galeria/baru/lightning.jpg',1),(6,'Fusce quam mi, sagittis nec, adipiscing at, sodales quis','Lotus','../images/galeria/baru/lotus.jpg',1),(7,'Suspendisse volutpat posuere dui. Suspendisse sit amet lorem et risus faucibus pellentesque.','Mojave','../images/galeria/baru/mojave.jpg',1),(8,'Proin erat nisi','Pier','../images/galeria/baru/pier.jpg',1),(9,'Caption text from title','Sea Mist','../images/galeria/baru/sea-mist.jpg',1),(10,'Aventura Sin Archivar','Aventura sin Archivar','../images/galeria/baru/aventura1.jpg',1),(11,'Aventura Sin Archivar','Aventura sin Archivar','../images/galeria/baru/aventura2.jpg',1),(12,'Aventura sin Archivar','Aventura sin Archivar','../images/galeria/baru/aventura3.jpg',1),(13,'Aventura sin Archivar','Aventura sin Archivar','../images/galeria/baru/aventura4.jpg',1);
 /*!40000 ALTER TABLE `imagen_galeria` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `page`
+--
+
+DROP TABLE IF EXISTS `page`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `page` (
+  `id_page` int(10) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id_page`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `page`
+--
+
+LOCK TABLES `page` WRITE;
+/*!40000 ALTER TABLE `page` DISABLE KEYS */;
+INSERT INTO `page` VALUES (1,'home'),(2,'decamerun'),(3,'galeria');
+/*!40000 ALTER TABLE `page` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -105,4 +133,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-01-20 23:08:24
+-- Dump completed on 2014-02-16 20:58:39

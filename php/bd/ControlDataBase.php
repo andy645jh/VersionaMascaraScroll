@@ -23,7 +23,7 @@ class ControlDataBase
         }*/
     }
 
-    public function getDestinos()
+    public function getSecciones()
     {
         $listaDestino = array();
         $consulta = "Select * from home";
@@ -31,15 +31,8 @@ class ControlDataBase
 
         while($row = $result->fetch_assoc())
         {
-            $destino = new Destino;
-            $destino->id = $row['id'];
-            $destino->nombre =  $row['nombre'] ;
-            $destino->destino = $row['destino'];
-            $destino->urlFondo = $row['url_fondo'];
-            $destino->urlDestino = $row['url_img_destino'];
-            $destino->idTag = $row['tag_id'];
-
-            $listaDestino[] = $destino;
+            $seccion = new Seccion($row['id'],$row['nombre'],$row['destino'],$row['url_fondo'],$row['url_img_destino'],$row['tag_id'],$row['id_page'],$row['has_gallery']);
+            $listaDestino[] = $seccion;
         }   
         
         return $listaDestino;
