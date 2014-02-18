@@ -3,7 +3,8 @@ require_once('../php/const/Constantes.php');
 require_once(FOLDER_BD.'ControlDataBase.php');
 
 $controlDataBase = new ControlDataBase;
-$id = $_REQUEST['id'];
+//$id = $_REQUEST['id'];
+$id = 1;
 $listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
 
 ?>
@@ -89,7 +90,7 @@ $listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
 			<div id="contenedor_logo"><div id="logo"></div></div>          
             <nav>
             <ul>      
-                <li><a href="Galeria.php" class="current_page">GALERIA</a></li>               
+                <li><a href="Coleccion.php" class="current_page">GALERIA</a></li>               
                 <li><a href="Decamerun.php">DECAMERON</a></li>
                 <li><a href="Contacto.php">CONTACTO</a></li>
             </ul>
