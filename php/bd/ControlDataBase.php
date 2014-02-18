@@ -8,13 +8,12 @@ class ControlDataBase
     public $conn;
     public function ControlDataBase()
     {
-        
+        //local
         $result_con =new mysqli('localhost', 'root', '123456', 'viajes'); 
-        if($result_con){
-             $this->conn = $result_con;
-        }else{
-            $this->conn =new mysqli('localhost', 'terrazsa_admin', 'terrazsa123456', 'terrazsa_viajes'); 
-        }
+        
+        //online
+        //$this->conn =new mysqli('localhost', 'terrazsa_admin', 'terrazsa123456', 'terrazsa_viajes'); 
+      
                
         /* comprobar la conexión */
         /*if ($this->conn->connect_errno) {
@@ -59,8 +58,8 @@ class ControlDataBase
     public function getImagenesGaleriabyId($id)
     {
         $listaImgGaleria = array();       
-        $consulta = "Select * from Imagen_Galeria where id_seccion = $id";            
-
+        $consulta = "Select * from imagen_galeria where id_seccion = $id";            
+        
         $result = $this->conn->query($consulta);
 
         while($row = $result->fetch_assoc())
