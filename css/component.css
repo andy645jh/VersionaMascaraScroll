@@ -338,7 +338,7 @@ footer{
     background-image: url(../images/header/header.jpg);
     text-align: center;
     height: 80px;
-    width: 250px; 
+    width: 100%; 
     color: #41ADB4;   
     position: fixed;
     bottom: 0px;

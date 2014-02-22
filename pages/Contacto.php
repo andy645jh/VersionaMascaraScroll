@@ -37,10 +37,10 @@ $pathCssDefault = $path."css/default.css";
                     </nav>
 			    </header>
              <div id="cuerpo">
-                <div id="contacto">
+                <div id="contacto">                    
                     <div id="formulario">
                         <form method="post" action="../php/envioContacto.php" enctype="application/x-www-form-urlencoded">
-                            <table>                           
+                            <table id="table_form">                           
                                 <tr>
                                     <td><input type="text" name="nombre" value="Nombre:" size="60" MAXLENGTH="60" onfocus="limpiar(this);"></td>
                                 </tr>
@@ -52,12 +52,13 @@ $pathCssDefault = $path."css/default.css";
                                 </tr>
                                 <tr>
                                     <td><textarea name="mensaje" rows="6" cols="46" onfocus="limpiar(this);">Mensaje:</textarea></td>
-                                </tr>                           
+                                </tr>   
+                                                    
                            </table>   
-                           <div id="datos_contacto">
-                                <p>Cel: 312 449 2722- 316 865 0769</p>
-                                <p>Email: william@terrazsan.com</p>
-                           </div>  
+                            <table id="info_contacto">
+                                <tr><td>Cel: 312 449 2722- 316 865 0769</td></tr>  
+                                <tr><td>Email: william@terrazsan.com</td></tr>   
+                            </table>                           
                            <div id="btnEnviar"><input src="../images/contacto/enviar.png" type="image"></div>
                      </form>
                   </div>
