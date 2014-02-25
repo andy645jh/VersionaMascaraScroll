@@ -46,7 +46,7 @@ $pathCssDefault = $path."css/default.css";
 			<header class="clearfix">
                 <nav>
                     <ul>
-                        <li><a href="SalidasPedagogicas.html">SALIDAS PEDAGOGICAS</a></li>                         
+                        <li><a href="SalidasPedagogicas.php">SALIDAS PEDAGOGICAS</a></li>                        
                         <li><a href="Empresa.php">EMPRESA</a></li>   
                         <li><a href="Home.php">HOME</a></li>                    
                     </ul>
@@ -108,7 +108,9 @@ $pathCssDefault = $path."css/default.css";
                          <?php echo file_get_contents("../info/decamerun/santamarta.html"); ?>
                     </div>
                 </section>				          
-               	 <footer><div>Derechos Reservados<br>TerrazsanTours<br>2014</div></footer>		             
+                <footer>
+                    <?php echo file_get_contents("../info/extras/footer.html"); ?>                  
+                </footer>	             
 			</div>
            
 		</div>       

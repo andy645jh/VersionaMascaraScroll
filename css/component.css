@@ -35,6 +35,19 @@ header{
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#111111');
 }
 
+#redes_sociales{
+    position: relative;
+    bottom: 55px;
+    float: left;
+    width: 20%;
+    left: 10px;
+}
+
+#contenedor_footer{
+    margin: 0 auto;
+    width: 100%;
+}
+
 #contenedor_logo{
     float: left;
     height: 130px;

@@ -39,7 +39,7 @@ $listaDestinos = $controlBd->getSecciones();
 			<header class="clearfix">
                 <nav>
                     <ul>
-                       <li><a href="#">SALIDAS PEDAGOGICAS</a></li>                        
+                       <li><a href="SalidasPedagogicas.php">SALIDAS PEDAGOGICAS</a></li>                      
                        <li><a href="Empresa.php">EMPRESA</a></li>  
                        <li><a href="Home.php" class="current_page">HOME</a></li>
                                                       
@@ -81,8 +81,11 @@ $listaDestinos = $controlBd->getSecciones();
                         </section>
                 <?php
                     }
-                    echo "<footer><div>Derechos Reservados<br>TerrazsanTours<br>2014</div></footer>";
-                 ?>        
+                ?> 
+                <footer>
+                    <?php echo file_get_contents("../info/extras/footer.html"); ?>                  
+                </footer>
+                        
                 			             
 			</div>
            

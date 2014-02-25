@@ -22,7 +22,7 @@ $pathCssDefault = $path."css/default.css";
             <header class="clearfix">
                     <nav>
                         <ul>
-                            <li><a href="SalidasPedagogicas.html">SALIDAS PEDAGOGICAS</a></li>
+                            <li><a href="SalidasPedagogicas.php">SALIDAS PEDAGOGICAS</a></li>
                             <li><a href="Empresa.php">EMPRESA</a></li>
                             <li><a href="Home.php">HOME</a></li>                                                   
                         </ul>
@@ -64,7 +64,9 @@ $pathCssDefault = $path."css/default.css";
                   </div>
                  <div id="img_contacto"></div>  
                 </div>
-                 <footer><div>Derechos Reservados<br>TerrazsanTours<br>2014</div></footer>
+                 <footer>
+                    <?php echo file_get_contents("../info/extras/footer.html"); ?>                  
+                </footer>
             </div>      
         </div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

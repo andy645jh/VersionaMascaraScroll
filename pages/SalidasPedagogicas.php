@@ -12,7 +12,7 @@ $listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Galeria</title>
+    <title>Salidas Pedagogicas</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="imagetoolbar" content="false">
     <meta name="description" content="">
@@ -22,12 +22,14 @@ $listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
     <link rel="stylesheet" type="text/css" href="../css/component.css" /> 
     <script type="text/javascript" src="../js/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.galleria.js"></script>
+    
    
 	<script type="text/javascript">
    
 	
 	$(document).ready(function(){
 		
+
 		$('.gallery_demo_unstyled').addClass('gallery_demo'); // adds new class name to maintain degradability
 		
 		$('ul.gallery_demo').galleria({
@@ -81,7 +83,7 @@ $listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
 	<header class="clearfix">
         <nav>
             <ul>
-                <li><a href="SalidasPedagogicas.php">SALIDAS PEDAGOGICAS</a></li>                        
+                <li><a href="#" class="current_page">SALIDAS PEDAGOGICAS</a></li>                        
                 <li><a href="Empresa.php">EMPRESA</a></li>  
                 <li><a href="Home.php">HOME</a></li>
                                                       
@@ -90,7 +92,7 @@ $listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
 			<div id="contenedor_logo"><div id="logo"></div></div>          
             <nav>
             <ul>      
-                <li><a href="Coleccion.php" class="current_page">GALERIA</a></li>               
+                <li><a href="Coleccion.php" >GALERIA</a></li>               
                 <li><a href="Decamerun.php">DECAMERON</a></li>
                 <li><a href="Contacto.php">CONTACTO</a></li>
             </ul>
@@ -120,8 +122,9 @@ $listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
     </div>
 </div>
      <script type="text/javascript">
-            var PAGINA_ACTUAL = "GALERIA";          
+            var PAGINA_ACTUAL = "SALIDAS_PEDAGOGICAS";          
      </script>
-     <script src="../js/Funciones.js"></script>
+     <script src="../js/Funciones.js"></script>    
 </body>
 </html>
+

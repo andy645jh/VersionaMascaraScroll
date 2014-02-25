@@ -233,7 +233,7 @@ $(document).ready(function () {
                     $divImg = $(this);
                     $divImg.css('height', 'auto');
                     altoImg = $divImg.height();
-                    var posCentro = centrarVerticalmente(_espacioImgs, altoImg);
+                    var posCentro = centrarVerticalmente(_espacioImgs, altoImg) - 60;
 
                     $divImg.css({
                         width: anchoImg,

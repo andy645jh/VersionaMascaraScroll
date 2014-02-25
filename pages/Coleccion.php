@@ -46,16 +46,16 @@ $listaSecciones = $controlDataBase->getSeccionesTienenGaleria();
 			<header class="clearfix">
                 <nav>
                     <ul>
-                       <li><a href="#">SALIDAS PEDAGOGICAS</a></li>                        
+                       <li><a href="SalidasPedagogicas.php">SALIDAS PEDAGOGICAS</a></li>                       
                        <li><a href="Empresa.php">EMPRESA</a></li>  
-                       <li><a href="Home.php" class="current_page">HOME</a></li>
+                       <li><a href="Home.php" >HOME</a></li>
                                                       
                     </ul>
                 </nav>
 				  <div id="contenedor_logo"><div id="logo"></div></div>          
                  <nav>
                     <ul>      
-                        <li><a href="Galeria.php">GALERIA</a></li>               
+                        <li><a href="#" class="current_page">GALERIA</a></li>               
                         <li><a href="Decamerun.php">DECAMERON</a></li>
                         <li><a href="Contacto.php">CONTACTO</a></li>
                     </ul>
@@ -71,7 +71,10 @@ $listaSecciones = $controlDataBase->getSeccionesTienenGaleria();
                 </div>	
             
 		</div>
-        <footer><div>Derechos Reservados<br>TerrazsanTours<br>2014</div></footer>
+         <footer>
+                    <?php echo file_get_contents("../info/extras/footer.html"); ?>                  
+        </footer>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
 		<script src="../js/jquery.easing.min.js"></script>
