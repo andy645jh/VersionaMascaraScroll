@@ -14,7 +14,7 @@ TabInfo.prototype.mostrar = function () {
 TabInfo.prototype.cargarInfo = function (tab, destino) {
 
     var folder = '/info/' + destino + '/' + this.seccionActual + '.html';
-
+    $(tab).css('display','none');
     $.ajax({
         // la URL para la petición
         url: folder,
@@ -25,6 +25,7 @@ TabInfo.prototype.cargarInfo = function (tab, destino) {
         // código a ejecutar si la petición es satisfactoria;
         // la respuesta es pasada como argumento a la función
         success: function (datos) {
+            $(tab).show();
             $(tab).html(datos);
         }
     });

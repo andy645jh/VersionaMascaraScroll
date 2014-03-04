@@ -37,7 +37,7 @@ header{
 
 #redes_sociales{
     position: relative;
-    bottom: 55px;
+    bottom: 48px;
     float: left;
     width: 20%;
     left: 10px;
@@ -346,17 +346,21 @@ h3{
 .current_page{
     color: #e86011;
 }
-
+#footer_texto{
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 550px;
+}
 footer{
     background-image: url(../images/header/header.jpg);
-    text-align: center;
+    text-align: justify;
     height: 80px;
-    width: 100%; 
-    color: #41ADB4;   
+    width: 100%;    
+    color: #FFF;   
     position: fixed;
     bottom: 0px;
     left: 0px;   
-    padding-top: 20px;
+    font-size: 10px; 
     border-top-right-radius: 10px;
 }
 
