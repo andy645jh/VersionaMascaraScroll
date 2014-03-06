@@ -99,7 +99,7 @@ $listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
     </div>
 
     <div id="contenedor_galeria">
-        <div id="main_image"></div>
+        <div id="main_image"><div id="titulo_galeria">Titulo</div></div>
         <ul class="gallery_demo_unstyled">
             <?php
                 $cont=1;

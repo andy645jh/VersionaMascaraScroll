@@ -11,12 +11,12 @@
 
 .caption{display:none;font-style:italic;color:#887;}
 	.demo{position:relative;margin-top:2em;}
-	.gallery_demo{margin-top: 150px;float: left;}
+	.gallery_demo{margin-top: 190px;float: left;}
 	.gallery_demo li{width: 60px;height: 50px;border: 3px double #111;background: #000;}
 	.gallery_demo li div{left:240px}
 	.gallery_demo li div .caption{font:italic 0.7em/1.4 georgia,serif;}
-	
-	#main_image{margin: 150px 50px 0px 50px;height: 438px;float: left;background: black;}
+
+	#main_image{margin: 150px 50px 0px 50px;height: 400px;float: left;}
 	#main_image img{margin-bottom:10px;}
 	
 	.nav{padding-top:15px;clear:both;font:80% 'helvetica neue',sans-serif;letter-spacing:3px;text-transform:uppercase;}
@@ -24,3 +24,14 @@
 	.info{text-align:left;width:700px;margin:30px auto;border-top:1px dotted #221;padding-top:30px;}
 	.info p{margin-top:1.6em;}
 body {background-image: url(../images/cuerpo.png);}
+
+#titulo_galeria {
+    padding: 12px 40px;
+    color: rgb(2, 2, 2);
+    background-image: url(../images/galeria/titulo.png);
+    width: auto;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
