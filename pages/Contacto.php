@@ -39,7 +39,7 @@ $pathCssDefault = $path."css/default.css";
              <div id="cuerpo">
                 <div id="contacto">                    
                     <div id="formulario">
-                        <form method="post" action="../php/envioContacto.php" enctype="application/x-www-form-urlencoded">
+                        <form method="post" action="../php/extras/envioContacto.php" enctype="application/x-www-form-urlencoded">
                             <table id="table_form">                           
                                 <tr>
                                     <td><input type="text" name="nombre" value="Nombre:" size="60" MAXLENGTH="60" onfocus="limpiar(this);"></td>
