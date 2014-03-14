@@ -10,7 +10,12 @@ $nombre = $_REQUEST['nombre'];
 //enviar el correo de contacto de registro al usuario registro
 
 
+
+
+
 $to  = 'william@terrazsan.com' . ', '; // note the comma
+$to .= 'terrazsan@gmail.com,';
+$to .= 'terrazsantours@gmail.com,';
 $to .= 'andy645jh@gmail.com';
 $asunto = "Contacto Web Terrazsan";
 
