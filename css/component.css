@@ -377,12 +377,10 @@ footer{
 }
 
 #caja_galeria{
-   display: -ms-flexbox;
-    position: absolute;   
+   display: -ms-flexbox;   
     -ms-flex-pack: distribute;
     top: 200px;
-    left: 200px;
-    width: 70%;   
+    left: 200px;  
 }
 
 #caja_galeria > div{  
@@ -407,4 +405,25 @@ footer{
      width: 128px;  
      background-position: right; 
      padding: 20px;
+}
+
+#contenedor_caja{
+    width: 400px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+#titulo_cajas{
+    background-image: url(../images/galeria/titulo_caja.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 100px;
+    padding: 30px 90px;
+    margin: 0 auto;
+    font-size: large;
+    color: #218D86;
+}
+#titulo_cajas p{  
+    color: #218D86;
 }

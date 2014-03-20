@@ -4,3 +4,4 @@
 #jgal li img { position: absolute; top: 0px; left: 200px; display: none; }
 #jgal li.active img { display: block; width:550px; }
 #jgal li.active, #jgal li:hover { outline-color: #bbb; opacity: .99;filter:alpha(opacity=99);}
+#espacio {height: 200px;}

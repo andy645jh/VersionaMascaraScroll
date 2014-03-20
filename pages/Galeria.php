@@ -6,7 +6,7 @@ $controlDataBase = new ControlDataBase;
 //$id = $_REQUEST['id'];
 $id = 1;
 $listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
-
+$seccion = $controlDataBase->getNameSeccionById($id);
 ?>
 
 <!DOCTYPE html>
@@ -99,7 +99,7 @@ $listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
     </div>
 
     <div id="contenedor_galeria">
-        <div id="main_image"><div id="titulo_galeria">Titulo</div></div>
+        <div id="main_image"><div id="titulo_galeria"><?php echo $seccion; ?></div></div>
         <ul class="gallery_demo_unstyled">
             <?php
                 $cont=1;

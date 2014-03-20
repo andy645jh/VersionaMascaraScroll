@@ -95,5 +95,14 @@ class ControlDataBase
         $row = $result->fetch_assoc();       
         return $row['id_gal'];                                      
     }
+
+    public function getNameSeccionById($id)
+    {
+         $consulta = "Select nombre from home where id =".$id;        
+        $result = $this->conn->query($consulta);       
+
+        $row = $result->fetch_assoc();       
+        return $row['nombre'];   
+    }
 }
 ?>

@@ -23,7 +23,7 @@ $listaSecciones = $controlDataBase->getSeccionesTienenGaleria();
         <link href="../css/galleria.css" rel="stylesheet">
 
         <script type="text/javascript" src="../js/jquery.min.js"></script>
-	    <script type="text/javascript" src="../js/jquery.galleria.js"></script>
+	    <script type="text/javascript" src="../js/jquery.galleria.js"></script>       
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 		<script src="../js/modernizr.custom.js"></script>    
@@ -61,14 +61,18 @@ $listaSecciones = $controlDataBase->getSeccionesTienenGaleria();
                     </ul>
                 </nav>
 			</header> 	
-                <div id="caja_galeria">   
+                <div id="espacio"></div>
+                <div id="titulo_cajas"><p>GALERIA</p></div>
+                <div id="contenedor_caja">
+                    <div id="caja_galeria">   
                     <?php
                         foreach($listaSecciones as $seccion)
                         {
                             echo "<div class='contenedor_btn_galeria'><a href='Galeria.php?id=".$seccion->id."' title='section6' class='btn_galeria'>".$seccion->nombre."</a></div>";    
                         }                        
                     ?>                     
-                </div>	
+                    </div>
+               </div>	
             
 		</div>
          <footer>
@@ -90,5 +94,6 @@ $listaSecciones = $controlDataBase->getSeccionesTienenGaleria();
            var PAGINA_ACTUAL = "GALERIA";
         </script>
         <script src="../js/Funciones.js"></script>
+         <script type="text/javascript" src="../js/coleccion.js"></script>
 	</body>
 </html>
