@@ -28,21 +28,6 @@ $(function () {
     var galeria = "galeria_" + tag;
     var folder = "/info/galeria/"+galeria+".html";
 
-   /* $.ajax({
-        // la URL para la petición
-        url: folder,
-
-        // el tipo de información que se espera de respuesta
-        dataType: 'html',
-
-        // código a ejecutar si la petición es satisfactoria;
-        // la respuesta es pasada como argumento a la función
-        success: function (datos) {
-            alert(datos);
-            $('#info_destino').html(datos);
-        }
-    });*/
-   // $('#info_destino').load('/info/galeria/galeria_baru.html');
 
     $("body").css("overflow", "hidden");
     $("#dialogo").show();
@@ -217,12 +202,10 @@ $(document).ready(function () {
         if (_paginaActual == "DECAMERUN") {
             _espacioImgs = _altoVentana - BANNER;
             anchoImg = 800;
-            //anchoImg = Math.ceil(_espacioImgs * porcentaje);
-            //altoImg = Math.floor(anchoImg / proporcionImg);
-            //posImg = BANNER + (_espacioImgs * porcentajeEspacioPosImg);
 
             var $secciones = $('.img_movil');
             anchoMenu = $('#menu').width() / 2;
+
             // posicionar en el centro horizontalmente       
             $('.base_imgs_moviles').css('left', getPosCentroHorizontal(anchoImg) + anchoMenu);
 
@@ -281,8 +264,8 @@ $(document).ready(function () {
 
         if (_paginaActual == "EMPRESA") {
 
-            _espacioImgs = _altoVentana - BANNER;
-            anchoImg = 800;
+            _espacioImgs = _altoVentana - BANNER - $('footer').height();
+            anchoImg = 1000;
 
             var $secciones = $('.base_imgs_moviles');
             anchoMenu = $('#menu').width() / 2;
@@ -302,7 +285,7 @@ $(document).ready(function () {
                     $('#' + contenido).css('background-size', anchoImg + 'px ' + altoImg + 'px');
                     $divImg.css({
                         width: anchoImg,
-                        top: posCentro
+                        top: posCentro+10
                     });
                 }
             );
@@ -313,7 +296,7 @@ $(document).ready(function () {
 
         if (_paginaActual == 'GALERIA') {
 
-            $('.container').css('height','150');
+            $('.container').css('height', '150');
         }
     }
 

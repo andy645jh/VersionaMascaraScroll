@@ -33,15 +33,7 @@ $listaSecciones = $controlDataBase->getSeccionesTienenGaleria();
       
 	</head>
 	<body class="body_decamerun">
-        <div id="dialogo">
-            <div id="fondo"></div> 
-            <div id="contenido_dialog" > 
-                <button id="btn_cerrar_dialogo" onclick="ocultar();">X</button>
-                <div id="info_destino" >     
-                    <?php echo file_get_contents("../pages/Galeria2.html"); ?>
-                </div>
-            </div>          
-        </div>
+       
 		<div class="container">
 			<header class="clearfix">
                 <nav>
