@@ -3,8 +3,6 @@
 require_once('../php/const/Constantes.php');
 require_once(FOLDER_BD.'ControlDataBase.php');
 
-
-
 $controlBd = new ControlDataBase;
 $listaDestinos = $controlBd->getSecciones();
 
@@ -22,7 +20,7 @@ $listaDestinos = $controlBd->getSecciones();
         <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
 		<script src="../js/modernizr.custom.js"></script> 
 	</head>
-	<body style="display: none">
+	<body >
         <div id="dialogo">
             <div id="fondo"></div>
             <div id="contenido_dialog" > 
@@ -107,7 +105,7 @@ $listaDestinos = $controlBd->getSecciones();
             var PAGINA_ACTUAL = "HOME";
 
             $(document).ready(function () {               
-                $('body').show();
+               
                  mostrar('popup','planes','html');
             });
         </script>

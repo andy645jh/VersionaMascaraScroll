@@ -15,6 +15,9 @@ html, body,
 .cbp-fbscroller section { 
 	height: 100%; 
 }
+body{
+    /*display: none;*/
+}
 button{
     cursor: pointer;
 }

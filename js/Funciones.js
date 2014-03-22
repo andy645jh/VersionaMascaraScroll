@@ -16,9 +16,6 @@ $('nav').height(altura);
 var numNavs = $('nav').children().length;
 var segmento = Math.ceil(numNavs / NUM_ENLACES_SEGMENTO);
 
-$(function () {
-    cbpFixedScrollLayout.init();
-});
 
  function mostrarGaleria(tag) {
      
@@ -164,8 +161,8 @@ function subir() {
 
 }
 
-$(document).ready(function () {
-
+$(document).ready(function () {   
+   
     $("#content div").hide();
     $("#tabs li:first").attr("id", "current");
     $("#content div:first").fadeIn();
@@ -229,6 +226,9 @@ $(document).ready(function () {
         }
 
         if (_paginaActual == "HOME") {
+            $(function () {
+                cbpFixedScrollLayout.init();
+            });
             porcentaje = 0.95;
             porcentajeEspacioPosImg = 0.25;
             proporcionImg = 670 / 542;
@@ -285,7 +285,7 @@ $(document).ready(function () {
                     $('#' + contenido).css('background-size', anchoImg + 'px ' + altoImg + 'px');
                     $divImg.css({
                         width: anchoImg,
-                        top: posCentro+10
+                        top: posCentro + 10
                     });
                 }
             );
@@ -297,6 +297,11 @@ $(document).ready(function () {
         if (_paginaActual == 'GALERIA') {
 
             $('.container').css('height', '150');
+        }
+
+        if (_paginaActual == 'SALIDAS_PEDAGOGICAS') {
+
+            initGaleria();
         }
     }
 
@@ -311,5 +316,5 @@ $(document).ready(function () {
 
     redimensionarImagenes();
     moverPerfil();
-
+    $('body').show();
 });
