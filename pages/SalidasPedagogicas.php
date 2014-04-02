@@ -3,10 +3,9 @@ require_once('../php/const/Constantes.php');
 require_once(FOLDER_BD.'ControlDataBase.php');
 
 $controlDataBase = new ControlDataBase;
-//$id = $_REQUEST['id'];
-$id = 1;
-$listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
-$seccion = $controlDataBase->getNameSeccionById($id);
+
+$listaImagenes = $controlDataBase->getImagenesSalidas();
+//$seccion = $controlDataBase->getNameSeccionById($id);
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +47,7 @@ $seccion = $controlDataBase->getNameSeccionById($id);
     </div>
 
     <div id="contenedor_galeria">
-        <div id="main_image"><div id="titulo_galeria"><?php echo $seccion; ?></div></div>
+        <div id="main_image"><div id="titulo_galeria">Salidas Pedagogicas</div></div>
         <ul class="gallery_demo_unstyled">
             <?php
                 $cont=1;

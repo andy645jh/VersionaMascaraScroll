@@ -71,6 +71,22 @@ class ControlDataBase
         return $listaImgGaleria; 
     }
 
+    public function getImagenesSalidas()
+    {
+        $listaImgGaleria = array();       
+        $consulta = "Select * from salidas_pedagogicas";            
+        
+        $result = $this->conn->query($consulta);
+
+        while($row = $result->fetch_assoc())
+        {
+           $imgGaleria = new ImgGaleria($row['id'], $row['src'], $row['titulo'],$row['alt']);
+           $listaImgGaleria[] = $imgGaleria;
+        }        
+        
+        return $listaImgGaleria; 
+    }
+
     public function getSeccionesTienenGaleria()
     {
         $listaIdSecciones = array();
