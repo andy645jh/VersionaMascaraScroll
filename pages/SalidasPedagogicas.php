@@ -19,6 +19,7 @@ $listaImagenes = $controlDataBase->getImagenesSalidas();
 	<link href="../css/galleria.css" rel="stylesheet" type="text/css" media="screen">
     <link rel="stylesheet" type="text/css" href="../css/default.css" >	
     <link rel="stylesheet" type="text/css" href="../css/component.css" /> 
+    <link rel="stylesheet" type="text/css" href="../css/salidas_pedagogicas.css" /> 
     <script type="text/javascript" src="../js/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.galleria.js"></script>
     
@@ -47,7 +48,7 @@ $listaImagenes = $controlDataBase->getImagenesSalidas();
     </div>
 
     <div id="contenedor_galeria">
-        <div id="main_image"><div id="titulo_galeria">Salidas Pedagogicas</div></div>
+        <div id="main_image"><div id="titulo_pedagogicas"><div id="izq"></div><div id="titulo">Salidas Pedagogicas</div><div id="der"></div></div></div>
         <ul class="gallery_demo_unstyled">
             <?php
                 $cont=1;
