@@ -21,7 +21,7 @@ $listaSecciones = $controlDataBase->getSeccionesTienenGaleria();
         <link href='http://fonts.googleapis.com/css?family=Joti+One' rel='stylesheet' type='text/css'>
         <link href="../css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
         <link href="../css/galleria.css" rel="stylesheet">
-
+        <link rel="stylesheet" type="text/css" href="../css/salidas_pedagogicas.css" /> 
         <script type="text/javascript" src="../js/jquery.min.js"></script>
 	    <script type="text/javascript" src="../js/jquery.galleria.js"></script>       
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -38,7 +38,7 @@ $listaSecciones = $controlDataBase->getSeccionesTienenGaleria();
 			<header class="clearfix">
                 <nav>
                     <ul>
-                       <li><a href="SalidasPedagogicas.php">SALIDAS PEDAGOGICAS</a></li>                       
+                       <li><a href="SalidasPedagogicas.php">SALIDAS PEDAGÓGICAS</a></li>                       
                        <li><a href="Empresa.php">EMPRESA</a></li>  
                        <li><a href="Home.php" >HOME</a></li>
                                                       
@@ -47,14 +47,14 @@ $listaSecciones = $controlDataBase->getSeccionesTienenGaleria();
 				  <div id="contenedor_logo"><div id="logo"></div></div>          
                  <nav>
                     <ul>      
-                        <li><a href="#" class="current_page">GALERIA</a></li>               
+                        <li><a href="#" class="current_page">GALERÍA</a></li>               
                         <li><a href="Decamerun.php">DECAMERON</a></li>
                         <li><a href="Contacto.php">CONTACTO</a></li>
                     </ul>
                 </nav>
 			</header> 	
                 <div id="espacio"></div>
-                <div id="titulo_cajas"><p>GALERIA</p></div>
+                <div id="titulo_pedagogicas"><div id="izq"></div><div id="titulo">GALERIA</div><div id="der"></div></div>
                 <div id="contenedor_caja">
                     <div id="caja_galeria">   
                     <?php

@@ -22,7 +22,7 @@ $pathCssDefault = $path."css/default.css";
             <header class="clearfix">
                     <nav>
                         <ul>
-                            <li><a href="SalidasPedagogicas.php">SALIDAS PEDAGOGICAS</a></li>
+                            <li><a href="SalidasPedagogicas.php">SALIDAS PEDAGÓGICAS</a></li>
                             <li><a href="Empresa.php">EMPRESA</a></li>
                             <li><a href="Home.php">HOME</a></li>                                                   
                         </ul>
@@ -30,7 +30,7 @@ $pathCssDefault = $path."css/default.css";
 				      <div id="contenedor_logo"><div id="logo"></div></div>          
                      <nav>
                         <ul>        
-                            <li><a href="Coleccion.php">GALERIA</a></li>               
+                            <li><a href="Coleccion.php">GALERÍA</a></li>               
                             <li><a href="Decamerun.php">DECAMERON</a></li>
                             <li><a href="#" class="current_page">CONTACTO</a></li>
                         </ul>

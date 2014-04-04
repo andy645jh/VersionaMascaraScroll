@@ -11,7 +11,7 @@ $listaImagenes = $controlDataBase->getImagenesSalidas();
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Salidas Pedagogicas</title>
+    <title>Salidas Pedagógicas</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="imagetoolbar" content="false">
     <meta name="description" content="">
@@ -30,7 +30,7 @@ $listaImagenes = $controlDataBase->getImagenesSalidas();
 	<header class="clearfix">
         <nav>
             <ul>
-                <li><a href="#" class="current_page">SALIDAS PEDAGOGICAS</a></li>                        
+                <li><a href="#" class="current_page">SALIDAS PEDAGÓGICAS</a></li>                        
                 <li><a href="Empresa.php">EMPRESA</a></li>  
                 <li><a href="Home.php">HOME</a></li>
                                                       
@@ -39,7 +39,7 @@ $listaImagenes = $controlDataBase->getImagenesSalidas();
 			<div id="contenedor_logo"><div id="logo"></div></div>          
             <nav>
             <ul>      
-                <li><a href="Coleccion.php" >GALERIA</a></li>               
+                <li><a href="Coleccion.php" >GALERÍA</a></li>               
                 <li><a href="Decamerun.php">DECAMERON</a></li>
                 <li><a href="Contacto.php">CONTACTO</a></li>
             </ul>

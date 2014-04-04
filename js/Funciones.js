@@ -197,6 +197,8 @@ $(document).ready(function () {
     function redimensionarImagenes() {
 
         if (_paginaActual == "DECAMERUN") {
+
+            cbpFixedScrollLayout.init();
             _espacioImgs = _altoVentana - BANNER;
             anchoImg = 800;
 

@@ -26,7 +26,7 @@ $pathCssDefault = $path."css/default.css";
 		<script src="../js/modernizr.custom.js"></script>    
         
        <link href="../css/galeria.css" rel="stylesheet">
-         
+       <!--<script type="text/javascript" src="../js/galeria.js"></script>         -->
       
 	</head>
 	<body class="body_decamerun">
@@ -46,7 +46,7 @@ $pathCssDefault = $path."css/default.css";
 			<header class="clearfix">
                 <nav>
                     <ul>
-                        <li><a href="SalidasPedagogicas.php">SALIDAS PEDAGÓGICAS</a></li>                        
+                        <li><a href="SalidasPedagogicas.php">SALIDAS PEDAGOGICAS</a></li>                        
                         <li><a href="Empresa.php">EMPRESA</a></li>   
                         <li><a href="Home.php">HOME</a></li>                    
                     </ul>
@@ -54,7 +54,7 @@ $pathCssDefault = $path."css/default.css";
 				  <div id="contenedor_logo"><div id="logo"></div></div>          
                  <nav>
                     <ul>            
-                        <li><a href="Coleccion.php">GALERÍA</a></li>         
+                        <li><a href="Coleccion.php">GALERIA</a></li>         
                         <li><a href="#" class="current_page">DECAMERON</a></li>
                         <li><a href="Contacto.php">CONTACTO</a></li>
                     </ul>
