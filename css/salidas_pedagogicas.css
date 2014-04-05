@@ -24,7 +24,7 @@
     background-image: url(../images/galeria/patron.png);
 }
 
-#titulo_pedagogicas {    
+#titulo_pedagogicas,#titulo_coleccion{    
    color: rgb(2, 2, 2);
     width: 340px;
     height: 40px;

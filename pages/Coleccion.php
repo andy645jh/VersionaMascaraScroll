@@ -54,7 +54,7 @@ $listaSecciones = $controlDataBase->getSeccionesTienenGaleria();
                 </nav>
 			</header> 	
                 <div id="espacio"></div>
-                <div id="titulo_pedagogicas"><div id="izq"></div><div id="titulo">GALERIA</div><div id="der"></div></div>
+                <div id="titulo_coleccion"><div id="izq"></div><div id="titulo">GALERIA</div><div id="der"></div></div>
                 <div id="contenedor_caja">
                     <div id="caja_galeria">   
                     <?php

@@ -24,13 +24,17 @@
 	.info{text-align:left;width:700px;margin:30px auto;border-top:1px dotted #221;padding-top:30px;}
 	.info p{margin-top:1.6em;}
 body {background-image: url(../images/cuerpo.png);}
-
+.galleria_wrapper{
+    -webkit-box-shadow: -1px 3px 13px 0px rgba(53, 55, 50, 1);
+    -moz-box-shadow:    -1px 3px 13px 0px rgba(53, 55, 50, 1);
+    box-shadow:         -1px 3px 13px 0px rgba(53, 55, 50, 1);
+}
 #titulo_galeria {
-    padding: 12px 40px;
+
     color: rgb(2, 2, 2);
-    background-image: url(../images/galeria/titulo.png);
-    width: auto;
+    width: 340px;
     height: 40px;
+    margin: 0 auto;
     background-size: contain;
     background-repeat: no-repeat;
 

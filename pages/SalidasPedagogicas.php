@@ -4,8 +4,9 @@ require_once(FOLDER_BD.'ControlDataBase.php');
 
 $controlDataBase = new ControlDataBase;
 
-$listaImagenes = $controlDataBase->getImagenesSalidas();
-//$seccion = $controlDataBase->getNameSeccionById($id);
+$id = 1;
+$listaImagenes = $controlDataBase->getImagenesGaleriabyId($id);
+$seccion = $controlDataBase->getNameSeccionById($id);
 ?>
 
 <!DOCTYPE html>

@@ -297,12 +297,11 @@ $(document).ready(function () {
         }
 
         if (_paginaActual == 'GALERIA') {
-
-            $('.container').css('height', '150');
+            initGaleria();
+           // $('.container').css('height', '150');            
         }
 
         if (_paginaActual == 'SALIDAS_PEDAGOGICAS') {
-
             initGaleria();
         }
     }
