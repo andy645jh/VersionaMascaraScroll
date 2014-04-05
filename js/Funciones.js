@@ -161,8 +161,8 @@ function subir() {
 
 }
 
-$(document).ready(function () {   
-   
+$(document).ready(function () {
+
     $("#content div").hide();
     $("#tabs li:first").attr("id", "current");
     $("#content div:first").fadeIn();
@@ -224,7 +224,7 @@ $(document).ready(function () {
                     });
                 }
             );
-
+                $('#loading').css('display','none');
         }
 
         if (_paginaActual == "HOME") {
@@ -262,6 +262,7 @@ $(document).ready(function () {
                     });
                 }
             );
+                $('#loading').css('display','none');
         }
 
         if (_paginaActual == "EMPRESA") {
@@ -291,19 +292,26 @@ $(document).ready(function () {
                     });
                 }
             );
-
+                $('#loading').css('display','none');
             // $('.contenido_empresa').css('background.cover', );
 
         }
 
         if (_paginaActual == 'GALERIA') {
             initGaleria();
-           // $('.container').css('height', '150');            
+            // $('.container').css('height', '150');
+            $('#loading').css('display','none');            
         }
 
         if (_paginaActual == 'SALIDAS_PEDAGOGICAS') {
             initGaleria();
+            $('#loading').css('display','none');
         }
+
+         if (_paginaActual == 'COLECCION' || _paginaActual=="CONTACTO") {           
+            $('#loading').css('display','none');
+        }
+
     }
 
     function getPosCentroHorizontal(anchoDiv) {

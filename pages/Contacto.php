@@ -18,6 +18,7 @@ $pathCssDefault = $path."css/default.css";
 		<link rel="stylesheet" type="text/css" href="../css/component.css" /> 
 	</head>
 	<body>
+        <div id="loading"></div>
         <div class="container">
             <header class="clearfix">
                     <nav>

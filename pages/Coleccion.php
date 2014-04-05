@@ -33,7 +33,7 @@ $listaSecciones = $controlDataBase->getSeccionesTienenGaleria();
       
 	</head>
 	<body class="body_decamerun">
-       
+        <div id="loading"></div>  
 		<div class="container">
 			<header class="clearfix">
                 <nav>
@@ -83,7 +83,7 @@ $listaSecciones = $controlDataBase->getSeccionesTienenGaleria();
         <script src="../js/jquery-ui-1.10.3.custom.js"></script>
         <script src="../js/TabInfo.js"></script>
          <script type="text/javascript">
-           var PAGINA_ACTUAL = "GALERIA";
+           var PAGINA_ACTUAL = "COLECCION";
         </script>
         <script src="../js/Funciones.js"></script>
          <script type="text/javascript" src="../js/coleccion.js"></script>

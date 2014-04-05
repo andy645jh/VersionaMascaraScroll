@@ -9,10 +9,10 @@ class ControlDataBase
     public function ControlDataBase()
     {
         //local
-        //$this->conn =new mysqli('localhost', 'root', '123456', 'viajes'); 
+        $this->conn =new mysqli('localhost', 'root', '123456', 'viajes'); 
         
         //online
-        $this->conn =new mysqli('localhost', 'terrazsa_admin', 'terrazsa123456', 'terrazsa_viajes'); 
+       // $this->conn =new mysqli('localhost', 'terrazsa_admin', 'terrazsa123456', 'terrazsa_viajes'); 
       
                
         /* comprobar la conexión */

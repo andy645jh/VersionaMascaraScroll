@@ -430,3 +430,14 @@ footer{
 #titulo_cajas p{  
     color: #218D86;
 }
+#loading {
+   background-position: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(219, 217, 217);
+    background-image: url(../images/loading.gif);
+    background-repeat: no-repeat;
+    z-index: 10001;
+    background-size: 100px;
+}

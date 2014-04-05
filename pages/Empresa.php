@@ -16,6 +16,7 @@
         <title>Terrazsantours- Agencia de Viajes</title> 
 	</head>
 	<body id="empresa">
+        <div id="loading"></div>
         <div id="dialogo">
             <div id="fondo"></div>
             <div id="contenido_dialog" >

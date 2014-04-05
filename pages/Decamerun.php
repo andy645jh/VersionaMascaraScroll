@@ -30,6 +30,7 @@ $pathCssDefault = $path."css/default.css";
       
 	</head>
 	<body class="body_decamerun">
+        <div id="loading"></div>
         <div id="dialogo">
             <div id="fondo"></div> 
             <div id="contenido_dialog" > 

@@ -21,6 +21,7 @@ $listaDestinos = $controlBd->getSecciones();
 		<script src="../js/modernizr.custom.js"></script> 
 	</head>
 	<body >
+        <div id="loading"></div>
         <div id="dialogo">
             <div id="fondo"></div>
             <div id="contenido_dialog" > 

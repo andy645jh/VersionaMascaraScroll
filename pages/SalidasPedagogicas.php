@@ -27,7 +27,9 @@ $seccion = $controlDataBase->getNameSeccionById($id);
 
 </head>
 <body>
-<div class="container" style="height: auto">
+    <div id="loading"></div>
+    <div class="container" style="height: auto">
+
 	<header class="clearfix">
         <nav>
             <ul>
