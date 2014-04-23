@@ -5,8 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 		     	
 		<meta name="author" content="Codrops" /> 
-         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-          <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>	
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>	
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../css/default.css" />
 		<link rel="stylesheet" type="text/css" href="../css/component.css" />

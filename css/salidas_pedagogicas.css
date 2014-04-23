@@ -25,8 +25,8 @@
 }
 
 #der_coleccion,#izq_coleccion{
-    height: 60px;
-    width: 69px;  
+   height: 80px;
+    width: 60px;
     float: left;
     padding: 0;
     background-image: url(../images/galeria/galeria1.png);
@@ -42,21 +42,30 @@
 }
 
 #texto_coleccion{
-    float: left;  
-    margin-top: 2px;
-    padding-top: 10px;  
+    float: left;
+    margin-top: 25px;
+    font-size: 20px;
     text-align: center;
-    height: 35px;
+    height: 31px;
     width: 200px;
     background-image: url(../images/galeria/patron_galeria.png);
 }
 
-#titulo_pedagogicas,#titulo_coleccion{    
-   color: rgb(2, 2, 2);
+#titulo_pedagogicas{
+    color: rgb(2, 2, 2);
     width: 340px;
     height: 40px;
     margin: 0 auto;
     background-size: contain;
     background-repeat: no-repeat;
+}
 
+#titulo_coleccion{    
+   
+    color: rgb(2, 2, 2);
+    width: 335px;
+    height: 40px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

@@ -266,7 +266,9 @@ $(document).ready(function () {
         }
 
         if (_paginaActual == "EMPRESA") {
-
+             $(function () {
+                cbpFixedScrollLayout.init();
+            });
             _espacioImgs = _altoVentana - BANNER - $('footer').height();
             anchoImg = 1000;
 
